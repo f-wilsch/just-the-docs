@@ -8,6 +8,4 @@ url: https://f-wilsch.github.io/just-the-docs/
 aux_links:
   GitLab repository: https://gitlab.com/matchete/matchete
 
-just_the_docs:
-  custom_css:
-    - "assets/css/custom.css"
+color_scheme: matchete

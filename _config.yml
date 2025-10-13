@@ -1,6 +1,7 @@
-title: Matchete
+# title: Matchete
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
+logo: /assets/images/matchete.png
 
 url: https://f-wilsch.github.io/just-the-docs/
 

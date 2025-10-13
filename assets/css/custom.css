@@ -1,0 +1,5 @@
+:root {
+  --color-link: rgb(32,80,148);  /* Replace with your custom blue */
+/*  --color-link-visited: #005fa3; /* Optional: for visited links */
+  --color-link-hover: #005fa3;   /* Optional: for hover state */
+}

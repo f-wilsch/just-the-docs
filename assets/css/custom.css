@@ -3,3 +3,10 @@
 /*  --color-link-visited: #005fa3; /* Optional: for visited links */
   --color-link-hover: #005fa3;   /* Optional: for hover state */
 }
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: var(--color-link) !important;
+}

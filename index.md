@@ -1,11 +1,12 @@
 ---
-title: Home
+title: Matchete
 layout: home
+nav_order: 1
 ---
 
 <!-- Logo Section -->
 <p align="center">
-  <img src="/assets/images/matchete.png" alt="Project Logo" style="max-width: 800px; margin-bottom: 2em;">
+  <img src="{{ '/assets/images/matchete.png' | relative_url }}" alt="Project Logo" style="max-width: 800px; margin-bottom: 2em;">
 </p>
 
 This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.

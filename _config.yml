@@ -1,5 +1,5 @@
 # title: Matchete
-description: A starter template for a Jeykll site using the Just the Docs theme!
+description: Matchete webpage
 theme: just-the-docs
 logo: /assets/images/matchete.pdf
 
@@ -9,3 +9,9 @@ aux_links:
   GitLab repository: https://gitlab.com/matchete/matchete
 
 color_scheme: matchete
+
+just_the_docs:
+  include_head_custom: true
+
+plugins:
+  - jekyll-remote-include

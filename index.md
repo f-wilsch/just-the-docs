@@ -19,35 +19,11 @@ The `Match` routine can then be applied to the UV Lagrangian to obtain the corre
 
 The resulting EFT Lagrangian contains a (very) large number of redundant operators. These can be removed automatically by applying the routines `GreensSimplify`, which reduces the output to an off-shell Green's basis, and `EOMSimplify`, which performs field redefinitions. The fully simplified result will then be in a (near-)basis of the corresponding EFT operator space.
 
-
-### Release of Major update v0.3.0 (2025-05-30)
-
-The Matchete collaboration proudly announces version 0.3.0!
-
-Matchete now supports automatic evanescent reduction. It is also possible to obtain the matching condition in a particular EFT basis (e.g., the SMEFT Warsaw basis) with `MapEffectiveCouplings`. These tools should make practical matching calculations easier than ever. The distribution now includes build in documentation (w.i.p.) using the Mathematica documentation framework (which can be accessed with the \`F1\` function key). Install this latest version to experience new features and many quality-of-life improvements.
-
 ---
 
-## Reference
+## LaTeX
 
-If you use Matchete please cite: [\[arXiv:2212.04510\]](https://arxiv.org/abs/2212.04510).
-
----
-
-## Installing and loading of the package
-
-The simplest way to download and install Matchete is to run the following command in a Mathematica session:
-
-> Import["https://gitlab.com/matchete/matchete/-/raw/master/install.m"]
-
-This will download and install Matchete in the Applications folder of Mathematica's base directory. To load Matchete use the command:
-
-> <<Matchete\`
-
-The complete set of routines and usage examples can be found in the ancillary documentation notebooks. This repository also contains several example notebooks demonstrating the usage of Matchete for the one-loop matching of the following theories:
-* Vector-like fermion toy model
-* Singlet scalar extension of the SM
-* Vector-like charged lepton singlet extension of the SM
+Here is some LaTeX example $\Lambda^x$.
 
 ---
 
@@ -69,7 +45,7 @@ Please submit bugs and feature requests using GitLab's [issue system](https://gi
 
 ## License
 
-MATCHETE is free software under the terms of the GNU General Public License v3.0.
+MATCHETE is free software under the terms of the [GNU General Public License v3.0](https://gitlab.com/matchete/matchete/-/blob/master/LICENSE?ref_type=heads).
 
 <!-- ---
 

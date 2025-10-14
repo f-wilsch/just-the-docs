@@ -2,6 +2,7 @@
   --color-link: rgb(32,80,148);  /* Replace with your custom blue */
 /*  --color-link-visited: #005fa3; /* Optional: for visited links */
   --color-link-hover: #005fa3;   /* Optional: for hover state */
+  --content-width: 1200px;  /* Default is around 800px */
 }
 
 a,
@@ -11,3 +12,6 @@ a:active {
   color: var(--color-link) !important;
 }
 
+:root {
+  --content-width: 1200px;  /* Default is around 800px */
+}

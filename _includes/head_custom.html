@@ -9,3 +9,12 @@
         {left: '$', right: '$', display: false}
       ]
     });"></script>
+
+<script>
+  window.JTD_IFRAME_ROUTES = {
+    siteRouteBase: "{{ '/docs/' | relative_url }}",
+    baseDocRoot:  "{{ '/DocumentationHTML/Documentation/html/' | relative_url }}",
+    lowercaseDirs: true
+  };
+</script>
+<script defer src="{{ '/assets/js/iframe-route-rewrite.js' | relative_url }}"></script>

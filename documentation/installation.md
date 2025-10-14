@@ -1,7 +1,7 @@
 ---
 title: Installation
 layout: home
-parent: Documentation
+nav-order: 7
 ---
 
 ## Installing and loading of the package

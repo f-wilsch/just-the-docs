@@ -1,0 +1,330 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>CD&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="CD" />
+
+<meta name="description" content="CD[ind, expr] returns the covariant derivative(s) of a given expression expr. The argument ind can either be a single Lorentz index or a list of Lorentz indices." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'CD.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../ref/Lorentz.html"><span class="dropdownPad">Lorentz</span></a>
+     </li>
+     <li>
+      <a href="../ref/Index.html"><span class="dropdownPad">Index</span></a>
+     </li>
+     <li>
+      <a href="../ref/Field.html"><span class="dropdownPad">Field</span></a>
+     </li>
+     <li>
+      <a href="../ref/FS.html"><span class="dropdownPad">FS</span></a>
+     </li>
+     <li>
+      <a href="../ref/FieldStrength.html"><span class="dropdownPad">FieldStrength</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">CD</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../ref/CD.html">CD</a><span class="openbracket">[</span><span class="TI">ind</span><span class="comma">,</span><span class="TI">expr</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">returns the covariant derivative(s) of a given expression <span class="IF"><span class="TI">expr</span></span>. The argument <span class="IF"><span class="TI">ind</span></span> can either be a single <span class="IF"><a class="package-symbol" href="../ref/Lorentz.html">Lorentz</a></span> index or a list of <span class="IF"><a class="package-symbol" href="../ref/Lorentz.html">Lorentz</a></span> indices.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="1388600400"></a><span class="IF"><a class="package-symbol" href="../ref/CD.html">CD</a></span> automatically distributes over sums and applies the product rule.</li>
+     <li><a name="1163606804"></a>The exact representation of the covariant derivative is only implicitly defined through the gauge quantum numbers of single field or composite operator that the derivative is acting on.</li>
+     <li><a name="602002137"></a>When acting on a single instance of <span class="IF"><a class="package-symbol" href="../ref/Field.html">Field</a></span> the the <span class="IF"><a class="package-symbol" href="../ref/CD.html">CD</a></span> head will disappear and its indices will be added to the last argument of the <span class="IF"><a class="package-symbol" href="../ref/Field.html">Field</a></span>.</li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="618324163" class="toggle open">Examples</h1><span class="open-all on">open all</span><span class="close-all">close all</span><div class="hideable">
+   <div id="387817537"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/CD.en/I_1.png"
+       data-in-width="137"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0j3vgkw3e8uh-go6j7n"
+       data-code="Files/CD.en/i_1.txt"
+       ></div>
+   <div>
+    <h2 id="500839708" class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h2>
+    <div class="hideable">
+     <p><a name="1689732516"></a>Defining a scalar field:</p>
+     <div id="892576249"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_2.png"
+         data-in-width="135"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-o1paiz"
+         data-code="Files/CD.en/i_2.txt"
+         ></div>
+     <p><a name="598551098"></a>Since the scalars does not transform under any gauge group, the covariant derivative is equivalent to a partial derivative here <span class="IF"><span class="openparenthesis">(</span>D<sub><span class="special-character Mu">&#956;</span></sub>=<span class="special-character PartialD">&#8706;</span><sub><span class="special-character Mu">&#956;</span></sub><span class="closeparenthesis">)</span></span>.</p>
+     <p><a name="2112015424"></a>Apply a single derivative to one field:</p>
+     <div id="2068589498"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_3.png"
+         data-in-width="85"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-8hvb5o"
+         data-code="Files/CD.en/i_3.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[2]="
+         data-out-num="2"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_1.png"
+         data-out-width="186"
+         data-out-height="16"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_2.png"
+         data-out-width="21"
+         data-out-height="18"
+         ></div>
+     <p><a name="1041580107"></a>Apply two derivatives to one field:</p>
+     <div id="260536748"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_4.png"
+         data-in-width="87"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-elehp6"
+         data-code="Files/CD.en/i_4.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[3]="
+         data-out-num="3"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_3.png"
+         data-out-width="276"
+         data-out-height="16"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_4.png"
+         data-out-width="34"
+         data-out-height="18"
+         ></div>
+     <div class="ExLine"><a name="724830247"></a><!-- --></div>
+     <p><a name="1694715545"></a>For a gauged field we instead have <span class="IF">D<sub><span class="special-character Mu">&#956;</span></sub> = <span class="special-character PartialD">&#8706;</span><sub><span class="special-character Mu">&#956;</span></sub> - <span class="special-character ImaginaryI">&#63310;</span> <img src="Files/CD.en/1OverscriptBox.png" height="32" width="22" style="vertical-align:middle;" alt="" title="" /><img src="Files/CD.en/2.png" height="24" width="16" alt="" /> T<sup>a</sup></span>, where the sum runs over all representations of the fields with the corresponding generators <span class="IF"><span class="openparenthesis">(</span>T<sup>a</sup><span class="closeparenthesis">)</span></span> and gauge fields <span class="IF"><img src="Files/CD.en/5.png" height="24" width="21" alt="" /><span class="closeparenthesis">)</span></span>.</p>
+     <div id="1766358726"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_5.png"
+         data-in-width="213"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-3hxheg"
+         data-code="Files/CD.en/i_5.txt"
+         ></div>
+     <div id="1806447788"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_6.png"
+         data-in-width="279"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-35sqbi"
+         data-code="Files/CD.en/i_6.txt"
+         ></div>
+     <div id="628665971"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_7.png"
+         data-in-width="143"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-kokr1x"
+         data-code="Files/CD.en/i_7.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_5.png"
+         data-out-width="28"
+         data-out-height="18"
+         ></div>
+     <p><a name="877565073"></a>The <span class="IF"><a class="package-symbol" href="../ref/CD.html">CD</a></span> object does not carry any information about the gauge representations. This information is exclusively stored in the <span class="IF"><a class="package-symbol" href="../ref/Field.html">Field</a></span>.</p>
+    </div>
+   </div>
+   <div>
+    <h2 id="2142693083" class="toggle">Scope<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="1556974252"></a>Also works with <span class="IF"><a class="package-symbol" href="../ref/FieldStrength.html">FieldStrength</a></span> (or <span class="IF"><a class="package-symbol" href="../ref/FS.html">FS</a></span>):</p>
+     <div id="329809958"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_8.png"
+         data-in-width="213"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-fqm890"
+         data-code="Files/CD.en/i_8.txt"
+         ></div>
+     <div id="1412042573"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_9.png"
+         data-in-width="122"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-xmy9a3"
+         data-code="Files/CD.en/i_9.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[2]="
+         data-out-num="2"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_6.png"
+         data-out-width="453"
+         data-out-height="16"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_7.png"
+         data-out-width="37"
+         data-out-height="18"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 id="9679478" class="toggle">Properties &amp; Relations<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="2097632114"></a>CD  automatically applies the product rule:</p>
+     <div id="230489466"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_10.png"
+         data-in-width="213"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-d3ig3g"
+         data-code="Files/CD.en/i_10.txt"
+         ></div>
+     <div id="825682026"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_11.png"
+         data-in-width="282"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-nxvil4"
+         data-code="Files/CD.en/i_11.txt"
+         ></div>
+     <div id="165828746"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_12.png"
+         data-in-width="225"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-c00kkc"
+         data-code="Files/CD.en/i_12.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_8.png"
+         data-out-width="120"
+         data-out-height="18"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 id="1621713221" class="toggle">Possible Issues<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="2142227926"></a>Covariant derivatives always apply the product rule. Therefore, the Warsaw basis operator <span class="IF"><span class="openparenthesis">(</span>H<span class="special-character ConjugateTranspose">&#62409;</span>H<span class="closeparenthesis">)</span><span class="special-character Square">&#62752;</span><span class="openparenthesis">(</span>H<span class="special-character ConjugateTranspose">&#62409;</span>H<span class="closeparenthesis">)</span>=<span class="openparenthesis">(</span>H<span class="special-character ConjugateTranspose">&#62409;</span>H<span class="closeparenthesis">)</span><span class="special-character PartialD">&#8706;</span><sup>2</sup><span class="openparenthesis">(</span>H<span class="special-character ConjugateTranspose">&#62409;</span>H<span class="closeparenthesis">)</span></span> cannot be kept in its unevaluated form in Matchete.</p>
+     <div id="1051257730"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_13.png"
+         data-in-width="159"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-rn6dxw"
+         data-code="Files/CD.en/i_13.txt"
+         ></div>
+     <div id="1930219940"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/I_14.png"
+         data-in-width="339"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0j3vgkw3e8uh-57hliu"
+         data-code="Files/CD.en/i_14.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/CD.en/O_9.png"
+         data-out-width="191"
+         data-out-height="21"
+         ></div>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/Lorentz.html">Lorentz</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/Index.html">Index</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/Field.html">Field</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/FS.html">FS</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/FieldStrength.html">FieldStrength</a></span></p>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

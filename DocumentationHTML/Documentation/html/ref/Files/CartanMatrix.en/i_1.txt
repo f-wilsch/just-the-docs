@@ -1,0 +1,1 @@
+CartanMatrix@ Alg["B", 3] // MatrixForm

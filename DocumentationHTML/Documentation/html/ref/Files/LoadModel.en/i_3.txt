@@ -1,0 +1,4 @@
+lag = LoadModel["VLF_toy_model", 
+   SetModelOptions -> {DefineGaugeGroup, U1e, 
+     NiceForm -> {"\[ScriptE]", "\[ScriptCapitalA]"}}];
+lag // NiceForm

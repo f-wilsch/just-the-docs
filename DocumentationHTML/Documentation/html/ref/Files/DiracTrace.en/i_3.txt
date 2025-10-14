@@ -1,0 +1,3 @@
+7 \[Gamma][\[Mu]] ** \[Gamma][\[Nu]] + 
+   a \[Gamma][\[Mu]] ** \[Gamma][\[Rho], \[Nu]] ** \[Gamma][\[Rho]] //
+   DiracTrace // NiceForm

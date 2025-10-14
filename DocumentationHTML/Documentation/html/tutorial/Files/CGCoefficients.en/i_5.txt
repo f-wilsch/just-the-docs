@@ -1,0 +1,2 @@
+TensorRank@GetCGTensor@f3
+GetCGTensor@del[adj]

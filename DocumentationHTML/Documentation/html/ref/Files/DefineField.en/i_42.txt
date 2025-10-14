@@ -1,0 +1,2 @@
+DefineField[s, Scalar, Indices -> Flavor, 
+ Mass -> {Light, m\[Phi], {Flavor}}]

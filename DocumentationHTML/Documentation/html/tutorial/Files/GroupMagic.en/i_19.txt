@@ -1,0 +1,4 @@
+d = InvariantTensors[SU@3, {{1, 1}, {1, 1}, {1, 1}}, 
+  SymmetricIndices -> {1, 2, 3}]
+f = InvariantTensors[SU@3, {{1, 1}, {1, 1}, {1, 1}}, 
+  AntisymmetricIndices -> {1, 2, 3}]

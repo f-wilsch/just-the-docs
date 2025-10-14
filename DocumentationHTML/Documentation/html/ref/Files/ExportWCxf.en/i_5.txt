@@ -1,0 +1,3 @@
+LNP = FreeLag[\[Chi], \[Phi]] + 
+   PlusHc[\[Kappa][p, r]*Bar[d[a, p]] ** \[Chi][r]*\[Phi][a]];
+LNP // NiceForm

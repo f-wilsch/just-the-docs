@@ -1,0 +1,1 @@
+MatrixForm@First@InvariantTensors[SU[3], {CRep[{1, 0}], {1, 0}}]

@@ -1,0 +1,4 @@
+DefineCoupling[\[Lambda],
+ Indices -> {Flavor, Flavor, Flavor, Flavor, Flavor},
+ DiagonalCoupling -> {True, False, True, True, False}
+ ]

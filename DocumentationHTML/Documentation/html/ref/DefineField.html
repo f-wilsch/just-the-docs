@@ -1,0 +1,1000 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>DefineField&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="DefineField" />
+
+<meta name="description" content="DefineField[label, type] defines a new field referred to by its label to be used in Lagrangians. The type defines the spin and can take the values Scalar, Fermion or Vector. " />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'DefineField.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../ref/DefineGaugeGroup.html"><span class="dropdownPad">DefineGaugeGroup</span></a>
+     </li>
+     <li>
+      <a href="../ref/DefineFlavorIndex.html"><span class="dropdownPad">DefineFlavorIndex</span></a>
+     </li>
+     <li>
+      <a href="../ref/ResetAll.html"><span class="dropdownPad">ResetAll</span></a>
+     </li>
+     <li>
+      <a href="../ref/DefineGlobalGroup.html"><span class="dropdownPad">DefineGlobalGroup</span></a>
+     </li>
+     <li>
+      <a href="../ref/FreeLag.html"><span class="dropdownPad">FreeLag</span></a>
+     </li>
+     <li>
+      <a href="../ref/LoadModel.html"><span class="dropdownPad">LoadModel</span></a>
+     </li>
+     <li>
+      <a href="../ref/RemoveField.html"><span class="dropdownPad">RemoveField</span></a>
+     </li>
+     <li>
+      <a href="../ref/GetFields.html"><span class="dropdownPad">GetFields</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">DefineField</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../ref/DefineField.html">DefineField</a><span class="openbracket">[</span><span class="TI">label</span><span class="comma">,</span><span class="TI">type</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">defines a new field referred to by its <span class="IF"><span class="TI">label</span></span> to be used in Lagrangians. The <span class="IF"><span class="TI">type</span></span> defines the spin and can take the values <span class="IF"><a class="package-symbol" href="../ref/Scalar.html">Scalar</a></span>, <span class="IF"><a class="package-symbol" href="../ref/Fermion.html">Fermion</a></span> or <span class="IF"><a class="package-symbol" href="../ref/Vector.html">Vector</a></span>. </p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="1791757087"></a>Defining a field with <span class="IF"><a class="package-symbol" href="../ref/DefineField.html">DefineField</a></span> informs Matchete of the quantum numbers and masses of the field in question. All fields must be defined before a Lagrangian can be written down. </li>
+     <li><a name="914697409"></a><span class="IF"><a class="package-symbol" href="../ref/DefineField.html">DefineField</a></span> provides a new function <span class="IF"><span class="TI">label</span></span>[] (or <span class="IF"><span class="TI">label</span></span>[i, j, ...] if Indices are provided with the <span class="IF"><a class="package-symbol" href="../ref/Indices.html">Indices</a></span> option) that provides a shortcut for the user to write the field in the internal format used in Matchete. It gives an instance of the field with the indices given. </li>
+     <li><a name="423743530"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="801735258"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/BackgroundField.html">BackgroundField</a> <a href="DefineField?view=all#1480577776" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="specialcharacters">specifies if the field is a background field <span class="openparenthesis">(</span>non-propagating<span class="closeparenthesis">)</span>.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/Charges.html">Charges</a> <a href="DefineField?view=all#232288910" class="example-jump-link"></a></td><td><span class="openbrace">{</span><span class="closebrace">}</span></td><td><span class="TT"><span class="specialcharacters">specifies a <span class="openparenthesis">(</span>list of<span class="closeparenthesis">)</span> U<span class="openparenthesis">(</span>1<span class="closeparenthesis">)</span> group<span class="openparenthesis">(</span>s<span class="closeparenthesis">)</span> and corresponding charge<span class="openparenthesis">(</span>s<span class="closeparenthesis">)</span> of the field.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/Chiral.html">Chiral</a> <a href="DefineField?view=all#2101923771" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT">specifies if a fermion field is <span class="IF"><a class="package-symbol" href="../ref/LeftHanded.html">LeftHanded</a></span> or <span class="IF"><a class="package-symbol" href="../ref/RightHanded.html">RightHanded</a></span>. The option is only valid if the <span class="IF"><span class="TI">type</span></span> is <span class="IF"><a class="package-symbol" href="../ref/Fermion.html">Fermion</a></span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/Indices.html">Indices</a> <a href="DefineField?view=all#926826047" class="example-jump-link"></a></td><td><span class="openbrace">{</span><span class="closebrace">}</span></td><td><span class="TT"><span class="specialcharacters">specifies a <span class="openparenthesis">(</span>list of<span class="closeparenthesis">)</span> representation<span class="openparenthesis">(</span>s<span class="closeparenthesis">)</span> under which the field transforms. Theses can be representations of gauge or global groups or flavor indices.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/Mass.html">Mass</a> <a href="DefineField?view=all#1466480238" class="example-jump-link"></a></td><td><a class="package-symbol" href="../ref/Heavy.html">Heavy</a></td><td><span class="TT"><span class="specialcharacters">specifies the mass label and EFT scaling of the field.  If no mass label is given<span class="comma">,</span> a default value based on the field label is used.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/NiceForm.html">NiceForm</a> <a href="DefineField?view=all#463543447" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/Default.html">Default</a></td><td><span class="TT">provides the display of the field under <span class="IF"><a class="package-symbol" href="../ref/NiceForm.html">NiceForm</a></span> formatting.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="../ref/SelfConjugate.html">SelfConjugate</a> <a href="DefineField?view=all#1851526060" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="specialcharacters">specifies whether the field is self-conjugated <span class="openparenthesis">(</span>real<span class="closeparenthesis">)</span>.</span></span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="1580859696" class="toggle open">Examples</h1><span class="open-all on">open all</span><span class="close-all">close all</span><div class="hideable">
+   <div>
+    <h2 id="841229988" class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h2>
+    <div class="hideable">
+     <p><a name="406804936"></a>Defining a scalar field</p>
+     <div id="1919860645"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/I_1.png"
+         data-in-width="135"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-51bj8n"
+         data-code="Files/DefineField.en/i_1.txt"
+         ></div>
+     <div id="1373184164"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/I_2.png"
+         data-in-width="19"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-wzudyu"
+         data-code="Files/DefineField.en/i_2.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[2]="
+         data-out-num="2"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_1.png"
+         data-out-width="102"
+         data-out-height="16"
+         ></div>
+     <p><a name="2030578641"></a>Defining a fermion field</p>
+     <div id="1291467037"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/I_3.png"
+         data-in-width="149"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-vm6wmn"
+         data-code="Files/DefineField.en/i_3.txt"
+         ></div>
+     <div id="1604848535"
+         class="clipboard-input"
+         data-in="In[4]:="
+         data-in-num="4"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/I_4.png"
+         data-in-width="20"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-0trrb9"
+         data-code="Files/DefineField.en/i_4.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[4]="
+         data-out-num="4"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_2.png"
+         data-out-width="114"
+         data-out-height="16"
+         ></div>
+     <div class="ExLine"><a name="48258754"></a><!-- --></div>
+     <p><a name="725869021"></a>The defined fields are provided with a default formatting under <span class="IF"><a class="package-symbol" href="../ref/NiceForm.html">NiceForm</a></span> to </p>
+     <div id="1001770984"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/I_5.png"
+         data-in-width="132"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-quppp2"
+         data-code="Files/DefineField.en/i_5.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_3.png"
+         data-out-width="30"
+         data-out-height="16"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 id="331693184" class="toggle">Scope<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h2>
+    <div class="hideable">
+     <p><a name="1833501546"></a>In most cases <span class="IF"><a class="package-symbol" href="../ref/DefineField.html">DefineField</a></span> is used with many options. For instance to define the three generations of left-handed quarks in the SM, we would use</p>
+     <div id="1044290282"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/DefineField.en/I_6.png"
+         data-big="418 39"
+         data-small="418 39"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-rj01to"
+         data-code="Files/DefineField.en/i_6.txt"
+         ></div>
+     <div id="232292721"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/I_7.png"
+         data-in-width="124"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-d4k4hv"
+         data-code="Files/DefineField.en/i_7.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[2]="
+         data-out-num="2"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_4.png"
+         data-out-width="529"
+         data-out-height="16"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_5.png"
+         data-out-width="45"
+         data-out-height="17"
+         ></div>
+     <p><a name="1606838331"></a>This example assumes that the SU3c, SU2L, and U1Y (SM) gauge groups have been initialized first, which can be done with <span class="IF"><a class="package-symbol" href="../ref/DefineGaugeGroup.html">DefineGaugeGroup</a></span>. </p>
+     <div class="ExLine"><a name="183306901"></a><!-- --></div>
+     <p><a name="1347535309"></a>Massive vectors are also supported, and can be defined like scalar and fermion fields. Vector fields come with a Lorentz index in addition to the ones specified with the <span class="IF"><a class="package-symbol" href="../ref/Indices.html">Indices</a></span> option.</p>
+     <div id="387802235"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/I_8.png"
+         data-in-width="233"
+         data-in-height="59"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-go58el"
+         data-code="Files/DefineField.en/i_8.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[1]="
+         data-out-num="1"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_6.png"
+         data-out-width="192"
+         data-out-height="16"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_7.png"
+         data-out-width="13"
+         data-out-height="16"
+         ></div>
+     <p><a name="1226069823"></a>Massless vectors are associated with gauge groups and are implicitly defined through <span class="IF"><a class="package-symbol" href="../ref/DefineGaugeGroup.html">DefineGaugeGroup</a></span>.</p>
+    </div>
+   </div>
+   <div>
+    <h2 id="508241985" class="toggle">Options<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(17)</span></h2>
+    <div class="hideable">
+     <div>
+      <h3 id="1480577776" class="toggle">BackgroundField<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
+      <div class="hideable">
+       <p><a name="790478155"></a>With the <span class="IF"><a class="package-symbol" href="../ref/BackgroundField.html">BackgroundField</a></span> option, the user may set a field to be non-propagating, i.e., it is treated as a background field. A scalar field background field can be defined with</p>
+       <div id="2059778085"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_9.png"
+           data-in-width="298"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-8cmg77"
+           data-code="Files/DefineField.en/i_9.txt"
+           ></div>
+       <p><a name="59223890"></a>Background fields are treated as <span class="IF"><a class="package-symbol" href="../ref/Light.html">Light</a></span> fields with a vanishing mass (trying to associate a mass with a background field results in a failure). It does not have a kinetic term associated, and it cannot be passed to <span class="IF"><a class="package-symbol" href="../ref/FreeLag.html">FreeLag</a></span>:</p>
+       <div id="750771608"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_10.png"
+           data-in-width="68"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-mo9xc6"
+           data-code="Files/DefineField.en/i_10.txt"
+           ></div>
+       <div class="Message">
+        <img src="Files/DefineField.en/1.gif"
+            height="20"
+            width="474"
+            alt="" />
+       </div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_8.png"
+           data-out-width="47"
+           data-out-height="16"
+           ></div>
+      </div>
+     </div>
+     <div>
+      <h3 id="232288910" class="toggle">Charges<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
+      <div class="hideable">
+       <p><a name="500291033"></a>The <span class="IF"><a class="package-symbol" href="../ref/Charges.html">Charges</a></span> option is used to specify that the field is charged under one or more U(1) gauge groups. Having defined a U(1) group with <span class="IF"><a class="package-symbol" href="../ref/DefineGaugeGroup.html">DefineGaugeGroup</a></span>, </p>
+       <div id="1560934494"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_11.png"
+           data-in-width="213"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-z3mi1s"
+           data-code="Files/DefineField.en/i_11.txt"
+           ></div>
+       <p><a name="911623616"></a>it becomes possible to specify the charge of a field under that group. The charge under the group is specified in the format <span class="InlineCode">groupName[charge]</span>. Thus to specify a scalar with charge 2, use the option   </p>
+       <div id="1960087021"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_12.png"
+           data-in-width="261"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-6o9q3z"
+           data-code="Files/DefineField.en/i_12.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_9.png"
+           data-out-width="585"
+           data-out-height="16"
+           ></div>
+       <p><a name="1424581727"></a><span class="IF"><a class="package-symbol" href="../ref/Charges.html">Charges</a></span> can also take a list of charges as a value.</p>
+      </div>
+     </div>
+     <div>
+      <h3 id="2101923771" class="toggle">Chiral<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(3)</span></h3>
+      <div class="hideable">
+       <p><a name="1871383609"></a>The chiral option is used exclusively for fermions. Matchete employs Dirac spinor notation, and the chirality option lets the user specify if the spinor is left- or right-handed or if it is vector-like.</p>
+       <p><a name="1846503913"></a>The default option sets the field to be vector-like, which appears from the associated free Lagrangian </p>
+       <div id="458808180"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_13.png"
+           data-in-width="245"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-hvf4xy"
+           data-code="Files/DefineField.en/i_13.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_10.png"
+           data-out-width="129"
+           data-out-height="19"
+           ></div>
+       <div class="ExLine"><a name="1381912037"></a><!-- --></div>
+       <p><a name="579977525"></a>Option values <span class="IF"><a class="package-symbol" href="../ref/LeftHanded.html">LeftHanded</a></span> or <span class="IF"><a class="package-symbol" href="../ref/RightHanded.html">RightHanded</a></span> designates that the field is chiral, such as </p>
+       <div id="583289485"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_14.png"
+           data-in-width="301"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-jxj7bz"
+           data-code="Files/DefineField.en/i_14.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_11.png"
+           data-out-width="333"
+           data-out-height="29"
+           ></div>
+       <p><a name="718341711"></a>By default such fields are assumed to have a Majorana mass. </p>
+       <div class="ExLine"><a name="1098490237"></a><!-- --></div>
+       <p><a name="1320755931"></a>A common use case, known from the SM, is to have massless chiral fermions. In that case, one can also invoke the mass option to obtain</p>
+       <div id="154280541"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_15.png"
+           data-in-width="366"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-ct41wv"
+           data-code="Files/DefineField.en/i_15.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_12.png"
+           data-out-width="94"
+           data-out-height="19"
+           ></div>
+      </div>
+     </div>
+     <div>
+      <h3 id="926826047" class="toggle">Indices<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(3)</span></h3>
+      <div class="hideable">
+       <p><a name="947998980"></a>The index option specifies all the indices of a field associated with non-Abelian gauged or global groups or simple flavor (generation). Thus, indices are implicitly used to specify the transformation of the field under the non-Abelian gauge groups. First Matchete needs to recognize the index type we wish to specify. For instance defining a gauge group with <span class="IF"><a class="package-symbol" href="../ref/DefineGaugeGroup.html">DefineGaugeGroup</a></span> automatically defines some common representations, e.g., </p>
+       <div id="1893423347"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_16.png"
+           data-in-width="231"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-5lkw29"
+           data-code="Files/DefineField.en/i_16.txt"
+           ></div>
+       <p><a name="1639037916"></a>Then we may make a new field with a fundamental representation (<span class="IF"><a class="package-symbol" href="../ref/fund.html">fund</a></span>) of the SU3 group</p>
+       <div id="1682086663"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_17.png"
+           data-in-width="279"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-13q8nt"
+           data-code="Files/DefineField.en/i_17.txt"
+           ></div>
+       <p><a name="1998833852"></a>which now needs to be specified with one index. For instance</p>
+       <div id="1536551804"
+           class="clipboard-input"
+           data-in="In[3]:="
+           data-in-num="3"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_18.png"
+           data-in-width="108"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-zo3w8u"
+           data-code="Files/DefineField.en/i_18.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[3]="
+           data-out-num="3"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_13.png"
+           data-out-width="203"
+           data-out-height="16"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_14.png"
+           data-out-width="20"
+           data-out-height="16"
+           ></div>
+       <div class="ExLine"><a name="761528069"></a><!-- --></div>
+       <p><a name="234862965"></a>Flavor indices for a field are specified in a similar way. Defining a generation index counting 2 generations  with <span class="IF"><a class="package-symbol" href="../ref/DefineFlavorIndex.html">DefineFlavorIndex</a></span></p>
+       <div id="699396657"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_19.png"
+           data-in-width="207"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-luor67"
+           data-code="Files/DefineField.en/i_19.txt"
+           ></div>
+       <p><a name="1657753132"></a>lets us define a field with that generation index:</p>
+       <div id="1590833656"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_20.png"
+           data-in-width="279"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-0lfdd2"
+           data-code="Files/DefineField.en/i_20.txt"
+           ></div>
+       <p><a name="1346144137"></a>We see that the index is of the appropriate type</p>
+       <div id="920094860"
+           class="clipboard-input"
+           data-in="In[3]:="
+           data-in-num="3"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_21.png"
+           data-in-width="108"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-ph230u"
+           data-code="Files/DefineField.en/i_21.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[3]="
+           data-out-num="3"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_15.png"
+           data-out-width="210"
+           data-out-height="16"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_16.png"
+           data-out-width="21"
+           data-out-height="16"
+           ></div>
+       <div class="ExLine"><a name="905029541"></a><!-- --></div>
+       <p><a name="204823886"></a>When more indices are specified for the same field, for instance and SU(3) triplet with 2 generations, the ordering in which the indices are specified informs the ordering of the labels in the field short cut. </p>
+       <div id="329803870"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_22.png"
+           data-in-width="365"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-fqm4kw"
+           data-code="Files/DefineField.en/i_22.txt"
+           ></div>
+       <p><a name="473197928"></a>We may specify an instance of this field with triplet index <span class="InlineCode">a</span> and generation index <span class="InlineCode">p</span> by</p>
+       <div id="725485569"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_23.png"
+           data-in-width="126"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-l97yi7"
+           data-code="Files/DefineField.en/i_23.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_17.png"
+           data-out-width="311"
+           data-out-height="16"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_18.png"
+           data-out-width="26"
+           data-out-height="16"
+           ></div>
+      </div>
+     </div>
+     <div>
+      <h3 id="1466480238" class="toggle">Mass<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(5)</span></h3>
+      <div class="hideable">
+       <p><a name="2017538067"></a>The mass option is used to specify the label for the default mass of the field (used in <span class="IF"><a class="package-symbol" href="../ref/FreeLag.html">FreeLag</a></span>) and to inform the program whether the field is considered heavy or light for the purposes of matching. </p>
+       <p><a name="2020412994"></a>Specifying a heavy mass (the default), produces a generic mass label for the field and sets it as heavy:</p>
+       <div id="894756262"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_24.png"
+           data-in-width="236"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-o2z0mw"
+           data-code="Files/DefineField.en/i_24.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_19.png"
+           data-out-width="125"
+           data-out-height="19"
+           ></div>
+       <p><a name="1538616500"></a>In the associated field information, the field now appears with designation heavy:</p>
+       <div id="63141797"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_25.png"
+           data-in-width="84"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-bbvms3"
+           data-code="Files/DefineField.en/i_25.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_20.png"
+           data-out-width="560"
+           data-out-height="16"
+           ></div>
+       <div class="ExLine"><a name="207610531"></a><!-- --></div>
+       <p><a name="466207443"></a>Specifying a light mass (the default), produces a generic mass label for the field and sets it as light:</p>
+       <div id="418857143"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_26.png"
+           data-in-width="229"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-g7nuix"
+           data-code="Files/DefineField.en/i_26.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_21.png"
+           data-out-width="127"
+           data-out-height="19"
+           ></div>
+       <p><a name="2001167366"></a>In the associated field information, the field now appears with designation light:</p>
+       <div id="1878524695"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_27.png"
+           data-in-width="84"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-5cpk7t"
+           data-code="Files/DefineField.en/i_27.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_22.png"
+           data-out-width="564"
+           data-out-height="16"
+           ></div>
+       <div class="ExLine"><a name="269869285"></a><!-- --></div>
+       <p><a name="1126635636"></a>Setting the mass to zero also defines it as light, as would be expected. It ensures that no mass term is included in the free Lagrangian:</p>
+       <div id="2095068163"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_28.png"
+           data-in-width="205"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-8xmu75"
+           data-code="Files/DefineField.en/i_28.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_23.png"
+           data-out-width="57"
+           data-out-height="19"
+           ></div>
+       <div class="ExLine"><a name="1602579273"></a><!-- --></div>
+       <p><a name="608002130"></a>To use a custom mass label rather than the generic one, one has to specify the label in addition to <span class="IF"><a class="package-symbol" href="../ref/Light.html">Light</a></span> or <span class="IF"><a class="package-symbol" href="../ref/Heavy.html">Heavy</a></span>. For instance,</p>
+       <div id="433390069"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_29.png"
+           data-in-width="308"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-hgbb7b"
+           data-code="Files/DefineField.en/i_29.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_24.png"
+           data-out-width="152"
+           data-out-height="19"
+           ></div>
+       <div class="ExLine"><a name="1047250718"></a><!-- --></div>
+       <p><a name="165490961"></a>When the field has a flavor index, it will default to the assumption of a flavor universal mass: </p>
+       <div id="858535998"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_30.png"
+           data-in-width="348"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-ohfowg"
+           data-code="Files/DefineField.en/i_30.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_25.png"
+           data-out-width="153"
+           data-out-height="19"
+           ></div>
+       <p><a name="89187122"></a>If the mass of the heavy field is non-universal, it can be defined with a third entry to the list of mass arguments <span class="InlineCode">{&lt;Heavy&gt;,&lt;label&gt;,&lt;List of flavor indices&gt;}</span>. Note, that the heavy mass matrix is assumed to be diagonal; hence, it receives just a single diagonal index. </p>
+       <div id="369127959"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src-swap="Files/DefineField.en/I_31.png"
+           data-big="447 39"
+           data-small="447 39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-gd1y8p"
+           data-code="Files/DefineField.en/i_31.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_26.png"
+           data-out-width="159"
+           data-out-height="19"
+           ></div>
+      </div>
+     </div>
+     <div>
+      <h3 id="463543447" class="toggle">NiceForm<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h3>
+      <div class="hideable">
+       <p><a name="1938111257"></a>The NiceForm option provides the possibility of defining how the field is displayed in <span class="IF"><a class="package-symbol" href="../ref/NiceForm.html">NiceForm</a></span>. The Default choice uses the <span class="IF"><span class="TI">label</span></span> for the field in <span class="IF"><a class="package-symbol" href="../ref/NiceForm.html">NiceForm</a></span>, but this can be changed  </p>
+       <div id="1762011999"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_32.png"
+           data-in-width="249"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-3fcbf1"
+           data-code="Files/DefineField.en/i_32.txt"
+           ></div>
+       <p><a name="222961595"></a>This does not change the internal representation of the field <span class="InlineCode">f</span>, but we see the difference in the <span class="IF"><a class="package-symbol" href="../ref/NiceForm.html">NiceForm</a></span> display</p>
+       <div id="500355107"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_33.png"
+           data-in-width="97"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-ij6mq9"
+           data-code="Files/DefineField.en/i_33.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_27.png"
+           data-out-width="104"
+           data-out-height="16"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_28.png"
+           data-out-width="12"
+           data-out-height="16"
+           ></div>
+       <div class="ExLine"><a name="1985818634"></a><!-- --></div>
+       <p><a name="1227897984"></a>We can control also the display of the mass, by giving a list of two strings to the option:</p>
+       <div id="1562574200"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_34.png"
+           data-in-width="312"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-z4ln86"
+           data-code="Files/DefineField.en/i_34.txt"
+           ></div>
+       <div id="1163616493"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_35.png"
+           data-in-width="144"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-ti2min"
+           data-code="Files/DefineField.en/i_35.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_29.png"
+           data-out-width="111"
+           data-out-height="19"
+           ></div>
+       <p><a name="139270512"></a>The <span class="IF"><a href="http://reference.wolfram.com/language/ref/Default.html">Default</a></span> value can be used in place of either string to use the default <span class="IF"><a class="package-symbol" href="../ref/NiceForm.html">NiceForm</a></span> that would be associated to the field <span class="IF"><span class="TI">label</span></span>.</p>
+      </div>
+     </div>
+     <div>
+      <h3 id="1851526060" class="toggle">SelfConjugate<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h3>
+      <div class="hideable">
+       <p><a name="1460725567"></a>Self-conjugate allows specifying if a scalar is real, e.g.,</p>
+       <div id="1464112779"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_36.png"
+           data-in-width="273"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-yhzaxp"
+           data-code="Files/DefineField.en/i_36.txt"
+           ></div>
+       <p><a name="791709752"></a>This is reflected both in the generic free Lagrangian </p>
+       <div id="790157480"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_37.png"
+           data-in-width="151"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-ncp3o6"
+           data-code="Files/DefineField.en/i_37.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_30.png"
+           data-out-width="99"
+           data-out-height="29"
+           ></div>
+       <p><a name="1910193792"></a>and in complex conjugation (<span class="IF"><a class="package-symbol" href="../ref/Bar.html">Bar</a></span>)</p>
+       <div id="1398899287"
+           class="clipboard-input"
+           data-in="In[3]:="
+           data-in-num="3"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_38.png"
+           data-in-width="103"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-xe5jvt"
+           data-code="Files/DefineField.en/i_38.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[3]="
+           data-out-num="3"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_31.png"
+           data-out-width="24"
+           data-out-height="16"
+           ></div>
+       <div class="ExLine"><a name="661498079"></a><!-- --></div>
+       <p><a name="2077608707"></a>Fermions can also be self conjugate</p>
+       <div id="370684553"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_39.png"
+           data-in-width="290"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-gezcbf"
+           data-code="Files/DefineField.en/i_39.txt"
+           ></div>
+       <p><a name="1016235586"></a>In this case charge conjugation (<span class="IF"><a class="package-symbol" href="../ref/CConj.html">CConj</a></span>) returns the original field</p>
+       <div id="1272924256"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_40.png"
+           data-in-width="118"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-vb5gxe"
+           data-code="Files/DefineField.en/i_40.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out="Out[2]="
+           data-out-num="2"
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_32.png"
+           data-out-width="24"
+           data-out-height="16"
+           ></div>
+       <p><a name="1743019876"></a>The free Lagrangian in this case provides a Majorana mass for the fermion</p>
+       <div id="1618449420"
+           class="clipboard-input"
+           data-in="In[3]:="
+           data-in-num="3"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/I_41.png"
+           data-in-width="147"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-01u9um"
+           data-code="Files/DefineField.en/i_41.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineField.en/O_33.png"
+           data-out-width="170"
+           data-out-height="29"
+           ></div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <h2 id="1164453530" class="toggle">Possible Issues<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h2>
+    <div class="hideable">
+     <p><a name="660017830"></a>It is not possible to define a light field with a mass carrying flavor indices. In that event, the mass should be defined separately with <span class="IF"><a class="package-symbol" href="../ref/DefineCoupling.html">DefineCoupling</a></span> </p>
+     <div id="2001185775"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/DefineField.en/I_42.png"
+         data-big="426 19"
+         data-small="426 19"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-7dqm31"
+         data-code="Files/DefineField.en/i_42.txt"
+         ></div>
+     <div class="Message">
+      <img src="Files/DefineField.en/2.gif"
+          height="34"
+          width="592"
+          alt="" />
+     </div>
+     <div class="clipboard-output"
+         data-out="Out[1]="
+         data-out-num="1"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_34.png"
+         data-out-width="47"
+         data-out-height="16"
+         ></div>
+     <div class="ExLine"><a name="375309067"></a><!-- --></div>
+     <p><a name="1531322897"></a>It is not possible to define a complex and chiral fermion with a mass, e.g., </p>
+     <div id="1172078751"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/DefineField.en/I_43.png"
+         data-big="493 19"
+         data-small="493 19"
+         data-link="https://wolfram.com/xid/0ys9bwdmxsbbyulq-tn3z1d"
+         data-code="Files/DefineField.en/i_43.txt"
+         ></div>
+     <div class="Message">
+      <img src="Files/DefineField.en/3.gif"
+          height="34"
+          width="572"
+          alt="" />
+     </div>
+     <div class="clipboard-output"
+         data-out="Out[1]="
+         data-out-num="1"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineField.en/O_35.png"
+         data-out-width="47"
+         data-out-height="16"
+         ></div>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="../ref/DefineGaugeGroup.html">DefineGaugeGroup</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/DefineFlavorIndex.html">DefineFlavorIndex</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/ResetAll.html">ResetAll</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/DefineGlobalGroup.html">DefineGlobalGroup</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/FreeLag.html">FreeLag</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/LoadModel.html">LoadModel</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/RemoveField.html">RemoveField</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="../ref/GetFields.html">GetFields</a></span></p>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/Matchete.html">Matchete</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+f3[a, i, j] f3[b, j, k] f3[c, k, l] f3[e, l, i] f3[a, i2, j2] f3[b, 
+   j2, k2] f3[c, k2, l2] f3[e, l2, i2] // ContractCGs

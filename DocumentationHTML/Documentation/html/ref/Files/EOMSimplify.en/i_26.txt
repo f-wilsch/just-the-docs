@@ -1,0 +1,2 @@
+DefineCoupling[c3, SelfConjugate -> True, EFTOrder -> 2]
+EOMSimplify[FreeLag[] + c3[] CD[\[Mu], \[Phi][]]^2] // NiceForm

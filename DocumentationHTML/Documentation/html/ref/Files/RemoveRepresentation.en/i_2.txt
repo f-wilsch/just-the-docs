@@ -1,0 +1,2 @@
+RemoveRepresentation[G[fund]]
+GetRepresentations[]

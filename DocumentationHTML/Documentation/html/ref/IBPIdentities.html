@@ -1,0 +1,87 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>IBPIdentities&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="IBPIdentities" />
+
+<meta name="description" content="IBPIdentities[fields, devNo] returns a list with all the integration-by-part identities used by GreensSimplify for the class of operators consisting of the exact matter fields (including Bars) and the specified number of derivatives. Field strength tensors count as 2 derivatives." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'IBPIdentities.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="../guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">IBPIdentities</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="../ref/IBPIdentities.html">IBPIdentities</a><span class="openbracket">[</span><span class="TI">fields</span><span class="comma">,</span><span class="TI">devNo</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">returns a list with all the integration-by-part identities used by <span class="IF"><a class="package-symbol" href="../ref/GreensSimplify.html">GreensSimplify</a></span> for the class of operators consisting of the exact matter fields (including Bars) and the specified number of derivatives. <span class="IF"><a class="package-symbol" href="../ref/Field.html">Field</a></span> strength tensors count as 2 derivatives.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="489009238"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="358345997"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="../ref/ReductionIdentities.html">ReductionIdentities</a></td><td><a class="package-symbol" href="../ref/dDimensional.html">dDimensional</a></td><td><span class="TT">Option for <span class="IF"><a class="package-symbol" href="../ref/GreensSimplify.html">GreensSimplify</a></span><span class="specialcharacters"> to decide whether or not to use the subset of identities valid only in 4 dimensions <span class="openparenthesis">(</span>fierz<span class="comma">,</span> gamma reduction and L</span><span class="IF"><a class="package-symbol" href="../ref/ev.html">ev</a></span><span class="specialcharacters">i-Civita relations<span class="closeparenthesis">)</span> in the simplification.
+</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         The value can be <span class="IF"><a class="package-symbol" href="../ref/dDimensional.html">dDimensional</a></span><span class="specialcharacters"> <span class="openparenthesis">(</span>4D identies are not included<span class="closeparenthesis">)</span><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/FourDimensional.html">FourDimensional</a></span><span class="specialcharacters"> <span class="openparenthesis">(</span>4D identities are included<span class="closeparenthesis">)</span><span class="comma">,</span> </span><span class="IF"><a class="package-symbol" href="../ref/Evanescent.html">Evanescent</a></span><span class="specialcharacters"> <span class="openparenthesis">(</span>4D identities are included with the corresponding </span><span class="IF"><a class="package-symbol" href="../ref/ev.html">ev</a></span><span class="specialcharacters">anescent operators<span class="closeparenthesis">)</span> or </span><span class="IF"><a class="package-symbol" href="../ref/EvanescenceFree.html">EvanescenceFree</a></span><span class="specialcharacters"> <span class="openparenthesis">(</span>4D identities are included and </span><span class="IF"><a class="package-symbol" href="../ref/ev.html">ev</a></span>anescent contributions are <span class="IF"><a class="package-symbol" href="../ref/ev.html">ev</a></span><span class="specialcharacters">aluated<span class="closeparenthesis">)</span>.</span></span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="912071179" class="toggle open">Examples</h1><div class="hideable">
+   <div id="1470453194"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/IBPIdentities.en/I_1.png"
+       data-in-width="137"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0mdtvxrw7tmdqmmme3dsk8-ylq68c"
+       data-code="Files/IBPIdentities.en/i_1.txt"
+       ></div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="../guide/Matchete.html">Matchete</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

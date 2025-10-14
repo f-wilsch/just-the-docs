@@ -1,0 +1,3 @@
+expr // RelabelIndices // NiceForm;
+FlavorSum[Index[x, Flavor]] \[Xi][x]
+% // RelabelIndices // NiceForm

@@ -1,0 +1,2 @@
+RepresentationWeights[SU[3], CRep[{1, 0}]]
+RepresentationWeights[SU[3], {0, 1}]

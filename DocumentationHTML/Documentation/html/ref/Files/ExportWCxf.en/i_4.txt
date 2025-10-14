@@ -1,0 +1,4 @@
+DefineCoupling[\[Kappa],
+  	Indices -> {Flavor, Flavor},
+  	SelfConjugate -> False
+  ];

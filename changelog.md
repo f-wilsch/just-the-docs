@@ -7,7 +7,7 @@ nav_order: 6
 Here we can put the latest updates...
 
 Latest public release:
-{% remote_include https://gitlab.com/matchete/matchete/-/raw/master/version?ref_type=heads&inline=false %}
+
 
 ---
 

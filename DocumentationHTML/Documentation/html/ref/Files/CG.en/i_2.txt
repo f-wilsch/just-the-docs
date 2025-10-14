@@ -1,0 +1,1 @@
+DefineGlobalGroup[G, SU[3]]

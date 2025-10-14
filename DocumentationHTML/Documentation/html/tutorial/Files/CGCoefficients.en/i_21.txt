@@ -1,0 +1,4 @@
+ReplaceCGs[{Tr4[a, b, c, e], t3t3[a, i, b, j]}] // 
+  RelabelIndices // NiceForm
+ReplaceCGs[{Tr4[a, b, c, e], t3t3[a, i, b, j]}, 
+   CGsToReplace -> {t3t3}] // RelabelIndices // NiceForm

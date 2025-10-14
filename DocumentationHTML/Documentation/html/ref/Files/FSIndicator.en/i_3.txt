@@ -1,0 +1,1 @@
+FSIndicator[SO[5], {1, 0}]

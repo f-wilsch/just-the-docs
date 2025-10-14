@@ -1,0 +1,3 @@
+expr = (\[Phi][J1] \[Phi][J1]) (\[Phi][J2] \[Phi][J2]) // NiceForm;
+expr // RelabelIndices
+% // NiceForm

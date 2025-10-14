@@ -1,0 +1,3 @@
+DefineFlavorIndex[Flavor, 3,
+ 	IndexAlphabet -> {"p", "r", "s", "t"}
+ ]

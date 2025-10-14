@@ -1,0 +1,2 @@
+q[c, u, p]
+q[c, i, p] // NiceForm

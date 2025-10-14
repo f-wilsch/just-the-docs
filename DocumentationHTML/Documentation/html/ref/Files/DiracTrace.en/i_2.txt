@@ -1,0 +1,4 @@
+DiracTrace[\[Gamma][\[Mu]] ** \[Gamma][\[Nu]] ** \[Gamma][\[Mu]] ** \
+\[Gamma][\[Rho]], Dimensions -> \[ScriptD]] // NiceForm
+DiracTrace[\[Gamma][\[Mu]] ** \[Gamma][\[Nu]] ** \[Gamma][\[Mu]] ** \
+\[Gamma][\[Rho]], Dimensions -> 4] // NiceForm

@@ -1,0 +1,2 @@
+CG[t2\[CurlyEpsilon], {i, b, c}] // ReplaceCGs // 
+  RelabelIndices // NiceForm

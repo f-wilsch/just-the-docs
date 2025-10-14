@@ -1,0 +1,1 @@
+(Bar@H[i] H[i]) CD[{\[Mu], \[Mu]}, Bar@H[j] H[j]] // NiceForm

@@ -1,0 +1,2 @@
+DefineField[\[CapitalPsi], Fermion, Chiral -> False]
+FreeLag[\[CapitalPsi]] // NiceForm

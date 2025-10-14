@@ -1,0 +1,3 @@
+DefineFlavorIndex[Flavor, nf, IndexAlphabet -> {"p", "r", "s", "t"}]
+DefineField[\[Phi], Scalar, Indices -> {Flavor}, 
+ Mass -> {Heavy, M, {Flavor}}]

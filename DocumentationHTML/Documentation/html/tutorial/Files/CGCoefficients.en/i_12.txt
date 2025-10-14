@@ -1,0 +1,5 @@
+Needs["Matchete`"];
+Bar@t3[a, i, j]
+% // NiceForm;
+t3[a, i, j] t3[a, j, k] // ContractCGs
+% // NiceForm

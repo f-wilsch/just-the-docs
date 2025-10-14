@@ -1,0 +1,2 @@
+\[CapitalPhi]3[p]
+\[CapitalPhi]3[p] // NiceForm

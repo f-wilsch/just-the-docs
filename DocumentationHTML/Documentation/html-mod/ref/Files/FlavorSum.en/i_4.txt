@@ -1,0 +1,7 @@
+DefineCoupling[m,
+ SelfConjugate -> True,
+ Indices -> {Flavor},
+ DiagonalCoupling -> {True}
+ ];
+FlavorSum[Index[p, Flavor]] m[p]
+% // NiceForm

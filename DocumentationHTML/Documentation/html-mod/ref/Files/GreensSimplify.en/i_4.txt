@@ -1,0 +1,1 @@
+GreensSimplify[op, ReductionIdentities -> Evanescent] // NiceForm

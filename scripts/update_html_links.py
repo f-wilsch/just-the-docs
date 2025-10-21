@@ -48,7 +48,6 @@ def process_html_file(input_path, output_path):
         f.write(new_content)
 
 def main():
-    print(INPUT_DIR)
     for root, _, files in os.walk(INPUT_DIR):
         for filename in files:
             if filename.lower().endswith(".html"):

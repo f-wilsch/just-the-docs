@@ -1,0 +1,4 @@
+DefineFlavorIndex[Flavor, 3]
+DefineCoupling[Cee, Indices -> {Flavor, Flavor, Flavor, Flavor}, 
+ Symmetries -> {SymmetricPermutation[3, 4, 1, 2], 
+   SymmetricPermutation[1, 4, 3, 2]}]

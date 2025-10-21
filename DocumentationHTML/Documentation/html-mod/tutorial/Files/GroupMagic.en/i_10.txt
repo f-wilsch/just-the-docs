@@ -1,0 +1,2 @@
+DynkinIndex[SU@2, {2}]
+Casimir2[SU@3, {1, 1}]

@@ -1,0 +1,2 @@
+expr=Metric[\[Mu],\[Nu]]CD[\[Mu],\[Phi][]];
+%//NiceForm

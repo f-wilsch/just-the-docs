@@ -1,0 +1,2 @@
+DefineGaugeGroup[H4, SU[3], h4, A4, 
+ NiceForm -> {Default, "\!\(\*SubscriptBox[\(A\), \(4\)]\)"}]

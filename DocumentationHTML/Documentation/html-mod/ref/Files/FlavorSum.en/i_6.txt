@@ -1,0 +1,2 @@
+DefineField[\[Phi], Scalar, Indices -> {G[fund], Flavor}, 
+ Mass -> {Heavy, M, {Flavor}}]

@@ -1,0 +1,1 @@
+\[ScriptCapitalL]OnShell = EOMSimplify[\[ScriptCapitalL]Greens];

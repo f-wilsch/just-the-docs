@@ -1,0 +1,4 @@
+DefineGaugeGroup[SU3, SU[3], g, G, 
+ FundAlphabet -> {"\[Alpha]", "\[Beta]", "\[Gamma]", "\[Delta]"}]
+DefineFlavorIndex[Flavor, 3, IndexAlphabet -> {"p", "r", "s", "t"}]
+DefineField[\[Psi], Fermion, Indices -> {SU3[fund], Flavor}]

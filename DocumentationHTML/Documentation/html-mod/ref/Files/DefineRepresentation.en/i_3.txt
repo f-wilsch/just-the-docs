@@ -1,0 +1,4 @@
+DefineCGGroup[G2, SU@3]
+DefineRepresentation[fund, G2, {1, 0},
+ IndexAlphabet -> 
+  CharacterRange["\[DoubleStruckA]", "\[DoubleStruckF]"]]

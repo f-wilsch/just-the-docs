@@ -1,0 +1,1 @@
+fStruct[G][a, b, c] // NiceForm

@@ -1,0 +1,6 @@
+\[Gamma][\[Mu]] ** \[Gamma][\[Nu]] ** \[Gamma][\[Rho]] ** \[Gamma][\
+\[Sigma]] ** \[Gamma][\[Alpha]] ** \[Gamma][\[Alpha]] ** \[Gamma]@5 //
+   DiracTrace // NiceForm
+-\[Gamma][\[Alpha]] ** \[Gamma][\[Mu]] ** \[Gamma][\[Nu]] ** \
+\[Gamma][\[Rho]] ** \[Gamma][\[Sigma]] ** \[Gamma][\[Alpha]] ** \
+\[Gamma]@5 // DiracTrace // NiceForm

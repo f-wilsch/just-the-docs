@@ -1,0 +1,2 @@
+DefineCoupling[k, Indices -> {Flavor, Flavor}, 
+ DiagonalCoupling -> {True, False}]

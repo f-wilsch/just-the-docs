@@ -1,0 +1,1 @@
+DefineGaugeGroup[G2, Alg["G", 2], g2, A2]

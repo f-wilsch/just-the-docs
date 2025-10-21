@@ -1,0 +1,4 @@
+(Bar@\[Phi][a1] \[Phi][a1]) (Bar@\[Phi][a2] \[Phi][
+      a2]) (Bar@\[Phi][a3] \[Phi][a3]) (Bar@\[Phi][a4] \[Phi][
+      a4]) (Bar@\[Phi][a5] \[Phi][a5]) (Bar@\[Phi][a6] \[Phi][a6]) // 
+  RelabelIndices // NiceForm

@@ -1,0 +1,2 @@
+DefineCG[\[Delta]fund, {fund, Bar[fund]}, 
+ First@InvariantTensors[SU[3], {CRep[{1, 0}], {1, 0}}]]

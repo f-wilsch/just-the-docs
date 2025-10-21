@@ -1,0 +1,8 @@
+DefineField[\[Psi], Fermion, Mass -> Heavy]
+DefineField[\[Chi], Fermion, Mass -> Heavy]
+DefineField[\[Phi], Scalar, SelfConjugate -> True, Mass -> Light]
+DefineCoupling[\[Lambda], SelfConjugate -> True]
+DefineCoupling[y, SelfConjugate -> True]
+\[ScriptCapitalL]UV = 
+  FreeLag[] + PlusHc[y[] \[Phi][] Bar[\[Psi][]] ** \[Chi][]];
+\[ScriptCapitalL]Greens = GreensSimplify[Match[\[ScriptCapitalL]UV]];

@@ -1,0 +1,5 @@
+DefineGlobalGroup[G, SU[3]]
+DefineCompositeCG[ff, {fStruct@G, fStruct@G}, {{a, b, e}, {c, d, e}}]
+DefineCompositeCG[dd, {dSym@G, dSym@G}, {{a, b, e}, {c, d, e}}];
+{CG[ff, {i, j, k, l}], CG[dd, {i, j, k, l}]} // NiceForm
+ReplaceCGs[%, CGsToReplace -> {dd}] // RelabelIndices // NiceForm

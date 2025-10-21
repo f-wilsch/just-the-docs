@@ -1,0 +1,2 @@
+Bar@ \[Psi][] ** \[Gamma][\[Mu]] ** \[Psi][]
+% // NiceForm

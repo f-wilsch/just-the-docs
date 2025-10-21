@@ -1,0 +1,3 @@
+lag = LoadModel["VLF_toy_model", 
+   ModelParameters -> {\[Phi] -> \[CapitalPhi]}];
+lag // NiceForm

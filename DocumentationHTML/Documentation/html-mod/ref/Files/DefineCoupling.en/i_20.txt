@@ -1,0 +1,3 @@
+DefineFlavorIndex[Flavor, 3]
+DefineCoupling[\[Kappa], Indices -> {Flavor, Flavor}, 
+ SelfConjugate -> {2, 1}]

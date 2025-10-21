@@ -1,0 +1,2 @@
+EOMSimplify[ FreeLag[] + hbar \[CapitalLambda][]^2 \[Phi][]^2, 
+  Verbose -> False];

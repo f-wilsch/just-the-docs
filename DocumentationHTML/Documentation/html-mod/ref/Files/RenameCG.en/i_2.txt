@@ -1,0 +1,1 @@
+CG[fStruct[G], {a, b, c}]

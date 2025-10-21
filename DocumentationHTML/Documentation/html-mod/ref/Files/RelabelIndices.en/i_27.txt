@@ -1,0 +1,2 @@
+DefineCoupling[\[Lambda], Indices -> {Flavor, Flavor}]
+DefineCoupling[\[Kappa], Indices -> {Flavor, Flavor}]

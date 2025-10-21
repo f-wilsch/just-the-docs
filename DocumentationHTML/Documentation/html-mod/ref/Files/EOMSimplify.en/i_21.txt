@@ -1,0 +1,4 @@
+SelectOperatorClass[\[ScriptCapitalL]ev = 
+   EOMSimplify[\[ScriptCapitalL], 
+    ReductionIdentities -> Evanescent], {Bar@u, u, Bar@d, d}, 
+  0] // NiceForm

@@ -1,0 +1,194 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+    <base target=\"_top\">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>DefineRepresentation&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content=" DefineRepresentation, Definitions,  Representation" />
+
+<meta name="description" content="DefineRepresentation[repName, groupName, rep] initializes a representation repName associated to the groupName group " />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'DefineRepresentation.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/just-the-docs/docs/ref/Alg.html"><span class="dropdownPad">Alg</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/CG.html"><span class="dropdownPad">CG</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/DefineCG.html"><span class="dropdownPad">DefineCG</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/GetRepresentations.html"><span class="dropdownPad">GetRepresentations</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/just-the-docs/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu see-also">Tech Notes</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/just-the-docs/docs/tutorial/CGCoefficients.html"><span class="dropdownPad">CG Coefficients</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/tutorial/GroupMagic.html"><span class="dropdownPad">Group Magic</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">DefineRepresentation</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineRepresentation.html">DefineRepresentation</a><span class="openbracket">[</span><span class="TI">repName</span><span class="comma">,</span> <span class="TI">groupName</span><span class="comma">,</span> <span class="TI">rep</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">initializes a  representation <span class="IF"><span class="TI">repName</span></span> associated to the <span class="IF"><span class="TI">groupName</span></span> group </p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="1297247193"></a><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineRepresentation.html">DefineRepresentation</a></span> does not give a return value, but modifies the internal state of Matchete, initializing a new representation associated with a group has been initialized through <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCGGroup.html">DefineCGGroup</a></span>, <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineGaugeGroup.html">DefineGaugeGroup</a></span>, or <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineGlobalGroup.html">DefineGlobalGroup</a></span>.</li>
+     <li><a name="1210560154"></a>All representations are initialized with a Kronecker delta <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/CG.html">CG</a></span> for that representation, which is named <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/del.html">del</a><span class="openbracket">[</span><span class="TI">repName</span><span class="closebracket">]</span></span>.</li>
+     <li><a name="813921171"></a>Representations are labeled with a list of integers corresponding to the Dynkin coefficients of the highest weight in the representation.</li>
+     <li><a name="834402383"></a>The algebra argument must be a valid <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Alg.html">Alg</a><span class="openbracket">[</span><span class="TI">class</span><span class="comma">,</span> <span class="TI">n</span><span class="closebracket">]</span></span> object.</li>
+     <li><a name="2040121249"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="1593923941"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/IndexAlphabet.html">IndexAlphabet</a> <a href="DefineRepresentation?view=all#1678074255" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/None.html">None</a></td><td><span class="TT">specifies a canoncial printing alphabet for the representation under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span>.</span></td></tr>
+      </table>
+     </li>
+     <li><a name="1032253073"></a>The option <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/IndexAlphabet.html">IndexAlphabet</a></span> takes a list of strings (typically characters).  </li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="1365773121" class="toggle open">Examples</h1><span class="open-all on">open all</span><span class="close-all">close all</span><div class="hideable">
+   <div>
+    <h2 id="96141864" class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="1093722756"></a>Initializing the adjoint representation <strong>adj</strong> of an SU(2) group <strong>G1</strong>:</p>
+     <div id="1294743168"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineRepresentation.en/I_1.png"
+         data-in-width="218"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0bc1lnx24x27xt70ia6-vo44ia"
+         data-code="Files/DefineRepresentation.en/i_1.txt"
+         ></div>
+     <p><a name="1888447941"></a>The representation also initializes the Kronecker delta <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/CG.html">CG</a></span> for the <span class="Input">adj</span> representation:</p>
+     <div id="718057216"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineRepresentation.en/I_2.png"
+         data-in-width="187"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0bc1lnx24x27xt70ia6-l5sqr2"
+         data-code="Files/DefineRepresentation.en/i_2.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DefineRepresentation.en/O_1.png"
+         data-out-width="19"
+         data-out-height="17"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 id="764311166" class="toggle">Options<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <div>
+      <h3 id="1678074255" class="toggle">IndexAlphabet<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
+      <div class="hideable">
+       <p><a name="1926787505"></a>The formatting of the canonical index names <strong>d$$1, d$$2, <span class="special-character Ellipsis">&#8230;</span> </strong>(as used for dummy indices under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/RelabelIndices.html">RelabelIndices</a></span>) can be specified with the <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/IndexAlphabet.html">IndexAlphabet</a></span> option. Here we have a fundamental representation of an SU(3) use double-struck letters:</p>
+       <div id="1605953217"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineRepresentation.en/I_3.png"
+           data-in-width="291"
+           data-in-height="59"
+           data-link="https://wolfram.com/xid/0bc1lnx24x27xt70ia6-0uffpv"
+           data-code="Files/DefineRepresentation.en/i_3.txt"
+           ></div>
+       <div id="535462942"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineRepresentation.en/I_4.png"
+           data-in-width="250"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0bc1lnx24x27xt70ia6-i4234w"
+           data-code="Files/DefineRepresentation.en/i_4.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/DefineRepresentation.en/O_2.png"
+           data-out-width="14"
+           data-out-height="18"
+           ></div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Alg.html">Alg</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/CG.html">CG</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCG.html">DefineCG</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/GetRepresentations.html">GetRepresentations</a></span></p>
+  </div></section><div class="TechNotesSection">Tech Notes</div><span class="special-character FilledVerySmallSquare">&#9642;</span><li>
+  <a href="/just-the-docs/docs/tutorial/CGCoefficients.html">CG Coefficients</a>
+ </li><span class="special-character FilledVerySmallSquare">&#9642;</span><div class="TechNotes">
+  <a href="/just-the-docs/docs/tutorial/GroupMagic.html">Group Magic</a>
+ </div><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="/just-the-docs/docs/guide/Matchete.html">Matchete</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+    <base target=\"_top\">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>DiagonalCoupling&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="DiagonalCoupling" />
+
+<meta name="description" content="DiagonalCoupling is an option for the routine DefineCoupling. Its value must be a list of booleans or empty and specifies which flavor indices of the coupling should be considered as corresponding to a diagonal tensor structure. DiagonalCoupling is also the corresponding key in the association returned by GetCouplings[]." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'DiagonalCoupling.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/just-the-docs/docs/ref/DefineCoupling.html"><span class="dropdownPad">DefineCoupling</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/DefineFlavorIndex.html"><span class="dropdownPad">DefineFlavorIndex</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/Index.html"><span class="dropdownPad">Index</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/Indices.html"><span class="dropdownPad">Indices</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/DefineField.html"><span class="dropdownPad">DefineField</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/Mass.html"><span class="dropdownPad">Mass</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/RelabelIndices.html"><span class="dropdownPad">RelabelIndices</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/FlavorSum.html"><span class="dropdownPad">FlavorSum</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">DiagonalCoupling</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF">DiagonalCoupling</span>
+   </p>
+   <p class="code-description">is an option for the routine <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCoupling.html">DefineCoupling</a></span>. Its value must be a list of booleans or empty and specifies which flavor indices of the coupling should be considered as corresponding to a diagonal tensor structure.</p>
+  </div>
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF">DiagonalCoupling</span>
+   </p>
+   <p class="code-description">is also the corresponding key in the association returned by <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/GetCouplings.html">GetCouplings</a><span class="openbracket">[</span><span class="closebracket">]</span></span>.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="997256968"></a>Allowed values are a list of booleans or an empty list. The n-th boolean specifies whether the n-th flavor index is a diagonal in flavor space. By default all flavor indices are assumed to be non-diagonal. <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DiagonalCoupling.html">DiagonalCoupling</a></span> is also the corresponding key in the association returned by <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/GetCouplings.html">GetCouplings</a><span class="openbracket">[</span><span class="closebracket">]</span></span>.</li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="201917837" class="toggle open">Examples</h1><span class="open-all on">open all</span><span class="close-all">close all</span><div class="hideable">
+   <div id="895692371"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/DiagonalCoupling.en/I_1.png"
+       data-in-width="137"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-o3j2xx"
+       data-code="Files/DiagonalCoupling.en/i_1.txt"
+       ></div>
+   <div>
+    <h2 id="608924199" class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="106796810"></a>Defining a flavor index type:</p>
+     <div id="272604914"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/DiagonalCoupling.en/I_2.png"
+         data-big="409 19"
+         data-small="409 19"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-esk5k0"
+         data-code="Files/DiagonalCoupling.en/i_2.txt"
+         ></div>
+     <p><a name="1577595689"></a>Defining a flavored scalar field:</p>
+     <div id="938973923"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/I_3.png"
+         data-in-width="257"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-ptbq69"
+         data-code="Files/DiagonalCoupling.en/i_3.txt"
+         ></div>
+     <p><a name="2015590703"></a>Define a flavor non-universal but diagonal mass matrix:</p>
+     <div id="932091024"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/DiagonalCoupling.en/I_4.png"
+         data-big="559 39"
+         data-small="559 39"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-po78bm"
+         data-code="Files/DiagonalCoupling.en/i_4.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/O_1.png"
+         data-out-width="59"
+         data-out-height="18"
+         ></div>
+     <p><a name="279808804"></a>In this case the dummy index resummation by <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/RelabelIndices.html">RelabelIndices</a></span> ignores these indices when determining all contracted indices. However, a proper relabeling is still guaranteed.</p>
+     <p><a name="1802715844"></a>If the mass is defined without specifying the <span class="InlineCode">DiagonalCoupling</span> options  (default), or equivalently using <span class="InlineCode">DiagonalCoupling<span class="special-character Rule">&#62754;</span>{False}</span>, the dummy index resummation is trying to interpret relabel the indices on the coupling as regular indices and an error message is generated in the example above:</p>
+     <div id="852512451"
+         class="clipboard-input"
+         data-in="In[4]:="
+         data-in-num="4"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/I_5.png"
+         data-in-width="383"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-oduk3p"
+         data-code="Files/DiagonalCoupling.en/i_5.txt"
+         ></div>
+     <div class="Message">
+      <img src="Files/DiagonalCoupling.en/1.gif"
+          height="36"
+          width="573"
+          alt="" />
+     </div>
+     <div class="clipboard-output"
+         data-out="Out[4]="
+         data-out-num="4"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/O_2.png"
+         data-out-width="47"
+         data-out-height="16"
+         ></div>
+     <p><a name="1741478241"></a>One  can also obtain the information about all DiagonalCoupling definitions before using:</p>
+     <div id="25066016"
+         class="clipboard-input"
+         data-in="In[5]:="
+         data-in-num="5"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/I_6.png"
+         data-in-width="92"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-o7jci"
+         data-code="Files/DiagonalCoupling.en/i_6.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[5]="
+         data-out-num="5"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/O_3.png"
+         data-out-width="572"
+         data-out-height="50"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 id="1239287549" class="toggle">Scope<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="1752686256"></a>One  can use this option also for multiple indices and each index is individually treated as either belonging to a diagonal tensor structure or not:</p>
+     <div id="1111284318"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/DiagonalCoupling.en/I_7.png"
+         data-big="411 19"
+         data-small="411 19"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-snwyq4"
+         data-code="Files/DiagonalCoupling.en/i_7.txt"
+         ></div>
+     <div id="1036580296"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/I_8.png"
+         data-in-width="257"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-rffsre"
+         data-code="Files/DiagonalCoupling.en/i_8.txt"
+         ></div>
+     <div id="1094460985"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/I_9.png"
+         data-in-width="334"
+         data-in-height="78"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-sdwdsb"
+         data-code="Files/DiagonalCoupling.en/i_9.txt"
+         ></div>
+     <div id="1756693924"
+         class="clipboard-input"
+         data-in="In[4]:="
+         data-in-num="4"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/I_10.png"
+         data-in-width="350"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-3b6bzq"
+         data-code="Files/DiagonalCoupling.en/i_10.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/O_4.png"
+         data-out-width="91"
+         data-out-height="16"
+         ></div>
+     <div id="313288035"
+         class="clipboard-input"
+         data-in="In[5]:="
+         data-in-num="5"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/I_11.png"
+         data-in-width="205"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0hxwi7fjgbj81s04sylu-fgs4vp"
+         data-code="Files/DiagonalCoupling.en/i_11.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DiagonalCoupling.en/O_5.png"
+         data-out-width="91"
+         data-out-height="16"
+         ></div>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCoupling.html">DefineCoupling</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineFlavorIndex.html">DefineFlavorIndex</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Index.html">Index</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Indices.html">Indices</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineField.html">DefineField</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Mass.html">Mass</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/RelabelIndices.html">RelabelIndices</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/FlavorSum.html">FlavorSum</a></span></p>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

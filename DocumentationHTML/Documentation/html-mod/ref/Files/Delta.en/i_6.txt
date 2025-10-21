@@ -1,0 +1,3 @@
+expr = Delta[Index[a, G[fund]], Index[b, G[fund]]] \[Phi][b];
+expr // NiceForm
+expr // Contract // NiceForm

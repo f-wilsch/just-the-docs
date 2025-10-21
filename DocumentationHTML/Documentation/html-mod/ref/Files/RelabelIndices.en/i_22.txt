@@ -1,0 +1,5 @@
+rule = \[Psi][a_, p_] :> 
+   Module[{x, y}, 
+    RelabelIndices[\[Psi][a, p ] (Bar@\[Psi][x, y] ** \[Psi][x, y]), 
+     Unique -> True]];
+rule // NiceForm

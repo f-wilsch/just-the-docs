@@ -1,0 +1,1 @@
+DefineField[\[CapitalPhi]2, Scalar, Indices -> SU3[fund]]

@@ -1,0 +1,2 @@
+\[Kappa][a,b]// NiceForm
+Bar@ \[Kappa][a,b]// NiceForm

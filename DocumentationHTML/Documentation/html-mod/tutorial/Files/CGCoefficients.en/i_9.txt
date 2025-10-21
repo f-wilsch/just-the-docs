@@ -1,0 +1,4 @@
+DefineCompositeCG[Tr4, {t3, t3, t3, 
+  t3}, {{a, i, j}, {b, j, k}, {c, k, l}, {d, l, i}}];
+CG[t3, {a, i, j}]
+% // NiceForm

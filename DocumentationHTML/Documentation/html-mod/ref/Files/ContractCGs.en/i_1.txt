@@ -1,0 +1,3 @@
+DefineGlobalGroup[G, SU[3]]
+CG[gen[G[fund]], {a, i, j}] CG[gen[G[fund]], {a, j, k}] // NiceForm
+% // ContractCGs // NiceForm

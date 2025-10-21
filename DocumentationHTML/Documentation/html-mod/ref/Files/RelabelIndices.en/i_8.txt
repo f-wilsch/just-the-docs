@@ -1,0 +1,4 @@
+DefineField[\[Phi], Scalar, Indices -> {Flavor}, 
+ Mass -> {Heavy, m\[Phi], {Flavor}}]
+L = FreeLag[\[Phi]];
+L // NiceForm

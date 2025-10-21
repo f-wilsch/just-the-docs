@@ -1,0 +1,1 @@
+CG[del@fund, {d$$1, d$$2}] // NiceForm

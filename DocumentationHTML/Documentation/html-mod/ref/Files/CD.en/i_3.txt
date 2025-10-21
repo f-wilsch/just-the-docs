@@ -1,0 +1,3 @@
+DefineField[\[Phi], Scalar];
+CD[\[Mu], \[Phi][]]
+% // NiceForm

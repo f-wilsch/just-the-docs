@@ -1,0 +1,593 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+    <base target=\"_top\">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>ExportWCxf&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="ExportWCxf" />
+
+<meta name="description" content="ExportWCxf[arg, input, output] generates WCxf files for the EFT Lagrangian or matching conditions specified by arg in the output directory. The parameter points must be specified through an input JSON file." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'ExportWCxf.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/just-the-docs/docs/ref/MapEffectiveCouplings.html"><span class="dropdownPad">MapEffectiveCouplings</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/ShiftRenCouplings.html"><span class="dropdownPad">ShiftRenCouplings</span></a>
+     </li>
+     <li>
+      <a href="/just-the-docs/docs/ref/ExportToSmelli.html"><span class="dropdownPad">ExportToSmelli</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">ExportWCxf</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/ExportWCxf.html">ExportWCxf</a><span class="openbracket">[</span><span class="TI">arg</span><span class="comma">,</span><span class="TI">input</span><span class="comma">,</span><span class="TI">output</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">generates WCxf files for the EFT Lagrangian or matching conditions specified by <span class="IF"><span class="TI">arg</span></span> in the <span class="IF"><span class="TI">output</span></span> directory. The parameter points must be specified through an <span class="IF"><span class="TI">input</span></span> <span class="InlineCode">JSON</span> file.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="1778364738"></a>The argument <span class="IF">arg</span><span class="TI"> </span>must be either a SMEFT Lagrangian obtained by the <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Match.html">Match</a></span> function, or directly a list of matching conditions obtained by <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/MapEffectiveCouplings.html">MapEffectiveCouplings</a></span> with the option  <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/ShiftRenCouplings.html">ShiftRenCouplings</a></span><span class="InlineCode">-&gt;</span><span class="IF"><a href="http://reference.wolfram.com/language/ref/True.html">True</a></span>. Notice that only BSM models matching directly onto the default SMEFT Lagrangian obtained by <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/LoadModel.html">LoadModel</a></span>[<span class="InlineCode">&quot;SMEFT&quot;</span>] used by Matchete are currently supported. </li>
+     <li><a name="511144537"></a>The <span class="IF"><span class="TI">input</span></span> argument must specify a path to a <span class="InlineCode">JSON</span>  file containing the following keys: </li>
+     <li class="NotesTable">
+      <a name="486644236"></a>
+      <table>
+       <col width="1%" />
+       <col width="35%" />
+       <col width="50%" />
+       <tr class="lineAbove" style=""><td /><td>&quot;matching scale&quot;</td><td><span class="TT">Matching scale in GeV.</span></td></tr>
+       <tr class="" style=""><td /><td>&quot;parameters&quot;</td><td><span class="TT">List of all parameter names for which numerical input is provided.</span></td></tr>
+       <tr class="" style=""><td /><td>&quot;dictionary&quot;</td><td><span class="TT">Dictionary mapping from Matchete notation to the parameter names given under <span class="InlineCode">&quot;parameters&quot;</span>.</span></td></tr>
+       <tr class="" style=""><td /><td>&quot;parameter points&quot;</td><td><span class="TT">Dictionary containing all numerical values: keys are integer IDs for each parameter points and values are lists of numbers for the all parameters specified in the same order as in <span class="InlineCode">&quot;parameters&quot;</span>.
+</span></td></tr>
+       <tr class="" style=""><td /><td>&quot;SM&quot;</td><td><span class="TT">Optional dictionary for overwriting default SM values or scheme choices. </span></td></tr>
+      </table>
+     </li>
+     <li><a name="377946473"></a>The <span class="IF"><span class="TI">output</span></span> argument specifies a path to the directory where all WCxf files should be saved.</li>
+     <li><a name="1474250546"></a>The default SM parameter values used by this function are:</li>
+     <li class="NotesTable">
+      <a name="592734000"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><span class="InlineCode">&quot;mH&quot;</span></td><td>125.20 GeV</td><td><span class="TT">Higgs mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;GFermi&quot;</span></td><td>1.1663788*10<sup>-5</sup> GeV<sup>-2</sup></td><td><span class="TT">Fermi's constant</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;mZ&quot;</span></td><td>91.1880 GeV</td><td><span class="TT"><span class="TI">Z</span>-bosons mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;sW2&quot;</span></td><td>0.22305</td><td><span class="TT">Sine squared of the weak mixing angle</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;<span class="special-character Alpha">&#945;</span>EM&quot;</span></td><td>7.2973525693*10<sup>-3</sup></td><td><span class="TT">electromagnetic fine-structure constant</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;<span class="special-character Alpha">&#945;</span>S&quot;</span></td><td>0.1180</td><td><span class="TT">strong fine-structure constant</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;me&quot;</span></td><td>0.511*10<sup>-3</sup> GeV</td><td><span class="TT">electron mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;m<span class="special-character Mu">&#956;</span>&quot;</span></td><td>105.66*10<sup>-3</sup> GeV</td><td><span class="TT">muon mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;m<span class="special-character Tau">&#964;</span>&quot;</span></td><td>1.77693 GeV</td><td><span class="TT">tau mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;md&quot;</span></td><td>4.70*10<sup>-3</sup> GeV</td><td><span class="TT">down-quark mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;ms&quot;</span></td><td>93.5*10 <sup>-3</sup> GeV</td><td><span class="TT">strange-quark mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;mb&quot;</span></td><td>4.183 GeV</td><td><span class="TT">bottom-quark mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;mu&quot;</span></td><td>2.16*10<sup>-3</sup> GeV</td><td><span class="TT">up-quark mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;mc&quot;</span></td><td>1.2730 GeV</td><td><span class="TT">charm-quark mass</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;mt&quot;</span></td><td>162.5 GeV</td><td><span class="TT"><span class="specialcharacters">top-quark mass <span class="openparenthesis">(</span></span><img src="Files/ExportWCxf.en/CellNone_2.png" height="22" width="19" alt="" style="vertical-align:middle;" /><span class="closeparenthesis">)</span></span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;<span class="special-character Lambda">&#955;</span>c&quot;</span></td><td>0.22501</td><td><span class="TT">Wolfenstein parameter <span class="special-character Lambda">&#955;</span></span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;A&quot;</span></td><td>0.826</td><td><span class="TT">Wolfenstein parameter A</span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;<span class="special-character Rho">&#961;</span>Bar&quot;</span></td><td>0.1591</td><td><span class="TT">Wolfenstein parameter <img src="Files/ExportWCxf.en/CellNone_4.png" height="22" width="10" alt="" style="vertical-align:middle;" /></span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">&quot;<span class="special-character Eta">&#951;</span>Bar&quot;</span></td><td>0.3523</td><td><span class="TT">Wolfenstein parameter <img src="Files/ExportWCxf.en/CellNone_6.png" height="22" width="9" alt="" style="vertical-align:middle;" /></span></td></tr>
+      </table>
+     </li>
+     <li><a name="1544207919"></a>A one-loop renormalization group evolution from the input scale to the matching scale is employed for the gauge couplings and the top mass.</li>
+     <li><a name="598838693"></a>The Wilson coefficients can be computed in the up- or down-quark mass basis by including a key <span class="InlineCode">&quot;flavor basis&quot;</span> with value <span class="InlineCode">&quot;up&quot;</span> or <span class="InlineCode">&quot;down&quot;</span> (default) under the optional <span class="InlineCode">&quot;SM&quot;</span> directory in the input <span class="InlineCode">JSON</span> file.</li>
+     <li><a name="1121988770"></a>The electroweak scheme can be specified with the <span class="InlineCode">&quot;EW scheme&quot;</span> key under the optional <span class="InlineCode">&quot;SM&quot;</span> directory in the input <span class="InlineCode">JSON</span> file. The available choices are:</li>
+     <li class="NotesTable">
+      <a name="746431941"></a>
+      <table>
+       <col width="1%" />
+       <col width="35%" />
+       <col width="50%" />
+       <tr class="lineAbove" style=""><td /><td><span class="InlineCode">1</span> <span class="openparenthesis">(</span>default<span class="closeparenthesis">)</span></td><td><span class="TT">m<sub>Z</sub><span class="comma">,</span>G<sub>F</sub><span class="comma">,</span>m<sub>W</sub></span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">2</span></td><td><span class="TT">m<sub>Z</sub><span class="comma">,</span>G<sub>F</sub><span class="comma">,</span><span class="special-character Alpha">&#945;</span><sub>EM</sub></span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">3</span></td><td><span class="TT">m<sub>Z</sub><span class="comma">,</span><span class="special-character Alpha">&#945;</span><sub>EM</sub><span class="comma">,</span>m<sub>W</sub></span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">4</span></td><td><span class="TT">m<sub>Z</sub><span class="comma">,</span>G<sub>F</sub><span class="comma">,</span>s<sub>W</sub></span></td></tr>
+       <tr class="" style=""><td /><td><span class="InlineCode">5</span></td><td><span class="TT">m<sub>Z</sub><span class="comma">,</span><span class="special-character Alpha">&#945;</span><sub>EM</sub><span class="comma">,</span>s<sub>W</sub></span></td></tr>
+      </table>
+     </li>
+     <li><a name="2002522563"></a>The numerical value of the input parameters listed above that are not used by the specified scheme are ignored.</li>
+     <li><a name="1538252726"></a>Warning: Input redefinitions for these schemes are currently not implemented, since these are dimension-eight effects and this function is restricted to dimension six.</li>
+     <li><a name="984716411"></a>Baryon or lepton number violating operators are currently not supported.</li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="147135778" class="toggle open">Examples</h1><div class="hideable">
+   <div id="582353"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/ExportWCxf.en/I_1.png"
+       data-in-width="137"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-mrmr"
+       data-code="Files/ExportWCxf.en/i_1.txt"
+       ></div>
+   <div>
+    <h2 id="1157343149" class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(6)</span></h2>
+    <div class="hideable">
+     <div>
+      <h3 id="1274371289" class="toggle">Example model definition<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
+      <div class="hideable">
+       <p><a name="139001274"></a>Loading the Standard Model:</p>
+       <div id="1687144654"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_2.png"
+           data-in-width="153"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-16rnfk"
+           data-code="Files/ExportWCxf.en/i_2.txt"
+           ></div>
+       <p><a name="1293820617"></a>Defining two heavy BSM fields: a flavored Majorana fermion <span class="special-character Chi">&#967;</span> and a colored scalar <span class="special-character Phi">&#981;</span> with Hypercharge <img src="Files/ExportWCxf.en/CellNone_8.png" height="23" width="17" alt="" style="vertical-align:middle;" />:</p>
+       <div id="38362390"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_3.png"
+           data-in-width="242"
+           data-in-height="275"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-w4iv8"
+           data-code="Files/ExportWCxf.en/i_3.txt"
+           ></div>
+       <p><a name="2039749167"></a>Define a Yukawa coupling:</p>
+       <div id="678556610"
+           class="clipboard-input"
+           data-in="In[3]:="
+           data-in-num="3"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_4.png"
+           data-in-width="218"
+           data-in-height="78"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-lh93w0"
+           data-code="Files/ExportWCxf.en/i_4.txt"
+           ></div>
+       <p><a name="1006889885"></a>Define the BSM Lagrangian:</p>
+       <div id="7324576"
+           class="clipboard-input"
+           data-in="In[4]:="
+           data-in-num="4"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_5.png"
+           data-in-width="395"
+           data-in-height="39"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-em9yq"
+           data-code="Files/ExportWCxf.en/i_5.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/O_1.png"
+           data-out-width="540"
+           data-out-height="29"
+           ></div>
+       <div id="697580953"
+           class="clipboard-input"
+           data-in="In[5]:="
+           data-in-num="5"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_6.png"
+           data-in-width="88"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-ltlu6z"
+           data-code="Files/ExportWCxf.en/i_6.txt"
+           ></div>
+      </div>
+     </div>
+     <div>
+      <h3 id="2075611710" class="toggle">Matching<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
+      <div class="hideable">
+       <p><a name="1796350738"></a>One-loop matching:</p>
+       <div id="130196573"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_7.png"
+           data-in-width="300"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-cfsulr"
+           data-code="Files/ExportWCxf.en/i_7.txt"
+           ></div>
+      </div>
+     </div>
+     <div>
+      <h3 id="1082611342" class="toggle">JSON input file<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h3>
+      <div class="hideable">
+       <p><a name="2075449765"></a>Example of a JSON file:</p>
+       <div id="1858420441"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src-swap="Files/ExportWCxf.en/I_8.png"
+           data-big="593 858"
+           data-small="593 858"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-40qoob"
+           data-code="Files/ExportWCxf.en/i_8.txt"
+           ></div>
+       <p><a name="854859969"></a>This specifies to work in the electroweak scheme {m<sub>Z</sub>,G<sub>F</sub>,m<sub>W</sub>} and the down-quark mass basis. The matching scale is set to 1 TeV and we have a total of 24 BSM parameters that must be specified. The generic <span class="IM"><img src="Files/ExportWCxf.en/9.png" height="15" width="27" alt="" /></span> matrix <span class="special-character Kappa">&#954;</span> is parametrized by 18 real parameters in the <span class="InlineCode">&quot;dictionary&quot;</span> and similarly for the 4 masses. For the one parameter point specified under <span class="InlineCode">&quot;parameter points&quot;</span> we have m<sub><span class="special-character Phi">&#981;</span></sub>=2.5 TeV, m<sub><span class="special-character Chi">&#967;</span><sub>1</sub></sub>=1.0 TeV, m<sub><span class="special-character Chi">&#967;</span><sub>2</sub></sub>=1.5 TeV, m<sub><span class="special-character Chi">&#967;</span><sub>3</sub></sub>=2.0 TeV,  <span class="special-character Kappa">&#954;</span><sub>33</sub>=1+0.01<span class="special-character ImaginaryI">&#63310;</span>, while all other couplings <span class="special-character Kappa">&#954;</span><sub>ij</sub>=0 with {i,j}<span class="special-character NotEqual">&#8800;</span>{3,3} vanish.</p>
+       <p><a name="200489554"></a>Exporting the input to a JSON file:</p>
+       <div id="1781808767"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_9.png"
+           data-in-width="201"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-3q4mp9"
+           data-code="Files/ExportWCxf.en/i_9.txt"
+           ></div>
+       <div>
+        <h4 id="2011514944" class="toggle">Example of the JSON input file<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h4>
+        <div class="hideable">
+         <p><a name="1802420617"></a>This <span class="InlineCode">JSON</span> file generated and used above has the form:</p>
+         <p>
+          <a name="1845969026"></a>
+          <span class="InlineCode">{
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;SM&quot;:{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;EW scheme&quot;:1,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;flavor basis&quot;:&quot;down&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;matching scale&quot;:1000,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;parameters&quot;:[
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe11&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe12&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe13&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe21&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe22&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe23&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe31&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe32&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaRe33&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm11&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm12&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm13&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm21&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm22&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm23&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm31&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm32&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;kapaIm33&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;mPhi&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;mChi1&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;mChi2&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;mChi3&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;],
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;dictionary&quot;:{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[m<span class="special-character Chi">&#967;</span>, {Index[1, Flavor]}, 0]&quot;:&quot;mChi1&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[m<span class="special-character Chi">&#967;</span>, {Index[2, Flavor]}, 0]&quot;:&quot;mChi2&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[m<span class="special-character Chi">&#967;</span>, {Index[3, Flavor]}, 0]&quot;:&quot;mChi3&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[m<span class="special-character Phi">&#981;</span>, {}, 0]&quot;:&quot;mPhi&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[1, Flavor], Index[1, Flavor]}, 0]&quot;:&quot;I kapaIm11 + kapaRe11&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[1, Flavor], Index[2, Flavor]}, 0]&quot;:&quot;I kapaIm12 + kapaRe12&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[1, Flavor], Index[3, Flavor]}, 0]&quot;:&quot;I kapaIm13 + kapaRe13&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[2, Flavor], Index[1, Flavor]}, 0]&quot;:&quot;I kapaIm21 + kapaRe21&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[2, Flavor], Index[2, Flavor]}, 0]&quot;:&quot;I kapaIm22 + kapaRe22&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[2, Flavor], Index[3, Flavor]}, 0]&quot;:&quot;I kapaIm23 + kapaRe23&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[3, Flavor], Index[1, Flavor]}, 0]&quot;:&quot;I kapaIm31 + kapaRe31&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[3, Flavor], Index[2, Flavor]}, 0]&quot;:&quot;I kapaIm32 + kapaRe32&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;Coupling[<span class="special-character Kappa">&#954;</span>, {Index[3, Flavor], Index[3, Flavor]}, 0]&quot;:&quot;I kapaIm33 + kapaRe33&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;},
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;parameter points&quot;:{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;1&quot;:[
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.0e-4,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2500,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1500,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2000
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</span>
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div>
+      <h3 id="1317811918" class="toggle">WCxf export<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h3>
+      <div class="hideable">
+       <p><a name="249669210"></a>Generating the WCxf file <span class="InlineCode">&quot;WCxf-directory/ParamPoint_1.json&quot;</span> from the EFT Lagrangian LEFT using the numerical input provided in the <span class="InlineCode">&quot;WCxf-input.json&quot;</span> file:</p>
+       <div id="2139083662"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_10.png"
+           data-in-width="353"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-9nt9sw"
+           data-code="Files/ExportWCxf.en/i_10.txt"
+           ></div>
+       <p><a name="1926796515"></a>Alternatively one can also first derive the matching conditions manually and pass these to the export function:</p>
+       <div id="1776568506"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_11.png"
+           data-in-width="356"
+           data-in-height="59"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-3n0bbg"
+           data-code="Files/ExportWCxf.en/i_11.txt"
+           ></div>
+       <div id="174252454"
+           class="clipboard-input"
+           data-in="In[3]:="
+           data-in-num="3"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/ExportWCxf.en/I_12.png"
+           data-in-width="342"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0hxwi7fjgbitylk4ipq7-c504b8"
+           data-code="Files/ExportWCxf.en/i_12.txt"
+           ></div>
+       <p><a name="2038928632"></a>Both ways produce identical WCxf files. Notice that it is required to use the default SMEFT model file. Models not matching onto this file are currently not supported.</p>
+       <div>
+        <h4 id="1275643246" class="toggle">WCxf output file<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h4>
+        <div class="hideable">
+         <p><a name="1093385419"></a>The WCxf file produced by the above example takes the form:</p>
+         <p>
+          <a name="1862629375"></a>
+          <span class="InlineCode">{
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;eft&quot;:&quot;SMEFT&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;basis&quot;:&quot;Warsaw&quot;,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;scale&quot;:1000,
+&nbsp;&nbsp;&nbsp;&nbsp;&quot;values&quot;:{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dB_33&quot;:7.052107105142169e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_1111&quot;:-3.58954392937526e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_1122&quot;:3.559919980212726e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_1133&quot;:-4.3902937634319e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_1221&quot;:-1.0739007838963246e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_1331&quot;:1.502533139559438e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_2222&quot;:-3.58954392937526e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_2233&quot;:-4.3902937634319e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_2332&quot;:1.502533139559438e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dd_3333&quot;:3.6197382975819236e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dG_33&quot;:-6.338220259560097e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;dphi_33&quot;:6.890430796112842e-16,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_1111&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_1122&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_1133&quot;:1.8544501052986743e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_2211&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_2222&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_2233&quot;:1.8544501052986743e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_3311&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_3322&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ed_3333&quot;:1.8544501052986743e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ee_1111&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ee_1122&quot;:-1.777436949752059e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ee_1133&quot;:-1.777436949752059e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ee_2222&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ee_2233&quot;:-1.777436949752059e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ee_3333&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_1111&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_1122&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_1133&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_2211&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_2222&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_2233&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_3311&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_3322&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;eu_3333&quot;:1.1849579665013728e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;G&quot;:3.3707893800117727e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiBox&quot;:-2.2217961871900737e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phid_11&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phid_22&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phid_33&quot;:-9.272250526493372e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiD&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phie_11&quot;:8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phie_22&quot;:8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phie_33&quot;:8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phil1_11&quot;:4.443592374380147e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phil1_22&quot;:4.443592374380147e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phil1_33&quot;:4.443592374380147e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiq1_11&quot;:-1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiq1_22&quot;:-1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiq1_33&quot;:-2.9151547263141266e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiq3_33&quot;:-1.4339572681874103e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiu_11&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiu_22&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;phiu_33&quot;:-5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_1111&quot;:-2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_1122&quot;:-2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_1133&quot;:9.272250526493372e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_2211&quot;:-2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_2222&quot;:-2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_2233&quot;:9.272250526493372e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_3311&quot;:-2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_3322&quot;:-2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ld_3333&quot;:9.272250526493372e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_1111&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_1122&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_1133&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_2211&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_2222&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_2233&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_3311&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_3322&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;le_3333&quot;:-8.887184748760295e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ll_1111&quot;:-2.2217961871900737e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ll_1122&quot;:-4.443592374380147e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ll_1133&quot;:-4.443592374380147e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ll_2222&quot;:-2.2217961871900737e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ll_2233&quot;:-4.443592374380147e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ll_3333&quot;:-2.2217961871900737e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_1111&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_1122&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_1133&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_2211&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_2222&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_2233&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_3311&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_3322&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lq1_3333&quot;:1.481197458126716e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_1111&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_1122&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_1133&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_2211&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_2222&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_2233&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_3311&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_3322&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;lu_3333&quot;:5.924789832506864e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_1111&quot;:9.87464972084477e-15,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_1122&quot;:9.87464972084477e-15,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_1133&quot;:-3.0907501754977924e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_2211&quot;:9.87464972084477e-15,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_2222&quot;:9.87464972084477e-15,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_2233&quot;:-3.0907501754977924e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_3311&quot;:9.87464972084477e-15,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_3322&quot;:9.87464972084477e-15,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd1_3333&quot;:-3.0907501754977924e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_1111&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_1122&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_1133&quot;:3.005066279118876e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_2211&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_2222&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_2233&quot;:3.005066279118876e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_3311&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_3322&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qd8_3333&quot;:3.005066279118876e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_1111&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_1122&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_1133&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_2211&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_2222&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_2233&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_3311&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_3322&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qe_3333&quot;:2.962394916253432e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_1111&quot;:-8.97385982343815e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_1122&quot;:3.5747319547939927e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_1133&quot;:3.5747319547939927e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_1221&quot;:-5.369503919481623e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_1331&quot;:-5.369503919481623e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_2222&quot;:-8.97385982343815e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_2233&quot;:3.5747319547939927e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_2332&quot;:-5.369503919481623e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq1_3333&quot;:-8.97385982343815e-13,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq3_1111&quot;:-2.6847519597408116e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq3_1221&quot;:-5.369503919481623e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq3_1331&quot;:-5.369503919481623e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq3_2222&quot;:-2.6847519597408116e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq3_2332&quot;:-5.369503919481623e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qq3_3333&quot;:-2.6847519597408116e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_1111&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_1122&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_1133&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_2211&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_2222&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_2233&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_3311&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_3322&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu1_3333&quot;:-1.974929944168954e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_1111&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_1122&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_1133&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_2211&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_2222&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_2233&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_3311&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_3322&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;qu8_3333&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_1111&quot;:3.949859888337908e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_1122&quot;:3.949859888337908e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_1133&quot;:-1.236300070199117e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_2211&quot;:3.949859888337908e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_2222&quot;:3.949859888337908e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_2233&quot;:-1.236300070199117e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_3311&quot;:3.949859888337908e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_3322&quot;:3.949859888337908e-14,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud1_3333&quot;:-1.236300070199117e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_1111&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_1122&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_1133&quot;:3.005066279118876e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_2211&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_2222&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_2233&quot;:3.005066279118876e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_3311&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_3322&quot;:-2.1478015677926493e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;ud8_3333&quot;:3.005066279118876e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_1111&quot;:-3.619167878537794e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_1122&quot;:3.500672081887657e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_1133&quot;:3.500672081887657e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_1221&quot;:-1.0739007838963246e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_1331&quot;:-1.0739007838963246e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_2222&quot;:-3.619167878537794e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_2233&quot;:3.500672081887657e-12,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_2332&quot;:-1.0739007838963246e-11,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;uu_3333&quot;:-3.619167878537794e-12
+&nbsp;&nbsp;&nbsp;&nbsp;}
+}</span>
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/MapEffectiveCouplings.html">MapEffectiveCouplings</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/ShiftRenCouplings.html">ShiftRenCouplings</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/ExportToSmelli.html">ExportToSmelli</a></span></p>
+  </div></section><section id="RelatedLinks" class="related-links"><div class="inner">
+   <h1>Related Links</h1>
+   <ul class="functionList">
+    <li>https://wcxf.github.io<br />https://arxiv.org/abs/1712.05298</li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

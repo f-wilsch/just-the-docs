@@ -1,0 +1,5 @@
+DefineFlavorIndex[Flavor, 3, IndexAlphabet -> {"p", "r", "s", "t"}]
+DefineGaugeGroup[G, SU@3, g, F,
+ FundAlphabet -> CharacterRange["a", "d"],
+ AdjAlphabet -> CharacterRange["A", "D"]
+ ]

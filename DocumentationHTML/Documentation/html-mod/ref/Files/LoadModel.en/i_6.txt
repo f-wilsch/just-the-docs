@@ -1,0 +1,4 @@
+lag = LoadModel["VLF",
+   	ModelParameters -> {\[Phi] -> \[CapitalPhi]},
+   	SetModelOptions -> {DefineField, \[CapitalPhi], Mass -> Heavy}];
+GetFields[\[CapitalPhi]]

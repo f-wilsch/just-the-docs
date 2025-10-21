@@ -1,0 +1,2 @@
+MatrixForm@ First@ InvariantTensors[SU[2], {CRep[{1}], {1}}]
+MatrixForm@ First@ InvariantTensors[SU[2], {{1}, {1}}]

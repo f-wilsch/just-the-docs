@@ -1,0 +1,3 @@
+lag = LoadModel["VLF_toy_model", 
+   SetModelOptions -> {DefineField, \[Phi], Mass -> Heavy}];
+GetFields[\[Phi]]

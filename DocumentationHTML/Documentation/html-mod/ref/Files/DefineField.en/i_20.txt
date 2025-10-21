@@ -1,0 +1,1 @@
+DefineField[\[CapitalPhi]3, Scalar, Indices->Generation]

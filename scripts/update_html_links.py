@@ -1,6 +1,8 @@
 import os
 import re
 
+print("python!!!!")
+
 # Input and output directories
 INPUT_DIR = "../DocumentationHTML/Documentation/html"   # <-- change this
 OUTPUT_DIR = "../DocumentationHTML/Documentation/html-mod" # <-- change this

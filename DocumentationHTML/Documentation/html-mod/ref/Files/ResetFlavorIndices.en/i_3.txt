@@ -1,3 +1,0 @@
-DefineField[\[Phi], Scalar, Indices -> {Flavor1}]
-DefineField[\[CapitalPhi], Scalar, Indices -> {Flavor2}]
-\[Phi][p] \[CapitalPhi][r]

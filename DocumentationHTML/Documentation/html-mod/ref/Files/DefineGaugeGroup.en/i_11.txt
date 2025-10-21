@@ -1,1 +1,0 @@
-CG[del@G2@fund, {a, a}] // ContractCGs

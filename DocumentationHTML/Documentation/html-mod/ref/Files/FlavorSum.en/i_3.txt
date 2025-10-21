@@ -1,5 +1,0 @@
-DefineCoupling[m,
- SelfConjugate -> True,
- Indices -> {Flavor},
- DiagonalCoupling -> {True}
- ]

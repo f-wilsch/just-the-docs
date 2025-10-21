@@ -1,2 +1,0 @@
-DefineGaugeGroup[H1, SU[3], h1, A1, 
- FundAlphabet -> CharacterRange["\[Alpha]", "\[Delta]"]]

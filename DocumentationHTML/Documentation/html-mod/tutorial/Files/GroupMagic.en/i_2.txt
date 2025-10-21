@@ -1,1 +1,0 @@
-CartanMatrix@ SO[7] // MatrixForm

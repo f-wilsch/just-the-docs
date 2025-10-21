@@ -1,4 +1,0 @@
-DefineGlobalGroup[G2, SU[2]]
-DefineGlobalGroup[G3, SU[3]]
-GetGroups[]
-GetRepresentations[]

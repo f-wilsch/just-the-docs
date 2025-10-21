@@ -1,2 +1,0 @@
-GreensSimplify[
-  SeriesEFT[\[ScriptCapitalL]Greens, EFTOrder -> 2]] // NiceForm

@@ -1,6 +1,0 @@
-{CG[del@SU3c@fund, {i, j}],
-  CG[del@SU3c@adj, {A, B}],
-  CG[gen@SU3c@fund, {A, i, j}],
-  CG[gen@SU3c@adj, {A, B, C} ],
-  CG[fStruct@SU3c, {A, B, C} ],
-  CG[eps@SU3c, {i, j, k}]} // NiceForm

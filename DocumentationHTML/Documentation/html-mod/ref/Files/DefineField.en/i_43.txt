@@ -1,2 +1,0 @@
-DefineField[f, Fermion, Mass -> Heavy, Chiral -> LeftHanded, 
- Charges -> U1Y[1]]

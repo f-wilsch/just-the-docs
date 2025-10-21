@@ -1,4 +1,0 @@
-DefineRepresentation[fund, SU3c, {1, 0}]
-DefineRepresentation[S2, SU3c, {2, 0}]
-DefineRepresentation[adj, SU3c, {1, 1}] 
-GetRepresentations[adj]

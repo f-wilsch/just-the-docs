@@ -1,4 +1,0 @@
-DefineCoupling[y\[Phi], 
- NiceForm -> "\!\(\*SubscriptBox[\(y\), \(\[Phi]\)]\)"]
-y\[Phi][]
-y\[Phi][] // NiceForm

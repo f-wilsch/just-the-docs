@@ -1,4 +1,0 @@
-DefineGlobalGroup[G, SU[3]]
-{CG[gen[G[fund]], {a, i, j}] CG[gen[G[fund]], {a, j, k}], 
-  CG[fStruct@G, {a, b, c}]^2} // NiceForm
-% // ContractCGs // NiceForm

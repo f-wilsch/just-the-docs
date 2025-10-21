@@ -1,2 +1,0 @@
-CG[fStruct@ H2, {a, b, c}] CG[fStruct@ H2, {b, c, d}] // 
-  RelabelIndices // NiceForm

@@ -1,3 +1,0 @@
-DefineCoupling[\[Lambda], Indices -> {Flavor, Flavor}];
-\[Lambda][i, j]
-% // NiceForm

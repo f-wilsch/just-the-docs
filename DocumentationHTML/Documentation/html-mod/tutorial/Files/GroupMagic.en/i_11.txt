@@ -1,2 +1,0 @@
-{FSIndicator[SU[2], {2}], FSIndicator[SU[3], {1, 0}], 
- FSIndicator[Sp[4], {1, 0}]}

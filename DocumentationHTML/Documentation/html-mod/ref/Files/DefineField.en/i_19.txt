@@ -1,1 +1,0 @@
-DefineFlavorIndex[Generation, 2]

@@ -1,1 +1,0 @@
-DefineField[\[Chi], Fermion, SelfConjugate -> True]

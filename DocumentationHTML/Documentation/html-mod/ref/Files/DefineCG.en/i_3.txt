@@ -1,4 +1,0 @@
-DefineCG[\[CurlyEpsilon], {fund, fund}, 
- First@ InvariantTensors[SU[2], {CRep[{1}], CRep[{1}]}]];
-\[CurlyEpsilon][a, b]
-% // NiceForm

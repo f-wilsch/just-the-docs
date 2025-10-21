@@ -1,9 +1,0 @@
-ResetAll[]
-DefineField[\[Phi], Scalar, SelfConjugate -> True, Mass -> Light]
-DefineField[\[Psi], Fermion, Mass -> Heavy]
-DefineCoupling[y, SelfConjugate -> True]
-DefineCoupling[\[Lambda], SelfConjugate -> True]
-\[ScriptCapitalL] = 
-  FreeLag[] + \[Lambda][]/4! \[Phi][]^4 + 
-   y[] Bar@\[Psi][] ** \[Psi][] \[Phi][];
-\[ScriptCapitalL]0 = GreensSimplify[Match[\[ScriptCapitalL]]];

@@ -1,3 +1,0 @@
-EOMSimplify[
-  FreeLag[] + 
-   c2[] \[Phi][]^3 CD[{\[Mu], \[Mu]}, \[Phi][]]] // NiceForm

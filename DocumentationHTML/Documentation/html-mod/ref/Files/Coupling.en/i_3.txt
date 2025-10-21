@@ -1,3 +1,0 @@
-DefineCoupling[\[Kappa], SelfConjugate -> True, EFTOrder -> 0];
-\[Kappa][]
-% // NiceForm

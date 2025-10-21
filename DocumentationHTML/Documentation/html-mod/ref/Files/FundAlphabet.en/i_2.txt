@@ -1,3 +1,0 @@
-DefineGaugeGroup[G, SU@3, g, F,
- 	FundAlphabet -> CharacterRange["a", "d"]
- ]

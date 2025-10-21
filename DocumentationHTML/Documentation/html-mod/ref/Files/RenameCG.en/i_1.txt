@@ -1,3 +1,0 @@
-DefineGlobalGroup[G, SU[3]]
-RenameCG[fStruct[G] -> f]
-CG[f, {a, b, c}]

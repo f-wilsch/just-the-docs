@@ -1,3 +1,0 @@
-expr = Metric[\[Mu], \[Nu]] CD[\[Nu], \[CapitalPhi][]];
-expr // NiceForm
-Contract[expr] // NiceForm

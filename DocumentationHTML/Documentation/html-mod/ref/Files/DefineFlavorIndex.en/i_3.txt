@@ -1,1 +1,0 @@
-Delta[Index[p, Flavor], Index[r, Flavor]] // NiceForm

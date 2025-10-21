@@ -1,5 +1,0 @@
-DefineGaugeGroup[Gr, SU[3], g, A];
-g[]
-% // NiceForm;
-FS[A, \[Mu], \[Nu], a]
-% // NiceForm

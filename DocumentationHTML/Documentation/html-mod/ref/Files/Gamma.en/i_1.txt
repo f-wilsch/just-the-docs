@@ -1,3 +1,0 @@
-{\[Gamma][\[Mu]], \[Gamma][
-   5], \[Gamma][\[Mu], \[Nu], \[Rho]]} // TableForm
-% // NiceForm

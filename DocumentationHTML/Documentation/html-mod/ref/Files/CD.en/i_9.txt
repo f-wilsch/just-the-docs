@@ -1,3 +1,0 @@
-DefineGaugeGroup[G, SU@3, g, A];
-CD[\[Rho], FS[A, \[Mu], \[Nu], a]]
-% // NiceForm

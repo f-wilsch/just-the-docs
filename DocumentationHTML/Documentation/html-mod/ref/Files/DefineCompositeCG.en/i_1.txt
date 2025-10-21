@@ -1,1 +1,0 @@
-DefineGlobalGroup[G1, SU@2]

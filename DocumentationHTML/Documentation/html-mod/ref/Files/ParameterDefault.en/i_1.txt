@@ -1,1 +1,0 @@
-ParameterDefault[Nf -> 3]

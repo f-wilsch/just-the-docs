@@ -1,2 +1,0 @@
-FundamentalRepresentation@SU[3]
-AdjointRepresentation@SU[3]

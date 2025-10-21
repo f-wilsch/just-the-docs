@@ -1,2 +1,0 @@
-SeriesEFT[\[Eta][], EFTOrder-> 3]
-SeriesEFT[\[Eta][], EFTOrder-> 4]

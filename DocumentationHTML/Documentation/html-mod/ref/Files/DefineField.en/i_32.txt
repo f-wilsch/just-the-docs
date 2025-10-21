@@ -1,2 +1,0 @@
-DefineField[f1, Scalar, 
- NiceForm -> "\!\(\*SubscriptBox[\(\[Phi]\), \(f\)]\)"]

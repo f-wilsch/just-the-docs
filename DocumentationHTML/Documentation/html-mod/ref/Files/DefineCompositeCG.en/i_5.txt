@@ -1,3 +1,0 @@
-DefineGlobalGroup[G1, SU@2]
-DefineCompositeCG[tf, {gen[G1[fund]], 
-  fStruct[G1]}, {{i, a, b}, {i, j, k}}, ReplaceCGs -> False]

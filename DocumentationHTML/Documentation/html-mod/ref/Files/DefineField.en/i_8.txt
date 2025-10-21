@@ -1,3 +1,0 @@
-DefineField[V, Vector, Mass -> Heavy]
-V[\[Mu]]
-V[\[Mu]] // NiceForm

@@ -1,1 +1,0 @@
-TableForm[RepresentationsUpToDimension[SU[6], 60], TableDepth -> 2]

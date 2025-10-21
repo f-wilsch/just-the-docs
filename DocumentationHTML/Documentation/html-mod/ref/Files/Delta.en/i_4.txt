@@ -1,2 +1,0 @@
-Delta[Index[a, G[fund]], Index[b, G[fund]]] Delta[Index[b, G[fund]], 
-   Index[a, G[fund]]] // NiceForm

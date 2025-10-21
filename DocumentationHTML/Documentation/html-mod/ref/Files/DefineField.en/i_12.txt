@@ -1,2 +1,0 @@
-DefineField[\[CapitalPhi]1, Scalar, Charges -> U1Y[2]]
-GetFields[\[CapitalPhi]1]

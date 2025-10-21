@@ -1,3 +1,0 @@
-expr = \[Lambda][a, p, a, a, 
-    r] (Bar@\[Phi][a] \[Phi][a]) (Bar@\[Phi][p] \[Phi][r]);
-expr // NiceForm

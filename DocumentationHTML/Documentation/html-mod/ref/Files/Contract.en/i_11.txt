@@ -1,1 +1,0 @@
-DefineFlavorIndex[Flavor, nf, IndexAlphabet -> {"p", "r", "s", "t"}]

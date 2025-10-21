@@ -1,4 +1,0 @@
-DefineCompositeCG[t2\[CurlyEpsilon], {gen[G1[fund]], 
-  eps[G1]}, {{i, a, b}, {b, c}}];
-CG[t2\[CurlyEpsilon], {i, b, c}]
-% // NiceForm

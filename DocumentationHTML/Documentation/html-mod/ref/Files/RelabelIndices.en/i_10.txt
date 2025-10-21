@@ -1,1 +1,0 @@
-DefineCoupling[\[Xi],Indices->{Flavor},DiagonalCoupling->{True}]

@@ -1,1 +1,0 @@
-Bar@ \[Lambda][a, b] \[Lambda][b, c] \[Lambda][b, d] // RelabelIndices

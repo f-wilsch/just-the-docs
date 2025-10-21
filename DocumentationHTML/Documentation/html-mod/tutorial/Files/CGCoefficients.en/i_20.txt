@@ -1,2 +1,0 @@
-RenameCG[cg1 -> t3t3]
-t3[a, i, k] t3[b, k, j] // ContractCGs // NiceForm

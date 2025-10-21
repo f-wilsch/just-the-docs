@@ -1,2 +1,0 @@
-DefineCGGroup[SU3c, SU[3]]
-GetGroups[]

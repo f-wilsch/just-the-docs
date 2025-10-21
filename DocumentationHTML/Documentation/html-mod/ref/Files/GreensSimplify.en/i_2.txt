@@ -1,6 +1,0 @@
-LoadModel["SM"];
-op = Bar[
-     e[p]] ** \[Gamma][\[Mu]] ** \[Gamma][\[Nu]] ** \[Gamma][\[Rho]] **
-     e[r] Bar[
-     e[s]] ** \[Gamma][\[Mu]] ** \[Gamma][\[Nu]] ** \[Gamma][\[Rho]] **
-     e[t] // NiceForm

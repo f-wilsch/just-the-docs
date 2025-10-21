@@ -1,1 +1,0 @@
-EOMSimplify[\[ScriptCapitalL], EFTOrder -> 5] // NiceForm

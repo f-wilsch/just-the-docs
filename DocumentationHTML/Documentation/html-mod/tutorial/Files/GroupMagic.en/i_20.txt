@@ -1,4 +1,0 @@
-f = First@
-   InvariantTensors[SU@3, {{1, 1}, {1, 1}, {1, 1}}, 
-    AntisymmetricIndices -> {1, 2, 3}, Normalization -> 24];
-TensorContract[TensorProduct[f, f], {{1, 4}, {2, 5}, {3, 6}}]

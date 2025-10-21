@@ -1,2 +1,0 @@
-SelectOperatorClass[
-  EOMSimplify[\[ScriptCapitalL]], {Bar@u, u, Bar@d, d}, 0] // NiceForm

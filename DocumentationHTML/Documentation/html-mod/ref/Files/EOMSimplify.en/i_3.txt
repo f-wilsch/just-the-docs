@@ -1,3 +1,0 @@
-DefineCoupling[c3, SelfConjugate -> True, EFTOrder -> 2]
-\[ScriptCapitalL]2 = \[ScriptCapitalL] +  c3[] CD[\[Mu], \[Phi][]]^2;
-NiceForm[\[ScriptCapitalL]2]

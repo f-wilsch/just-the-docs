@@ -1,2 +1,0 @@
-ResetFlavorIndices[]
-\[Phi][p] \[CapitalPhi][r]

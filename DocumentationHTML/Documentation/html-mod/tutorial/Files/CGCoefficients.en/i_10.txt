@@ -1,5 +1,0 @@
-Needs["Matchete`"];
-CG[t3, {a, i, j}]
-% // NiceForm;
-t3[a, i, j]
-% // NiceForm

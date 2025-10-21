@@ -1,2 +1,0 @@
-t3[a, i, k] t3[c, k, l] t3[b, l, m] t3[c, m, j] // 
-  ContractCGs // NiceForm

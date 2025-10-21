@@ -1,3 +1,0 @@
-DefineGlobalGroup[G, SU[3]];
-CG[fStruct[G], {a, b, c}]
-% // NiceForm

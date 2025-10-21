@@ -1,5 +1,0 @@
-DefineField[\[Phi], Scalar, SelfConjugate -> True, Mass -> Light]
-DefineCoupling[\[Lambda], SelfConjugate -> True]
-DefineCoupling[c1, SelfConjugate -> True]
-DefineCoupling[c2, SelfConjugate -> True]
-EOMSimplify[c2[] \[Phi][]^3 CD[{\[Mu], \[Mu]}, \[Phi][]]]

@@ -1,2 +1,0 @@
-DefineGlobalGroup[G, SU[3]]
-GetCGTensor[fStruct[G]]

@@ -1,3 +1,0 @@
-(\[Phi][J1] \[Phi][J1]) (\[Phi][J2] \[Phi][J2]) (\[Phi][J3] \[Phi][
-      J3]) (\[Phi][J4] \[Phi][J4]) (\[Phi][J5] \[Phi][J5]) (\[Phi][
-      J6] \[Phi][J6]) // RelabelIndices // NiceForm

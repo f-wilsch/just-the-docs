@@ -1,3 +1,0 @@
-expr = Bar@\[Psi][a, p] ** \[Psi][a, 
-     r] (\[Lambda][p, r] + \[Kappa][p, r]);
-expr // NiceForm

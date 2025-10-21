@@ -1,2 +1,0 @@
-RepresentationWeights[Sp[4], CRep[{1, 0}]]
-RepresentationWeights[Sp[4], {1, 0}]

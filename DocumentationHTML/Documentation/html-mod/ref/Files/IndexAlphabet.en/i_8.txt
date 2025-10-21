@@ -1,3 +1,0 @@
-DefineRepresentation[fund, G, {1, 0},
- IndexAlphabet -> 
-  CharacterRange["\[DoubleStruckA]", "\[DoubleStruckF]"]]

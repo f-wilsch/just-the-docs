@@ -1,2 +1,0 @@
-\[Gamma][\[Mu], \[Nu]] ** \[Gamma][\[Rho]] // 
-  RefineDiracProducts // NiceForm

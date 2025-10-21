@@ -1,1 +1,0 @@
-expr = Bar@\[Psi][a, p] ** \[Psi][a, p];

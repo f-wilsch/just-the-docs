@@ -1,4 +1,0 @@
-DefineGlobalGroup[G, SU[2]]
-DefineCompositeCG[\[CurlyEpsilon]\[CurlyEpsilon], {eps[G], 
-  eps[G]}, {{i, j}, {k, l}}]
-CG[\[CurlyEpsilon]\[CurlyEpsilon], {a, b, c, d}]

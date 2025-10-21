@@ -1,1 +1,0 @@
-RepresentationWeights[SU@3, {1, 1}]

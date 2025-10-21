@@ -1,3 +1,0 @@
-DefineCoupling[M, SelfConjugate -> True, Indices -> {Flavor}, 
- DiagonalCoupling -> {True}]
-M[r]^2 Bar@\[Phi][r] \[Phi][r] // RelabelIndices // NiceForm

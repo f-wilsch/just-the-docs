@@ -1,2 +1,0 @@
-\[ScriptCapitalL]EFT = 
-  Match[\[ScriptCapitalL], EFTOrder -> 6, LoopOrder -> 1];

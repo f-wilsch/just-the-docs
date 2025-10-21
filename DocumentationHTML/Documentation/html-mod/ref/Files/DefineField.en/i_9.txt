@@ -1,1 +1,0 @@
-DefineField[\[Phi], Scalar, BackgroundField -> True]

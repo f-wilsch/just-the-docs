@@ -1,1 +1,0 @@
-GetCouplings[Cee, Symmetries]

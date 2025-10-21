@@ -1,1 +1,0 @@
-AdjointRepresentation@ Alg["A", 3]

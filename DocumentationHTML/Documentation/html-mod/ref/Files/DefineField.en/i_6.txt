@@ -1,2 +1,0 @@
-DefineField[q, Fermion, Chiral -> LeftHanded, Mass -> 0, 
- Charges -> U1Y[1/6], Indices -> {SU3c[fund], SU2L[fund], Flavor}]

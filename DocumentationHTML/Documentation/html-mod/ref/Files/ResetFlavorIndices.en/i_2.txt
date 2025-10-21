@@ -1,2 +1,0 @@
-DefineFlavorIndex[Flavor1, 3]
-DefineFlavorIndex[Flavor2, 3]

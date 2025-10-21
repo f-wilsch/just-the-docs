@@ -1,2 +1,0 @@
-lag = LoadModel["SM"];
-lag // NiceForm

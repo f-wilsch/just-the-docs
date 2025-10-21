@@ -1,2 +1,0 @@
-DefineField[\[Phi], Scalar, Indices -> {Flavor}]
-\[Phi][p]

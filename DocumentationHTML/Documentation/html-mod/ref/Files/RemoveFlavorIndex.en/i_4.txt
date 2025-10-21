@@ -1,2 +1,0 @@
-RemoveFlavorIndex[Flavor]
-\[Phi][p]

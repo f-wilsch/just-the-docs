@@ -1,2 +1,0 @@
-expr = \[Xi][x] Bar@\[Phi][x] \[Phi][x];
-expr // NiceForm

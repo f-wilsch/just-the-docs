@@ -1,1 +1,0 @@
-Sp[4] // FullForm

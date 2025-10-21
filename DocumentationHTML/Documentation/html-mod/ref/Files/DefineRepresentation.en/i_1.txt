@@ -1,2 +1,0 @@
-DefineCGGroup[G1, SU@2]
-DefineRepresentation[adj, G1, {2}]

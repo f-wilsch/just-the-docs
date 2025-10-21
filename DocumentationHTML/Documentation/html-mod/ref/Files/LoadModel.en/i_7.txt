@@ -1,3 +1,0 @@
-LoadModel["SM", 
-  SetModelOptions -> {DefineField, e, 
-    Indices -> {Flavor, SU2L@fund}}];

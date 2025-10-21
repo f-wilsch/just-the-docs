@@ -1,1 +1,0 @@
-MatrixForm@ First@ InvariantTensors[SU[3], {{0, 1}, {1, 0}}]

@@ -1,3 +1,0 @@
-TableForm[RepresentationsUpToDimension[SO@10, 120], TableDepth -> 2]
-RepresentationProduct[
- SO@10, {{0, 0, 0, 0, 1}, {0, 0, 0, 0, 1}, {0, 0, 1, 0, 0}}]

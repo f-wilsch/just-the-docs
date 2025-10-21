@@ -1,3 +1,0 @@
-DefineField[\[CapitalPsi]2, Fermion, Chiral -> RightHanded, 
- Mass -> 0]
-FreeLag[\[CapitalPsi]2] // NiceForm

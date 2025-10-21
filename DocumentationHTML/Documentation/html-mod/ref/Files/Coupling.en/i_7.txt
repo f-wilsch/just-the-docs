@@ -1,1 +1,0 @@
-Bar@\[Lambda][i, j] \[Lambda][i, j] // RelabelIndices // NiceForm

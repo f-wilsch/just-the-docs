@@ -1,4 +1,0 @@
-DefineCG[f3, {adj, adj, adj}, StructureConstants@SU[3]]
-DefineCG[d3, {adj, adj, adj}, 
- First@InvariantTensors[SU[3], {{1, 1}, {1, 1}, {1, 1}}, 
-   SymmetricIndices -> {1, 2, 3}, Normalization -> 40/3] ]

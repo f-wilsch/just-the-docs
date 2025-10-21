@@ -1,2 +1,0 @@
-DefineGaugeGroup[H3, SU[3], h3, A3, 
- NiceForm -> {"\!\(\*SubscriptBox[\(h\), \(3\)]\)", Default}]

@@ -1,3 +1,0 @@
-mc = MapEffectiveCouplings[LEFT, LoadModel["SMEFT"],
-   ShiftRenCouplings -> True
-   ];

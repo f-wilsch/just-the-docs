@@ -1,1 +1,0 @@
-MatrixForm@ First@ InvariantTensors[SO[6], {{1, 0, 0}, {1, 0, 0}}]

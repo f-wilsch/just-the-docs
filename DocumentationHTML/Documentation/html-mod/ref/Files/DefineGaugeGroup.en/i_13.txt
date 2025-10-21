@@ -1,2 +1,0 @@
-CG[del@ H1@ fund, {a, b}] CG[del@ H1@ fund, {b, c}] // 
-  RelabelIndices // NiceForm

@@ -1,2 +1,0 @@
-Generators[SU[2], {1}]
-MatrixForm /@ Normal@%

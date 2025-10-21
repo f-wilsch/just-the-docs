@@ -1,1 +1,0 @@
-CG[tf, {a, b, i, j}] // ReplaceCGs // RelabelIndices // NiceForm

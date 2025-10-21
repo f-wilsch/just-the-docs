@@ -1,1 +1,0 @@
-DefineGaugeGroup[SU3c, SU[3], g3, G]

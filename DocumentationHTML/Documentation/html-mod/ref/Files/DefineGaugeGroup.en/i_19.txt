@@ -1,1 +1,0 @@
-FS[A4, \[Mu], \[Nu], a] // NiceForm

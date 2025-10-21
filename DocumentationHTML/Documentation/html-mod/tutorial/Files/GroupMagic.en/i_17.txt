@@ -1,2 +1,0 @@
-Table[Tr[A . (B . C - C . B)], {A, t}, {B, t}, {C, t}] - 
-  I DynkinIndex[SU[3], {1, 0}] Normal@f // SparseArray

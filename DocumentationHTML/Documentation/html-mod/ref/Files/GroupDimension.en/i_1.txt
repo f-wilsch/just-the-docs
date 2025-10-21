@@ -1,1 +1,0 @@
-GroupDimension@ Alg["A", 2]

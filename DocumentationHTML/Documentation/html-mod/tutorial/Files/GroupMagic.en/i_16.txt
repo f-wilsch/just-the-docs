@@ -1,1 +1,0 @@
-f = StructureConstants@SU[3]

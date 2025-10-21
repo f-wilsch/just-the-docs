@@ -1,2 +1,0 @@
-f3[a, i, j] f3[b, j, k] f3[c, k, l] f3[d, l, i] // 
-  ContractCGs // NiceForm

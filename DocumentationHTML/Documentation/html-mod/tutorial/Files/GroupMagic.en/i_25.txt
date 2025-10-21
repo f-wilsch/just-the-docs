@@ -1,2 +1,0 @@
-First@InvariantTensors[SU@3, {{1, 1}, CRep@{1, 0}, {1, 0}}, 
-    Normalization -> 4] - Generators[SU@3, {1, 0}] // SparseArray

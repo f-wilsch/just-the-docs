@@ -1,1 +1,0 @@
-PositiveRoots@ Alg["A", 2]

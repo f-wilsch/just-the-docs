@@ -1,2 +1,0 @@
-\[Gamma][a, b] ** \[Gamma][b, c, d] ** PL // RefineDiracProducts // 
-   ContractMetric // Simplify // NiceForm

@@ -1,4 +1,0 @@
-DefineField[\[Phi], Scalar, SelfConjugate -> True]
--2 \[Phi][] CD[\[Mu], \[Phi][]] CD[\[Mu], \[Phi][]] + \[Phi][]^2 CD[{\
-\[Nu], \[Nu]}, \[Phi][]] // NiceForm
-% // GreensSimplify // NiceForm

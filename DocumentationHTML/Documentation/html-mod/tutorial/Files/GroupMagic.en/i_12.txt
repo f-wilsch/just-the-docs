@@ -1,1 +1,0 @@
-DualRepresentation[SU[3], {1, 0}]

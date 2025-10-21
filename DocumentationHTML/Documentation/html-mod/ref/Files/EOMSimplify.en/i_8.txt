@@ -1,2 +1,0 @@
-SelectOperatorClass[\[ScriptCapitalL]OnShell, {\[Phi], \[Phi]}, 
-  0] // NiceForm

@@ -1,2 +1,0 @@
-DefineField[\[Phi]2, Scalar, Mass -> Light]
-FreeLag[\[Phi]2] // NiceForm

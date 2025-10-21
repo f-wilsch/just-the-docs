@@ -1,1 +1,0 @@
-Bar@{yComplex[], yReal[]} // NiceForm

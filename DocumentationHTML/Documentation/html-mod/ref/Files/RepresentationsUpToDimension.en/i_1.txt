@@ -1,1 +1,0 @@
-RepresentationsUpToDimension[Alg["A", 2], 20]

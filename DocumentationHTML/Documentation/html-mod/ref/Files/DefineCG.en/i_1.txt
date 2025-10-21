@@ -1,2 +1,0 @@
-DefineCGGroup[SU2, SU[2]]
-DefineRepresentation[fund, SU2, {1}]

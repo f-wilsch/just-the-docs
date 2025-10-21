@@ -1,0 +1,2 @@
+RemoveCG[\[CurlyEpsilon]\[CurlyEpsilon]]
+CG[\[CurlyEpsilon]\[CurlyEpsilon], {a, b, c, d}]

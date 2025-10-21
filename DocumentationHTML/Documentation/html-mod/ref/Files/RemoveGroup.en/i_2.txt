@@ -1,0 +1,2 @@
+RemoveGroup[H]
+GetGroups[]

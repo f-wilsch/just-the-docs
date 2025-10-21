@@ -1,0 +1,3 @@
+DefineGaugeGroup[Gr, SU[3], g, A];
+g[]
+% // NiceForm

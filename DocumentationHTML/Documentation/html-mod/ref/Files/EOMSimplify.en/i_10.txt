@@ -1,0 +1,3 @@
+DefineField[\[Phi], Scalar, SelfConjugate -> True, Mass -> Light]
+DefineCoupling[\[CapitalLambda], SelfConjugate -> True]
+EOMSimplify[ FreeLag[] + hbar \[CapitalLambda][]^2 \[Phi][]^2];

@@ -1,0 +1,4 @@
+expr = Bar@\[Phi][p] \[Phi][r] Delta[Index[p, Flavor], 
+    Index[r, Flavor]];
+expr // NiceForm
+Contract[expr] // NiceForm

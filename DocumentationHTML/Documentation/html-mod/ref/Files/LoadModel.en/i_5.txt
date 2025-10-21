@@ -1,0 +1,2 @@
+lag = LoadModel["VLF", Verbose -> True];
+lag // NiceForm

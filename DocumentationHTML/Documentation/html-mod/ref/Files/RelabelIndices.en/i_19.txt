@@ -1,0 +1,2 @@
+RelabelIndices[expr, Unique -> True];
+% // NiceForm

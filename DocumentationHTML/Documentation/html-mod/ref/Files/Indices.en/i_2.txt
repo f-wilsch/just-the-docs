@@ -1,0 +1,2 @@
+DefineGaugeGroup[G, SU@3, g, F]
+DefineFlavorIndex[Flavor, 3]

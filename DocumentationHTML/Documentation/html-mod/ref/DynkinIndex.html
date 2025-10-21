@@ -1,0 +1,133 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+    <base target=\"_top\">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>DynkinIndex&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content=" Dynkin index,  DynkinIndex,  Index, Representation" />
+
+<meta name="description" content="DynkinIndex[alg, rep] returns the Dynkin index (trace normalization) of a representation." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'DynkinIndex.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/docs/ref/RepresentationDimension.html"><span class="dropdownPad">RepresentationDimension</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/Casimir2.html"><span class="dropdownPad">Casimir2</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/DualRepresentation.html"><span class="dropdownPad">DualRepresentation</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/FSIndicator.html"><span class="dropdownPad">FSIndicator</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/RepresentationWeights.html"><span class="dropdownPad">RepresentationWeights</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/Alg.html"><span class="dropdownPad">Alg</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/RepresentationsUpToDimension.html"><span class="dropdownPad">RepresentationsUpToDimension</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu see-also">Tech Notes</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/docs/tutorial/GroupMagic.html"><span class="dropdownPad">Group Magic</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">DynkinIndex</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="/docs/ref/DynkinIndex.html">DynkinIndex</a><span class="openbracket">[</span><span class="TI">alg</span><span class="comma">,</span><span class="TI">rep</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">returns the Dynkin index (trace normalization) of a representation.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="1043313733"></a>The Dynkin indices are normalized to 1/2 for fundamental representations, which fixes all other representations. </li>
+     <li><a name="1846763481"></a>The algebra argument must be a valid <span class="IF"><a class="package-symbol" href="/docs/ref/Alg.html">Alg</a><span class="openbracket">[</span><span class="TI">class</span><span class="comma">,</span> <span class="TI">n</span><span class="closebracket">]</span></span> object.</li>
+     <li><a name="1780800353"></a>Representations are labeled with a list of integers corresponding to the Dynkin coefficients of the highest weight in the representation.</li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="637196712" class="toggle open">Examples</h1><div class="hideable">
+   <div>
+    <h2 id="2011674642" class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="1683620586"></a>The Dynkin index (trace normalization) of the adjoint representation of  SU(2)/<span class="IF">A<sub>1</sub></span> (note the use of <span class="IF"><a class="package-symbol" href="/docs/ref/SU.html">SU</a><span class="openbracket">[</span>2<span class="closebracket">]</span></span> as short-hand for the algebra):</p>
+     <div id="36365509"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DynkinIndex.en/I_1.png"
+         data-in-width="148"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/08qkeffxjf2kq1ty2al-vxp3b"
+         data-code="Files/DynkinIndex.en/i_1.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out="Out[1]="
+         data-out-num="1"
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/DynkinIndex.en/O_1.png"
+         data-out-width="7"
+         data-out-height="16"
+         ></div>
+     <p><a name="1512774809"></a>{2} is the Dynkin coefficients of the (highest weight of the) adjoint representation of SU(2).</p>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/docs/ref/RepresentationDimension.html">RepresentationDimension</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/Casimir2.html">Casimir2</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/DualRepresentation.html">DualRepresentation</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/FSIndicator.html">FSIndicator</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/RepresentationWeights.html">RepresentationWeights</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/Alg.html">Alg</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/RepresentationsUpToDimension.html">RepresentationsUpToDimension</a></span></p>
+  </div></section><div class="TechNotesSection">Tech Notes</div><span class="special-character FilledVerySmallSquare">&#9642;</span><li>
+  <a href="/docs/tutorial/GroupMagic.html">Group Magic</a>
+ </li><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="/docs/guide/Matchete.html">Matchete</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

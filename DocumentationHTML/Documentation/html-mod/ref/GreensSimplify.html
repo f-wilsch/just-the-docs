@@ -1,0 +1,248 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+    <base target=\"_top\">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>GreensSimplify&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="Basis,  Green's basis,  GreensSimplify,  Identities,  Off-shell,  Simplification,  Simplify" />
+
+<meta name="description" content="GreensSimplify[expr] simplifies (part of) a Lagrangian to a Green&apos;s (off-shell) basis. " />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'GreensSimplify.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/docs/ref/EOMSimplify.html"><span class="dropdownPad">EOMSimplify</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/HcSimplify.html"><span class="dropdownPad">HcSimplify</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/MapEffectiveCouplings.html"><span class="dropdownPad">MapEffectiveCouplings</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/IBPIdentities.html"><span class="dropdownPad">IBPIdentities</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/CollectOperators.html"><span class="dropdownPad">CollectOperators</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu see-also">Tech Notes</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/docs/tutorial/EvanescentPrescription.html"><span class="dropdownPad">Evanescent Prescription</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">GreensSimplify</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="/docs/ref/GreensSimplify.html">GreensSimplify</a><span class="openbracket">[</span><span class="TI">expr</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">simplifies (part of) a Lagrangian to a Green's (off-shell) basis. </p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="2099536602"></a>The operator basis used by <span class="IF"><a class="package-symbol" href="/docs/ref/GreensSimplify.html">GreensSimplify</a></span> is determined from a heuristic scoring and will not typically agree with literature basis choices. The output is expressed in terms of the basis operators and <span class="IF"><a class="package-symbol" href="/docs/ref/GreensSimplify.html">GreensSimplify</a></span> will not attempt to reduce an expression to the minimal number of operators. As a result simple expressions may look more complicated after application of the simplification function. </li>
+     <li><a name="1893736222"></a>In addition to simplifying operators to a set of basis operators, <span class="IF"><a class="package-symbol" href="/docs/ref/GreensSimplify.html">GreensSimplify</a></span> also collects and simplify the coefficients in front of coefficients. </li>
+     <li><a name="72331263"></a>The following options can be given: </li>
+     <li class="NotesTable">
+      <a name="195793039"></a>
+      <table>
+       <col width="1%" />
+       <col width="28%" />
+       <col width="28%" />
+       <col width="43%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/docs/ref/ReductionIdentities.html">ReductionIdentities</a> <a href="GreensSimplify?view=all#1666222982" class="example-jump-link"></a></td><td><a class="package-symbol" href="/docs/ref/dDimensional.html">dDimensional</a></td><td><span class="TT">determines how to treat identies related to Dirac and Lorentz algebra that are valid only in four dimensions.</span></td></tr>
+      </table>
+     </li>
+     <li><a name="622094682"></a>The option values for <span class="IF"><a class="package-symbol" href="/docs/ref/ReductionIdentities.html">ReductionIdentities</a></span> are</li>
+     <li class="NotesTable">
+      <a name="646620032"></a>
+      <table>
+       <col width="1%" />
+       <col width="35%" />
+       <col width="50%" />
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/docs/ref/dDimensional.html">dDimensional</a></td><td><span class="TT">applies only the identities that are strictly valid in <span class="special-character ScriptD">&#63157;</span>-dimensional space time. </span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/EvanescenceFree.html">EvanescenceFree</a></td><td><span class="TT"><span class="specialcharacters">reduces operators to a physical <span class="openparenthesis">(</span>four-dimensional<span class="closeparenthesis">)</span> basis using the evanescent prescription and then performs a finite evanescent shift to remove resulting evanescent operators. This option requires that the imput is a </span><strong>full valid Lagrangian</strong> and not just a part.  </span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/Evanescent.html">Evanescent</a></td><td><span class="TT"><span class="specialcharacters">reduces operators to a physical <span class="openparenthesis">(</span>four-dimensional<span class="closeparenthesis">)</span> basis using the evanescent prescription. The resulting evanescent operators are kept in the output. </span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/FourDimensional.html">FourDimensional</a></td><td><span class="TT">simplifies with four-dimensional identities. This is <strong>incompatible with other <span class="special-character ScriptD">&#63157;</span>-dimensional calculations</strong><span class="specialcharacters"><span class="comma">,</span> such as one-loop matching.</span></span></td></tr>
+      </table>
+     </li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="11852152" class="toggle open">Examples</h1><span class="open-all on">open all</span><span class="close-all">close all</span><div class="hideable">
+   <div>
+    <h2 id="1630623140" class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="49926713"></a>In a real-scalar toy model, <span class="IF"><a class="package-symbol" href="/docs/ref/GreensSimplify.html">GreensSimplify</a></span> performs integration by parts relations (a real scalar is defined with <span class="IF"><a class="package-symbol" href="/docs/ref/DefineField.html">DefineField</a></span>)</p>
+     <div id="530024857"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/GreensSimplify.en/I_1.png"
+         data-in-width="380"
+         data-in-height="78"
+         data-link="https://wolfram.com/xid/0bnb8digzlarfew3m-i1uj2z"
+         data-code="Files/GreensSimplify.en/i_1.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/GreensSimplify.en/O_1.png"
+         data-out-width="103"
+         data-out-height="19"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/GreensSimplify.en/O_2.png"
+         data-out-width="43"
+         data-out-height="16"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 id="1707915312" class="toggle">Options<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <div>
+      <h3 id="1666222982" class="toggle">ReductionIdentities<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
+      <div class="hideable">
+       <p><a name="498294387"></a>When dealing with operators involving <span class="special-character ScriptD">&#63157;</span>-dimensional Dirac algebra such as  (the SM definitions are loaded with <span class="IF"><a class="package-symbol" href="/docs/ref/LoadModel.html">LoadModel</a></span>)</p>
+       <div id="1681112305"
+           class="clipboard-input"
+           data-in="In[1]:="
+           data-in-num="1"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src-swap="Files/GreensSimplify.en/I_2.png"
+           data-big="570 39"
+           data-small="570 39"
+           data-link="https://wolfram.com/xid/0bnb8digzlarfew3m-126cub"
+           data-code="Files/GreensSimplify.en/i_2.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/GreensSimplify.en/O_3.png"
+           data-out-width="195"
+           data-out-height="18"
+           ></div>
+       <p><a name="608224082"></a>it is often insufficient to simplify using strictly <span class="special-character ScriptD">&#63157;</span>-dimensional identities. For instance, </p>
+       <div id="1455429166"
+           class="clipboard-input"
+           data-in="In[2]:="
+           data-in-num="2"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/GreensSimplify.en/I_3.png"
+           data-in-width="193"
+           data-in-height="19"
+           data-link="https://wolfram.com/xid/0bnb8digzlarfew3m-ycs6l8"
+           data-code="Files/GreensSimplify.en/i_3.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/GreensSimplify.en/O_4.png"
+           data-out-width="195"
+           data-out-height="18"
+           ></div>
+       <p><a name="485880837"></a>In such cases the <span class="IF"><a class="package-symbol" href="/docs/ref/ReductionIdentities.html">ReductionIdentities</a><span class="special-character Rule">&#62754;</span>Evanescent</span> option can be used to reduce the expression to a physical operator basis:</p>
+       <div id="2110595118"
+           class="clipboard-input"
+           data-in="In[3]:="
+           data-in-num="3"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src-swap="Files/GreensSimplify.en/I_4.png"
+           data-big="409 19"
+           data-small="409 19"
+           data-link="https://wolfram.com/xid/0bnb8digzlarfew3m-86vnwg"
+           data-code="Files/GreensSimplify.en/i_4.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/GreensSimplify.en/O_5.png"
+           data-out-width="392"
+           data-out-height="22"
+           ></div>
+       <p><a name="1687106792"></a>Here the physical basis has explicit symmetry in the r<span class="special-character LeftRightArrow">&#8596;</span>t indices. This option often leaves remnant evanescent operators (E1, E2 above), which may or may not be relevant in further calculations. When simplifying an entire Lagrangian, the user will typically want to use the option <span class="IF"><a class="package-symbol" href="/docs/ref/ReductionIdentities.html">ReductionIdentities</a><span class="special-character Rule">&#62754;</span><a class="package-symbol" href="/docs/ref/EvanescenceFree.html">EvanescenceFree</a></span> to remove the evanescent operators in favor of a finite shift in the physical operator coefficients. </p>
+       <p><a name="84607603"></a>To obtain a strictly four-dimensional reduction (incompatible with <span class="special-character ScriptD">&#63157;</span>-dimensional matching and running), the option value <span class="IF"><a class="package-symbol" href="/docs/ref/FourDimensional.html">FourDimensional</a></span> can be used:</p>
+       <div id="711185565"
+           class="clipboard-input"
+           data-in="In[4]:="
+           data-in-num="4"
+           data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src-swap="Files/GreensSimplify.en/I_5.png"
+           data-big="449 19"
+           data-small="449 19"
+           data-link="https://wolfram.com/xid/0bnb8digzlarfew3m-l1pgkv"
+           data-code="Files/GreensSimplify.en/i_5.txt"
+           ></div>
+       <div class="clipboard-output"
+           data-out=" "
+           data-out-num=""
+           data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+           data-src="Files/GreensSimplify.en/O_6.png"
+           data-out-width="299"
+           data-out-height="18"
+           ></div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/docs/ref/EOMSimplify.html">EOMSimplify</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/HcSimplify.html">HcSimplify</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/MapEffectiveCouplings.html">MapEffectiveCouplings</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/IBPIdentities.html">IBPIdentities</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/CollectOperators.html">CollectOperators</a></span></p>
+  </div></section><div class="TechNotesSection">Tech Notes</div><span class="special-character FilledVerySmallSquare">&#9642;</span><div class="TechNotes">
+  <a href="/docs/tutorial/EvanescentPrescription.html">Evanescent Prescription</a>
+ </div><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="/docs/guide/Matchete.html">Matchete</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

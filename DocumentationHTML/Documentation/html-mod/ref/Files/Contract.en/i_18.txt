@@ -1,0 +1,1 @@
+M[r]Contract[Delta[Index[p, Flavor], Index[r, Flavor]] Delta[Index[r, Flavor], Index[s, Flavor]] Bar@\[Phi][p] \[Phi][s]]//NiceForm

@@ -1,0 +1,2 @@
+DefineField[\[Phi]5, Scalar, Mass -> Heavy, Indices -> Flavor]
+FreeLag[\[Phi]5] // NiceForm

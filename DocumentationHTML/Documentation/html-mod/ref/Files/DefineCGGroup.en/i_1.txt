@@ -1,0 +1,1 @@
+DefineCGGroup[G1, Sp[4]]

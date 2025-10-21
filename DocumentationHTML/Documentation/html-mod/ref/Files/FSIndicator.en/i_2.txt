@@ -1,0 +1,1 @@
+FSIndicator[Sp[4], {1, 0}]

@@ -1,0 +1,14 @@
+DefineField[\[Chi], Fermion,
+  	SelfConjugate -> True,
+  	Indices -> {Flavor},
+  	Charges -> {},
+  	Mass -> {Heavy, m\[Chi], {Flavor}},
+  	NiceForm -> {"\[Chi]", "\!\(\*SubscriptBox[\(m\), \(\[Chi]\)]\)"}
+  ];
+DefineField[\[Phi], Scalar,
+  	SelfConjugate -> False,
+  	Indices -> {SU3c[fund]},
+  	Charges -> {U1Y[-1/3]},
+  	Mass -> {Heavy, m\[Phi]},
+  	NiceForm -> {"\[Phi]", "\!\(\*SubscriptBox[\(m\), \(\[Phi]\)]\)"}
+  ];

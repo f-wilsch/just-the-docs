@@ -1,0 +1,2 @@
+DefineGlobalGroup[G, SU[2]]
+GetRepresentations[]

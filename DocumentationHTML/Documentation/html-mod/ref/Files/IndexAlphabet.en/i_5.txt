@@ -1,0 +1,3 @@
+expr = (Bar@\[Phi][a] \[Phi][a]) (Bar@\[Phi][b] \[Phi][b]) // NiceForm;
+expr // RelabelIndices
+% // NiceForm

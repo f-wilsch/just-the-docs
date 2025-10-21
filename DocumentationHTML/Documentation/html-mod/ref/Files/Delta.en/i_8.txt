@@ -1,0 +1,4 @@
+expr = Delta[Index[p, Flavor], Index[r, Flavor]] Delta[
+    Index[r, Flavor], Index[s, Flavor]];
+expr // NiceForm
+expr // Contract // NiceForm

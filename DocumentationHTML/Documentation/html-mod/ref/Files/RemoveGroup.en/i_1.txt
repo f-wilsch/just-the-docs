@@ -1,0 +1,2 @@
+DefineCGGroup[H, SU[2]]
+GetGroups[]

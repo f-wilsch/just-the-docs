@@ -1,0 +1,2 @@
+Metric[\[Mu], \[Nu]] Metric[\[Nu], \[Rho]]
+% // NiceForm

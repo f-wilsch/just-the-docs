@@ -1,0 +1,2 @@
+EOMSimplify[\[ScriptCapitalL], 
+  EffectiveCouplingSymbol -> "x"] // NiceForm

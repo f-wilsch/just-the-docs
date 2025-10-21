@@ -1,0 +1,2 @@
+m1 f3[a, b, e] t3[e, i, j] t3[c, j, i] + 
+   3 M2 t3[a, i, j] t3[b, j, k] t3[c, k, i] // ContractCGs // NiceForm

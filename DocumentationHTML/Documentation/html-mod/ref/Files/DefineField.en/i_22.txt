@@ -1,0 +1,2 @@
+DefineField[\[CapitalPhi]4, Scalar, 
+ Indices -> {SU3[fund], Generation}]

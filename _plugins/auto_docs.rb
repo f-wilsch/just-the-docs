@@ -41,7 +41,7 @@ module Jekyll
     priority :low
 
     def generate(site)
-      root = File.join(site.source, 'DocumentationHTML', 'Documentation', 'html')
+      root = File.join(site.source, 'DocumentationHTML', 'Documentation', 'html-mod')
       return unless Dir.exist?(root)
 
       # Top-level section under /docs/
@@ -83,7 +83,7 @@ module Jekyll
                               top_title
                             end
 
-        src_rel = "/DocumentationHTML/Documentation/html/#{rel}"
+        src_rel = "/DocumentationHTML/Documentation/html-mod/#{rel}"
         
         # name    = slugify(file_title) + '.md'
         # site.pages << IframePage.new(site, page_dir, name, file_title, parent_for_child, grand_parent, src_rel)

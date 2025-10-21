@@ -1,0 +1,433 @@
+
+		<!DOCTYPE html>
+		<html lang="en">
+
+		<head>
+    <base target=\"_top\">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	
+
+<title>Contract&mdash;Wolfram Language Documentation</title>
+<meta name="buildnumber" content="0000000">
+<meta name="historydata" content="{XX, , , }" />
+<meta name="keywords" content="Contract" />
+
+<meta name="description" content="Contract[expr] contracts all Delta[a, b] functions and Metric[\[Mu], \[Nu]] tensors in the expression expr whenever possible." />
+<link rel="stylesheet" href="../../common/framework/css/framework.en.css"><link rel="stylesheet" href="../../common/framework/css/gui.en.css"><link rel="stylesheet" href="../../common/js/clipboard/2.0/clipboard.css"><link rel="stylesheet" href="../../fonts/source-code-pro/1.0/all.css"><link rel="stylesheet" href="../../fonts/source-sans-pro/1.0/global.css"><link rel="stylesheet" href="../../language-assets/css/entities.css"><link rel="stylesheet" href="../../language-assets/css/footer.css"><link rel="stylesheet" href="../../language-assets/css/global.css"><link rel="stylesheet" href="../../language-assets/css/guide.css"><link rel="stylesheet" href="../../language-assets/css/header-language.css"><link rel="stylesheet" href="../../language-assets/css/iconography.css"><link rel="stylesheet" href="../../language-assets/css/icons.css"><link rel="stylesheet" href="../../language-assets/css/in-out.css"><link rel="stylesheet" href="../../language-assets/css/language-specific.css"><link rel="stylesheet" href="../../language-assets/css/language.css"><link rel="stylesheet" href="../../language-assets/css/man-page.css"><link rel="stylesheet" href="../../language-assets/css/related-links.css"><link rel="stylesheet" href="../../language-assets/css/root-guide-language.css"><link rel="stylesheet" href="../../language-assets/css/special-styles.css"><link rel="stylesheet" href="../../language-assets/css/tables.css"><link rel="stylesheet" href="../../language-assets/css/technotes.css"><link rel="stylesheet" href="../../language-assets/css/tooltips.css"><link rel="stylesheet" href="../../language-assets/css/workflows.css">
+<script>var baselang = 'Contract.en';</script>
+</head>
+
+<body id="ref" class="package">
+  <main class="main">
+  <nav class="topContentWrap"><span class="badge">MATCHETE SYMBOL</span><ul class="dropdown">
+   <li>
+    <a href="#" class="menu see-also">See Also</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/docs/ref/Delta.html"><span class="dropdownPad">Delta</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/Metric.html"><span class="dropdownPad">Metric</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/Indices.html"><span class="dropdownPad">Indices</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/RelabelIndices.html"><span class="dropdownPad">RelabelIndices</span></a>
+     </li>
+     <li>
+      <a href="/docs/ref/DiagonalCoupling.html"><span class="dropdownPad">DiagonalCoupling</span></a>
+     </li>
+    </ul>
+   </li>
+   <li>
+    <a href="#" class="menu related-guides">Related Guides</a>
+    <ul class="sub_menu">
+     <li>
+      <a href="/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+     </li>
+    </ul>
+   </li>
+  </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">Contract</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
+  <div class="functionIntro">
+   <p class="code">
+    <span class="IF"><a class="package-symbol" href="/docs/ref/Contract.html">Contract</a><span class="openbracket">[</span><span class="TI">expr</span><span class="closebracket">]</span></span>
+   </p>
+   <p class="code-description">contracts all <span class="IF"><a class="package-symbol" href="/docs/ref/Delta.html">Delta</a><span class="openbracket">[</span><span class="TI">a</span><span class="comma">,</span><span class="TI">b</span><span class="closebracket">]</span></span> functions and <span class="IF"><a class="package-symbol" href="/docs/ref/Metric.html">Metric</a><span class="openbracket">[</span><span class="TR"><span class="special-character Mu">&#956;</span></span><span class="comma">,</span><span class="TR"><span class="special-character Nu">&#957;</span></span><span class="closebracket">]</span></span> tensors in the expression <span class="IF"><span class="TI">expr</span></span> whenever possible.</p>
+  </div>
+ </div><section id="DetailsAndOptions"><div class="inner">
+   <h1 class="toggle">Details and Options</h1>
+   <div class="hideable">
+    <ul class="functionList">
+     <li><a name="1901676096"></a>When contracting flavor indices, Contract should only be applied to entire Lagrangian terms and not to sub-expressions. For more details see <a href="/docs/ref/Contract.html#89502682">Possible Issues</a> section.</li>
+    </ul>
+   </div>
+  </div></section><section id="Examples"><h1 id="1776472789" class="toggle open">Examples</h1><span class="open-all on">open all</span><span class="close-all">close all</span><div class="hideable">
+   <div id="1135600989"
+       class="clipboard-input"
+       data-in="In[1]:="
+       data-in-num="1"
+       data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+       data-src="Files/Contract.en/I_1.png"
+       data-in-width="137"
+       data-in-height="21"
+       data-link="https://wolfram.com/xid/0d5y3ftioos7zm-s2d5l7"
+       data-code="Files/Contract.en/i_1.txt"
+       ></div>
+   <div>
+    <h2 id="713020482" class="toggle open">Basic Examples<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h2>
+    <div class="hideable">
+     <p><a name="1566025281"></a>Defining a scalar field with a flavor index:</p>
+     <div id="1751628755"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/Contract.en/I_2.png"
+         data-big="409 39"
+         data-small="409 39"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-285rol"
+         data-code="Files/Contract.en/i_2.txt"
+         ></div>
+     <p><a name="1628756212"></a>Contracting expressions with one Delta:</p>
+     <div id="1650876191"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_3.png"
+         data-in-width="397"
+         data-in-height="59"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-1k6ah9"
+         data-code="Files/Contract.en/i_3.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_1.png"
+         data-out-width="47"
+         data-out-height="18"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_2.png"
+         data-out-width="30"
+         data-out-height="16"
+         ></div>
+     <div class="ExLine"><a name="78988148"></a><!-- --></div>
+     <p><a name="408909590"></a>Similarly, we can contract multiple metric tensors:</p>
+     <div id="1095066334"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_4.png"
+         data-in-width="136"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-sd9cvk"
+         data-code="Files/Contract.en/i_4.txt"
+         ></div>
+     <div id="1321570079"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_5.png"
+         data-in-width="191"
+         data-in-height="59"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-v43399"
+         data-code="Files/Contract.en/i_5.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_3.png"
+         data-out-width="42"
+         data-out-height="18"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_4.png"
+         data-out-width="22"
+         data-out-height="18"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 id="896036441" class="toggle">Generalizations &amp; Extensions<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(3)</span></h2>
+    <div class="hideable">
+     <p><a name="1668636274"></a>When multiple instances of <span class="IF"><a class="package-symbol" href="/docs/ref/Metric.html">Metric</a></span> are multiplied together, they contract automatically among them, but they do not contract with indices of other objects like Fields:</p>
+     <div id="402165710"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_6.png"
+         data-in-width="230"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-gxp3b0"
+         data-code="Files/Contract.en/i_6.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_5.png"
+         data-out-width="18"
+         data-out-height="18"
+         ></div>
+     <p><a name="1768124587"></a><span class="IF"><a class="package-symbol" href="/docs/ref/Metric.html">Metric</a></span><span class="InlineCode">[<span class="special-character Mu">&#956;</span>,<span class="special-character Mu">&#956;</span>]</span> evaluates to the space time dimension <span class="IF"><a class="package-symbol" href="/docs/ref/&#119993;.html"><span class="special-character ScriptD">&#63157;</span></a></span>:</p>
+     <div id="16163696"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_7.png"
+         data-in-width="230"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-jwp9u"
+         data-code="Files/Contract.en/i_7.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_6.png"
+         data-out-width="7"
+         data-out-height="16"
+         ></div>
+     <div class="ExLine"><a name="1993610198"></a><!-- --></div>
+     <p><a name="614604360"></a>Similarly, when multiple instances of <span class="IF"><a class="package-symbol" href="/docs/ref/Delta.html">Delta</a></span> are multiplied together, they contract automatically among them (except for flavor indices), but they do not contract with indices of other objects like Fields:</p>
+     <div id="1656175027"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_8.png"
+         data-in-width="213"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-1obu35"
+         data-code="Files/Contract.en/i_8.txt"
+         ></div>
+     <div id="1723806194"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_9.png"
+         data-in-width="356"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-2slfno"
+         data-code="Files/Contract.en/i_9.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_7.png"
+         data-out-width="18"
+         data-out-height="16"
+         ></div>
+     <p><a name="327550761"></a><span class="IF"><a class="package-symbol" href="/docs/ref/Delta.html">Delta</a></span><span class="InlineCode">[a,a]</span> evaluates to the dimension of the representation of <span class="InlineCode">a</span>:</p>
+     <div id="1300951576"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_10.png"
+         data-in-width="357"
+         data-in-height="39"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-vst6x2"
+         data-code="Files/Contract.en/i_10.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_8.png"
+         data-out-width="7"
+         data-out-height="16"
+         ></div>
+     <div class="ExLine"><a name="1960041818"></a><!-- --></div>
+     <p><a name="891303114"></a>The exception to this are flavor indices for which <span class="IF"><a class="package-symbol" href="/docs/ref/Delta.html">Delta</a></span> does not automatically contract (for more details see <a href="/docs/ref/Contract.html#89502682">Possible Issues</a> section):</p>
+     <div id="1236418947"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/Contract.en/I_11.png"
+         data-big="414 19"
+         data-small="414 19"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-uqe081"
+         data-code="Files/Contract.en/i_11.txt"
+         ></div>
+     <div id="1752300939"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/Contract.en/I_12.png"
+         data-big="566 19"
+         data-small="566 19"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-29j6cd"
+         data-code="Files/Contract.en/i_12.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_9.png"
+         data-out-width="34"
+         data-out-height="18"
+         ></div>
+     <p><a name="1416564513"></a>Flavor indices must always be contracted using <span class="IF"><a class="package-symbol" href="/docs/ref/Contract.html">Contract</a></span>:</p>
+     <div id="1073306193"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/Contract.en/I_13.png"
+         data-big="571 39"
+         data-small="571 39"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-r1aym7"
+         data-code="Files/Contract.en/i_13.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_10.png"
+         data-out-width="18"
+         data-out-height="18"
+         ></div>
+     <p><a name="1586538624"></a><span class="IF"><a class="package-symbol" href="/docs/ref/Delta.html">Delta</a></span><span class="InlineCode">[p,p]</span> gives the number of flavors defined for this type of flavor index, which can be symbolic:</p>
+     <div id="1053870726"
+         class="clipboard-input"
+         data-in="In[4]:="
+         data-in-num="4"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/Contract.en/I_14.png"
+         data-big="573 39"
+         data-small="573 39"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-rpqd44"
+         data-code="Files/Contract.en/i_14.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_11.png"
+         data-out-width="11"
+         data-out-height="16"
+         ></div>
+    </div>
+   </div>
+   <div>
+    <h2 id="89502682" class="toggle">Possible Issues<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
+    <div class="hideable">
+     <p><a name="1957646044"></a>Special attention has to be paid when contracting flavor indices. This is because of certain flavor tensors, such as diagonal mass matrices, carrying only a single flavor index, which breaks the conventional Einstein summation convention. </p>
+     <p><a name="1335238479"></a>Consider  the following setup with a flavored scalar field, which has a flavor non-universal, but diagonal mass matrix:</p>
+     <div id="800661792"
+         class="clipboard-input"
+         data-in="In[1]:="
+         data-in-num="1"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/Contract.en/I_15.png"
+         data-big="440 39"
+         data-small="440 39"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-niy8vm"
+         data-code="Files/Contract.en/i_15.txt"
+         ></div>
+     <p><a name="1202815051"></a>The following expression would be problematic if flavor deltas would automatically contract with each other such as gauge deltas do. In particular, the flavor index <span class="TI">r</span> on the mass <span class="TI">M </span>would not be properly relabeled:</p>
+     <div id="1670008608"
+         class="clipboard-input"
+         data-in="In[2]:="
+         data-in-num="2"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_16.png"
+         data-in-width="392"
+         data-in-height="59"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-1wkc6a"
+         data-code="Files/Contract.en/i_16.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_12.png"
+         data-out-width="79"
+         data-out-height="18"
+         ></div>
+     <p><a name="1224425320"></a>Therefore, one has to manually use <span class="IF"><a class="package-symbol" href="/docs/ref/Contract.html">Contract</a></span> for flavor indices, which takes care of the proper relabeling of all flavor indices, including the ones on diagonal flavor tensors:</p>
+     <div id="518117218"
+         class="clipboard-input"
+         data-in="In[3]:="
+         data-in-num="3"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/I_17.png"
+         data-in-width="164"
+         data-in-height="19"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-iurb28"
+         data-code="Files/Contract.en/i_17.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_13.png"
+         data-out-width="47"
+         data-out-height="16"
+         ></div>
+     <p><a name="2135888189"></a>Notice, however, that Contract should only be applied to full Lagrangian terms, but not to subexpressions. The problem can be seen with the example above:</p>
+     <div id="905890893"
+         class="clipboard-input"
+         data-in="In[4]:="
+         data-in-num="4"
+         data-in-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src-swap="Files/Contract.en/I_18.png"
+         data-big="737 19"
+         data-small="737 19"
+         data-link="https://wolfram.com/xid/0d5y3ftioos7zm-o9mn57"
+         data-code="Files/Contract.en/i_18.txt"
+         ></div>
+     <div class="clipboard-output"
+         data-out=" "
+         data-out-num=""
+         data-out-src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+         data-src="Files/Contract.en/O_14.png"
+         data-out-width="45"
+         data-out-height="16"
+         ></div>
+     <p><a name="1414448073"></a>Here the flavor index <span class="TI">r</span> outside the <span class="IF"><a class="package-symbol" href="/docs/ref/Contract.html">Contract</a></span> was not properly identified and relabeled, highlighting that special care should be paid to properly applying Contract only to full Lagrangian terms and not sup-expressions.</p>
+    </div>
+   </div>
+   <div class="clear"><!-- --></div>
+  </div></section><section id="SeeAlso" class="related-links"><div class="inner">
+   <h1>See Also</h1>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/docs/ref/Delta.html">Delta</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/Metric.html">Metric</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/Indices.html">Indices</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/RelabelIndices.html">RelabelIndices</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/DiagonalCoupling.html">DiagonalCoupling</a></span></p>
+  </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
+   <h1>Related Guides</h1>
+   <ul class="functionList">
+    <span class="special-character FilledVerySmallSquare">&#9642;</span>
+    <li>
+     <a href="/docs/guide/Matchete.html">Matchete</a>
+    </li>
+   </ul>
+  </div></section>
+  
+
+  
+		</main>
+		<div id="_footer-offset"></div>
+		<div id="_footer"></div>
+		<script src="../../common/js/jquery/2.2.4/jquery.min.js"></script><script src="../../common/js/jquery/plugins/hoverintent/1.8.0/hoverintent.min.j2"></script><script src="../../common/js/clipboard/2.0/clipboard.js"></script><script src="../../common/js/clipboard/2.0/code-clipboard.js"></script><script src="../../common/framework/js/body.en.js"></script><script src="../../common/framework/js/head.en.js"></script><script src="../../language-assets/js/dropdowns.js"></script><script src="../../language-assets/js/global.js"></script><script src="../../language-assets/js/language-specific.js.en"></script><script src="../../language-assets/js/language.js"></script><script src="../../language-assets/js/temporary.js"></script><script src="../../language-assets/js/toggles.js"></script><script src="../../language-assets/js/tooltips.js"></script><script src="../../language-assets/js/workflows.js"></script>
+</body>
+</html>

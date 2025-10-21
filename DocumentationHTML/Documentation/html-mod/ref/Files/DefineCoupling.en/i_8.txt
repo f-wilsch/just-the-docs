@@ -1,0 +1,2 @@
+DefineCoupling[m, Indices -> Flavor, DiagonalCoupling -> True]
+m[b] \[Lambda][b, c] // RelabelIndices // NiceForm

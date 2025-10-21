@@ -1,0 +1,2 @@
+StructureConstants@ SU[2]
+MatrixForm /@ Normal@%

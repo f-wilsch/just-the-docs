@@ -1,0 +1,6 @@
+DefineGlobalGroup[G, SU[3]]
+CG[gen@G@fund, {a, k1, k2}] (x CG[gen@G@fund, {b, k2, k3}] + 
+     y CG[gen@G@fund, {d, k2, j1}] CG[gen@G@fund, {b, j1, j2}] CG[
+       gen@G@fund, {d, j2, k3}]) CG[gen@G@fund, {c, k3, k1}] + 
+  3 CG[fStruct@G, {a, b, d}] CG[del@G@adj, {d, c}] // NiceForm
+% // ContractCGs // NiceForm

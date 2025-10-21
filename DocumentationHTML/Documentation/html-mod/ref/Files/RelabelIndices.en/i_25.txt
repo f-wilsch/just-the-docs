@@ -1,0 +1,3 @@
+expr = (Bar@\[Psi][a, p] ** \[Psi][a, p]) (Bar@\[Psi][a, r] ** \[Psi][
+      a, r]);
+expr // NiceForm

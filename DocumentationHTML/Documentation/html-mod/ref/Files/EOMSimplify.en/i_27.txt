@@ -1,0 +1,1 @@
+EOMSimplify[FreeLag[] + hbar c1[] CD[\[Mu], \[Phi][]]^2] // NiceForm

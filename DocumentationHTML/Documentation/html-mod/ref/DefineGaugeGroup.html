@@ -26,28 +26,28 @@
     <a href="#" class="menu see-also">See Also</a>
     <ul class="sub_menu">
      <li>
-      <a href="/docs/ref/DefineField.html"><span class="dropdownPad">DefineField</span></a>
+      <a href="/just-the-docs/docs/ref/DefineField.html"><span class="dropdownPad">DefineField</span></a>
      </li>
      <li>
-      <a href="/docs/ref/DefineRepresentation.html"><span class="dropdownPad">DefineRepresentation</span></a>
+      <a href="/just-the-docs/docs/ref/DefineRepresentation.html"><span class="dropdownPad">DefineRepresentation</span></a>
      </li>
      <li>
-      <a href="/docs/ref/FS.html"><span class="dropdownPad">FS</span></a>
+      <a href="/just-the-docs/docs/ref/FS.html"><span class="dropdownPad">FS</span></a>
      </li>
      <li>
-      <a href="/docs/ref/DefineGlobalGroup.html"><span class="dropdownPad">DefineGlobalGroup</span></a>
+      <a href="/just-the-docs/docs/ref/DefineGlobalGroup.html"><span class="dropdownPad">DefineGlobalGroup</span></a>
      </li>
      <li>
-      <a href="/docs/ref/CG.html"><span class="dropdownPad">CG</span></a>
+      <a href="/just-the-docs/docs/ref/CG.html"><span class="dropdownPad">CG</span></a>
      </li>
      <li>
-      <a href="/docs/ref/ResetAll.html"><span class="dropdownPad">ResetAll</span></a>
+      <a href="/just-the-docs/docs/ref/ResetAll.html"><span class="dropdownPad">ResetAll</span></a>
      </li>
      <li>
-      <a href="/docs/ref/LoadModel.html"><span class="dropdownPad">LoadModel</span></a>
+      <a href="/just-the-docs/docs/ref/LoadModel.html"><span class="dropdownPad">LoadModel</span></a>
      </li>
      <li>
-      <a href="/docs/ref/DefineCG.html"><span class="dropdownPad">DefineCG</span></a>
+      <a href="/just-the-docs/docs/ref/DefineCG.html"><span class="dropdownPad">DefineCG</span></a>
      </li>
     </ul>
    </li>
@@ -55,14 +55,14 @@
     <a href="#" class="menu related-guides">Related Guides</a>
     <ul class="sub_menu">
      <li>
-      <a href="/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+      <a href="/just-the-docs/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
      </li>
     </ul>
    </li>
   </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">DefineGaugeGroup</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="/docs/ref/DefineGaugeGroup.html">DefineGaugeGroup</a><span class="openbracket">[</span><span class="TI">groupName</span><span class="comma">,</span><span class="TI">LieGroup</span><span class="comma">,</span><span class="TI">coupling</span><span class="comma">,</span><span class="TI">fieldName</span><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineGaugeGroup.html">DefineGaugeGroup</a><span class="openbracket">[</span><span class="TI">groupName</span><span class="comma">,</span><span class="TI">LieGroup</span><span class="comma">,</span><span class="TI">coupling</span><span class="comma">,</span><span class="TI">fieldName</span><span class="closebracket">]</span></span>
    </p>
    <p class="code-description">defines a gauge group labelled <span class="IF"><span class="TI">groupName</span></span> from a simple or Abelian <span class="IF"><span class="TI">LieGroup</span></span>, together with its corresponding <span class="IF"><span class="TI">coupling</span></span> and gauge bosons labelled <span class="IF"><span class="TI">fieldName</span></span>. </p>
   </div>
@@ -70,12 +70,12 @@
    <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="66672247"></a>The <span class="TI">LieGroup</span> can either be <span class="IF"><a class="package-symbol" href="/docs/ref/U1.html">U1</a></span> or a simple group. The simple group are more accurately defined by their Lie algebra (<span class="IF"><a class="package-symbol" href="/docs/ref/Alg.html">Alg</a></span>) in this case, although the functions <span class="IF"><a class="package-symbol" href="/docs/ref/SU.html">SU</a></span>, <span class="IF"><a class="package-symbol" href="/docs/ref/SO.html">SO</a></span>, and <span class="IF"><a class="package-symbol" href="/docs/ref/Sp.html">Sp</a></span> provide convenient shortcuts to get the Algebra of the group in question. </li>
-     <li><a name="1324974463"></a>A scalar coupling with the name <span class="IF"><span class="TI">coupling</span></span> and <span class="IF"><a class="package-symbol" href="/docs/ref/EFTOrder.html">EFTOrder</a></span> 0 is initialized with the gauge group (as with <span class="IF"><a class="package-symbol" href="/docs/ref/DefineCoupling.html">DefineCoupling</a></span>). </li>
-     <li><a name="18485150"></a><span class="IF"><a class="package-symbol" href="/docs/ref/DefineGaugeGroup.html">DefineGaugeGroup</a></span> also defines the fundamental and adjoint representations of the corresponding non-Abelian group. They are referred to as <span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/docs/ref/fund.html">fund</a></span>] and <span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/docs/ref/adj.html">adj</a></span>], respectively.</li>
-     <li><a name="337006065"></a>The initialization of a simple gauge group also defines some Clebsch-Gordan (<span class="IF"><a class="package-symbol" href="/docs/ref/CG.html">CG</a></span>) coefficients among the representations: the generators of <span class="IF"><a class="package-symbol" href="/docs/ref/gen.html">gen</a></span>[<span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/docs/ref/fund.html">fund</a></span>]] and <span class="IF"><a class="package-symbol" href="/docs/ref/gen.html">gen</a></span>[<span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/docs/ref/adj.html">adj</a></span>]] of the fundamental and adjoint representations; Kronecker deltas  <span class="IF"><a class="package-symbol" href="/docs/ref/del.html">del</a></span>[<span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/docs/ref/fund.html">fund</a></span>]] and <span class="IF"><a class="package-symbol" href="/docs/ref/del.html">del</a></span>[<span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/docs/ref/adj.html">adj</a></span>]] of the representations; and the structure constant of the group <span class="IF"><a class="package-symbol" href="/docs/ref/fStruct.html">fStruct</a></span>[<span class="IF"><span class="TI">groupName</span></span>].</li>
-     <li><a name="1989572523"></a><span class="IF"><a class="package-symbol" href="/docs/ref/SU.html">SU</a></span>(N) groups also initialize the Levi-Civita symbol <span class="IF"><a class="package-symbol" href="/docs/ref/eps.html">eps</a></span>[<span class="IF"><span class="TI">groupName</span></span>].</li>
-     <li><a name="1620857015"></a><span class="IF"><a class="package-symbol" href="/docs/ref/Sp.html">Sp</a></span>(N) groups also initialize the 2-index antisymmetric invariant <span class="IF"><a class="package-symbol" href="/docs/ref/eps.html">eps</a></span>[<span class="IF"><span class="TI">groupName</span></span>].</li>
+     <li><a name="66672247"></a>The <span class="TI">LieGroup</span> can either be <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/U1.html">U1</a></span> or a simple group. The simple group are more accurately defined by their Lie algebra (<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Alg.html">Alg</a></span>) in this case, although the functions <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/SU.html">SU</a></span>, <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/SO.html">SO</a></span>, and <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Sp.html">Sp</a></span> provide convenient shortcuts to get the Algebra of the group in question. </li>
+     <li><a name="1324974463"></a>A scalar coupling with the name <span class="IF"><span class="TI">coupling</span></span> and <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/EFTOrder.html">EFTOrder</a></span> 0 is initialized with the gauge group (as with <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCoupling.html">DefineCoupling</a></span>). </li>
+     <li><a name="18485150"></a><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineGaugeGroup.html">DefineGaugeGroup</a></span> also defines the fundamental and adjoint representations of the corresponding non-Abelian group. They are referred to as <span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/fund.html">fund</a></span>] and <span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/adj.html">adj</a></span>], respectively.</li>
+     <li><a name="337006065"></a>The initialization of a simple gauge group also defines some Clebsch-Gordan (<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/CG.html">CG</a></span>) coefficients among the representations: the generators of <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/gen.html">gen</a></span>[<span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/fund.html">fund</a></span>]] and <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/gen.html">gen</a></span>[<span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/adj.html">adj</a></span>]] of the fundamental and adjoint representations; Kronecker deltas  <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/del.html">del</a></span>[<span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/fund.html">fund</a></span>]] and <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/del.html">del</a></span>[<span class="IF"><span class="TI">groupName</span></span>[<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/adj.html">adj</a></span>]] of the representations; and the structure constant of the group <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/fStruct.html">fStruct</a></span>[<span class="IF"><span class="TI">groupName</span></span>].</li>
+     <li><a name="1989572523"></a><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/SU.html">SU</a></span>(N) groups also initialize the Levi-Civita symbol <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/eps.html">eps</a></span>[<span class="IF"><span class="TI">groupName</span></span>].</li>
+     <li><a name="1620857015"></a><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Sp.html">Sp</a></span>(N) groups also initialize the 2-index antisymmetric invariant <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/eps.html">eps</a></span>[<span class="IF"><span class="TI">groupName</span></span>].</li>
      <li><a name="1342251725"></a>The following options can be given: </li>
      <li class="NotesTable">
       <a name="2056513987"></a>
@@ -84,12 +84,12 @@
        <col width="28%" />
        <col width="28%" />
        <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/docs/ref/AdjAlphabet.html">AdjAlphabet</a> <a href="DefineGaugeGroup?view=all#2127466605" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/None.html">None</a></td><td><span class="TT">specifies a printing alphabet for indices of the adjoint representation under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span>.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/FundAlphabet.html">FundAlphabet</a> <a href="DefineGaugeGroup?view=all#585327695" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/None.html">None</a></td><td><span class="TT">specifies a canonical printing alphabet for indices of the fundamental representation under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span>.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a> <a href="DefineGaugeGroup?view=all#728507685" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/Default.html">Default</a></td><td><span class="TT">provides the display of the gauge coupling and field under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span> formatting.</span></td></tr>
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/AdjAlphabet.html">AdjAlphabet</a> <a href="DefineGaugeGroup?view=all#2127466605" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/None.html">None</a></td><td><span class="TT">specifies a printing alphabet for indices of the adjoint representation under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/FundAlphabet.html">FundAlphabet</a> <a href="DefineGaugeGroup?view=all#585327695" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/None.html">None</a></td><td><span class="TT">specifies a canonical printing alphabet for indices of the fundamental representation under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span>.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a> <a href="DefineGaugeGroup?view=all#728507685" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/Default.html">Default</a></td><td><span class="TT">provides the display of the gauge coupling and field under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span> formatting.</span></td></tr>
       </table>
      </li>
-     <li><a name="184909671"></a>The allowed options for <span class="IF"><a class="package-symbol" href="/docs/ref/AdjAlphabet.html">AdjAlphabet</a></span> and <span class="IF"><a class="package-symbol" href="/docs/ref/FundAlphabet.html">FundAlphabet</a></span> are</li>
+     <li><a name="184909671"></a>The allowed options for <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/AdjAlphabet.html">AdjAlphabet</a></span> and <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/FundAlphabet.html">FundAlphabet</a></span> are</li>
      <li class="NotesTable">
       <a name="1265862372"></a>
       <table>
@@ -97,7 +97,7 @@
        <col width="35%" />
        <col width="50%" />
        <tr class="lineAbove" style=""><td /><td><span class="TT"><span class="IF"><a href="http://reference.wolfram.com/language/ref/None.html">None</a></span></span></td><td><span class="TT">default index alphabet is uses</span></td></tr>
-       <tr class="" style=""><td /><td><span class="TT"><span class="openbrace">{</span><span class="IF"><span class="TI">index</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">index</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TR"><span class="special-character Ellipsis">&#8230;</span></span></span><span class="specialcharacters"> <span class="closebrace">}</span></span></span></td><td><span class="TT">repeated indices of the representation are canonically displayed with as these strings under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span></span></td></tr>
+       <tr class="" style=""><td /><td><span class="TT"><span class="openbrace">{</span><span class="IF"><span class="TI">index</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">index</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TR"><span class="special-character Ellipsis">&#8230;</span></span></span><span class="specialcharacters"> <span class="closebrace">}</span></span></span></td><td><span class="TT">repeated indices of the representation are canonically displayed with as these strings under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span></span></td></tr>
       </table>
      </li>
      <li><a name="1267460636"></a>The allowed options for NiceForm are</li>
@@ -170,7 +170,7 @@
          data-out-width="7"
          data-out-height="16"
          ></div>
-     <p><a name="1565958990"></a>and a field strength tensor (shortcut <span class="IF"><a class="package-symbol" href="/docs/ref/FS.html">FS</a></span>) with 2 Lorentz and 1 adjoint index: </p>
+     <p><a name="1565958990"></a>and a field strength tensor (shortcut <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/FS.html">FS</a></span>) with 2 Lorentz and 1 adjoint index: </p>
      <div id="1943043203"
          class="clipboard-input"
          data-in="In[3]:="
@@ -203,7 +203,7 @@
    <div>
     <h2 id="2131110772" class="toggle">Scope<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h2>
     <div class="hideable">
-     <p><a name="508789103"></a>An Abelian gauge group is initialized by using <span class="IF"><a class="package-symbol" href="/docs/ref/U1.html">U1</a></span> for the <span class="TI">LieGroup</span>. For instance the SM hypercharge group is </p>
+     <p><a name="508789103"></a>An Abelian gauge group is initialized by using <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/U1.html">U1</a></span> for the <span class="TI">LieGroup</span>. For instance the SM hypercharge group is </p>
      <div id="638903828"
          class="clipboard-input"
          data-in="In[1]:="
@@ -235,7 +235,7 @@
          data-out-width="19"
          data-out-height="16"
          ></div>
-     <p><a name="1950953803"></a>To initialize a field that is charged under this group, one can use the <span class="IF"><a class="package-symbol" href="/docs/ref/Charges.html">Charges</a></span> option for <span class="IF"><a class="package-symbol" href="/docs/ref/DefineField.html">DefineField</a></span>. For, e.g., a charge 1/2 scalar, we may use</p>
+     <p><a name="1950953803"></a>To initialize a field that is charged under this group, one can use the <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Charges.html">Charges</a></span> option for <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineField.html">DefineField</a></span>. For, e.g., a charge 1/2 scalar, we may use</p>
      <div id="2079074942"
          class="clipboard-input"
          data-in="In[3]:="
@@ -249,7 +249,7 @@
          ></div>
      <p><a name="1588467342"></a>where the group name is used a <span class="IF"><a href="http://reference.wolfram.com/language/ref/Head.html">Head</a></span> for the charge value.</p>
      <div class="ExLine"><a name="1146513637"></a><!-- --></div>
-     <p><a name="1840341514"></a>Initialization of non-Abelian gauge groups also initializes fundamental and adjoint representations and a several Clebsch-Gordan coefficients (<span class="IF"><a class="package-symbol" href="/docs/ref/CG.html">CG</a></span>) between them. For instance the SM color group</p>
+     <p><a name="1840341514"></a>Initialization of non-Abelian gauge groups also initializes fundamental and adjoint representations and a several Clebsch-Gordan coefficients (<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/CG.html">CG</a></span>) between them. For instance the SM color group</p>
      <div id="503058076"
          class="clipboard-input"
          data-in="In[1]:="
@@ -281,13 +281,13 @@
          data-out-width="158"
          data-out-height="21"
          ></div>
-     <p><a name="1189217561"></a>More representations and CGs can be defined with <span class="IF"><a class="package-symbol" href="/docs/ref/DefineRepresentation.html">DefineRepresentation</a></span> and <span class="IF"><a class="package-symbol" href="/docs/ref/DefineCG.html">DefineCG</a></span>.</p>
+     <p><a name="1189217561"></a>More representations and CGs can be defined with <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineRepresentation.html">DefineRepresentation</a></span> and <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCG.html">DefineCG</a></span>.</p>
     </div>
    </div>
    <div>
     <h2 id="1846480338" class="toggle">Generalizations &amp; Extensions<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h2>
     <div class="hideable">
-     <p><a name="1964089082"></a>In principle more exotic gauge groups can be initialized by passing a Lie algebra (<span class="IF"><a class="package-symbol" href="/docs/ref/Alg.html">Alg</a></span>) for the <span class="TI">LieGroup</span> argument. For instance, the special group <span class="IF">G<sub>2</sub></span> is initialized by  </p>
+     <p><a name="1964089082"></a>In principle more exotic gauge groups can be initialized by passing a Lie algebra (<span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Alg.html">Alg</a></span>) for the <span class="TI">LieGroup</span> argument. For instance, the special group <span class="IF">G<sub>2</sub></span> is initialized by  </p>
      <div id="884875532"
          class="clipboard-input"
          data-in="In[1]:="
@@ -328,7 +328,7 @@
      <div>
       <h3 id="585327695" class="toggle">FundAlphabet<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
       <div class="hideable">
-       <p><a name="368529163"></a>The <span class="IF"><a class="package-symbol" href="/docs/ref/FundAlphabet.html">FundAlphabet</a></span> option allows the user to specify the canonical labeling (under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span>) of repeated indices that belong to the fundamental representation of the gauge group. To use lower case Greek letter starting from <span class="special-character Alpha">&#945;</span> we may specify</p>
+       <p><a name="368529163"></a>The <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/FundAlphabet.html">FundAlphabet</a></span> option allows the user to specify the canonical labeling (under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span>) of repeated indices that belong to the fundamental representation of the gauge group. To use lower case Greek letter starting from <span class="special-character Alpha">&#945;</span> we may specify</p>
        <div id="757567818"
            class="clipboard-input"
            data-in="In[1]:="
@@ -340,7 +340,7 @@
            data-link="https://wolfram.com/xid/0nv9t47mk0jmuqkd9fdu6-mtblcs"
            data-code="Files/DefineGaugeGroup.en/i_12.txt"
            ></div>
-       <p><a name="1843021616"></a>The Kronecker delta of the fundamental representation comes with fundamental and anti-fundamental indices. <span class="IF"><a class="package-symbol" href="/docs/ref/RelabelIndices.html">RelabelIndices</a></span> changes the repeated index labels to the canonical form</p>
+       <p><a name="1843021616"></a>The Kronecker delta of the fundamental representation comes with fundamental and anti-fundamental indices. <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/RelabelIndices.html">RelabelIndices</a></span> changes the repeated index labels to the canonical form</p>
        <div id="1476742401"
            class="clipboard-input"
            data-in="In[2]:="
@@ -365,7 +365,7 @@
      <div>
       <h3 id="2127466605" class="toggle">AdjAlphabet<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
       <div class="hideable">
-       <p><a name="1442350183"></a>Similarly to <span class="IF"><a class="package-symbol" href="/docs/ref/FundAlphabet.html">FundAlphabet</a></span>, the <span class="IF"><a class="package-symbol" href="/docs/ref/AdjAlphabet.html">AdjAlphabet</a></span> option allows the user to specify the canonical labeling (under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span>) of repeated indices that belong to the adjoint representation of the gauge group. To use lower case Greek letter starting from <span class="special-character Alpha">&#945;</span> we may specify</p>
+       <p><a name="1442350183"></a>Similarly to <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/FundAlphabet.html">FundAlphabet</a></span>, the <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/AdjAlphabet.html">AdjAlphabet</a></span> option allows the user to specify the canonical labeling (under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span>) of repeated indices that belong to the adjoint representation of the gauge group. To use lower case Greek letter starting from <span class="special-character Alpha">&#945;</span> we may specify</p>
        <div id="784118345"
            class="clipboard-input"
            data-in="In[1]:="
@@ -377,7 +377,7 @@
            data-link="https://wolfram.com/xid/0nv9t47mk0jmuqkd9fdu6-m84nvf"
            data-code="Files/DefineGaugeGroup.en/i_14.txt"
            ></div>
-       <p><a name="1717366423"></a>The structure constant of the group comes with indices in the adjoint representation. <span class="IF"><a class="package-symbol" href="/docs/ref/RelabelIndices.html">RelabelIndices</a></span> changes the repeated index labels to the canonical form</p>
+       <p><a name="1717366423"></a>The structure constant of the group comes with indices in the adjoint representation. <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/RelabelIndices.html">RelabelIndices</a></span> changes the repeated index labels to the canonical form</p>
        <div id="1597255681"
            class="clipboard-input"
            data-in="In[2]:="
@@ -402,7 +402,7 @@
      <div>
       <h3 id="728507685" class="toggle">NiceForm<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h3>
       <div class="hideable">
-       <p><a name="321671536"></a>The display of the gauge coupling under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span> can be changed with this option. For instance,  </p>
+       <p><a name="321671536"></a>The display of the gauge coupling under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span> can be changed with this option. For instance,  </p>
        <div id="834225131"
            class="clipboard-input"
            data-in="In[1]:="
@@ -436,7 +436,7 @@
            ></div>
        <p><a name="1258259159"></a>while using default formatting for the gauge field.</p>
        <div class="ExLine"><a name="1736471590"></a><!-- --></div>
-       <p><a name="575250400"></a>The display of the gauge field under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span> can be changed with this option. For instance,  </p>
+       <p><a name="575250400"></a>The display of the gauge field under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span> can be changed with this option. For instance,  </p>
        <div id="262094006"
            class="clipboard-input"
            data-in="In[1]:="
@@ -475,13 +475,13 @@
    <div class="clear"><!-- --></div>
   </div></section><section id="SeeAlso" class="related-links"><div class="inner">
    <h1>See Also</h1>
-   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/docs/ref/DefineField.html">DefineField</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/DefineRepresentation.html">DefineRepresentation</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/FS.html">FS</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/DefineGlobalGroup.html">DefineGlobalGroup</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/CG.html">CG</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/ResetAll.html">ResetAll</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/LoadModel.html">LoadModel</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/DefineCG.html">DefineCG</a></span></p>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineField.html">DefineField</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineRepresentation.html">DefineRepresentation</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/FS.html">FS</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineGlobalGroup.html">DefineGlobalGroup</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/CG.html">CG</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/ResetAll.html">ResetAll</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/LoadModel.html">LoadModel</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCG.html">DefineCG</a></span></p>
   </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
    <h1>Related Guides</h1>
    <ul class="functionList">
     <span class="special-character FilledVerySmallSquare">&#9642;</span>
     <li>
-     <a href="/docs/guide/Matchete.html">Matchete</a>
+     <a href="/just-the-docs/docs/guide/Matchete.html">Matchete</a>
     </li>
    </ul>
   </div></section>

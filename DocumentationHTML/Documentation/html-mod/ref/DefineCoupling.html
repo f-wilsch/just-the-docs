@@ -26,22 +26,22 @@
     <a href="#" class="menu see-also">See Also</a>
     <ul class="sub_menu">
      <li>
-      <a href="/docs/ref/DefineField.html"><span class="dropdownPad">DefineField</span></a>
+      <a href="/just-the-docs/docs/ref/DefineField.html"><span class="dropdownPad">DefineField</span></a>
      </li>
      <li>
-      <a href="/docs/ref/CheckLagrangian.html"><span class="dropdownPad">CheckLagrangian</span></a>
+      <a href="/just-the-docs/docs/ref/CheckLagrangian.html"><span class="dropdownPad">CheckLagrangian</span></a>
      </li>
      <li>
-      <a href="/docs/ref/ResetAll.html"><span class="dropdownPad">ResetAll</span></a>
+      <a href="/just-the-docs/docs/ref/ResetAll.html"><span class="dropdownPad">ResetAll</span></a>
      </li>
      <li>
-      <a href="/docs/ref/LoadModel.html"><span class="dropdownPad">LoadModel</span></a>
+      <a href="/just-the-docs/docs/ref/LoadModel.html"><span class="dropdownPad">LoadModel</span></a>
      </li>
      <li>
-      <a href="/docs/ref/SeriesEFT.html"><span class="dropdownPad">SeriesEFT</span></a>
+      <a href="/just-the-docs/docs/ref/SeriesEFT.html"><span class="dropdownPad">SeriesEFT</span></a>
      </li>
      <li>
-      <a href="/docs/ref/GetCouplings.html"><span class="dropdownPad">GetCouplings</span></a>
+      <a href="/just-the-docs/docs/ref/GetCouplings.html"><span class="dropdownPad">GetCouplings</span></a>
      </li>
     </ul>
    </li>
@@ -49,14 +49,14 @@
     <a href="#" class="menu related-guides">Related Guides</a>
     <ul class="sub_menu">
      <li>
-      <a href="/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+      <a href="/just-the-docs/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
      </li>
     </ul>
    </li>
   </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">DefineCoupling</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="/docs/ref/DefineCoupling.html">DefineCoupling</a><span class="openbracket">[</span><span class="TI">label</span><span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCoupling.html">DefineCoupling</a><span class="openbracket">[</span><span class="TI">label</span><span class="closebracket">]</span></span>
    </p>
    <p class="code-description">defines a new coupling referred to by its <span class="IF"><span class="TI">label</span></span> to be used in Lagrangians. </p>
   </div>
@@ -64,8 +64,8 @@
    <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="1765356201"></a>Defining a coupling with <span class="IF"><a class="package-symbol" href="/docs/ref/DefineCoupling.html">DefineCoupling</a></span> informs Matchete of the EFT order counting and indices of the coupling in question. All couplings must be defined before a Lagrangian can be written down. </li>
-     <li><a name="1938043328"></a><span class="IF"><a class="package-symbol" href="/docs/ref/DefineCoupling.html">DefineCoupling</a></span> provides a new function <span class="IF"><span class="TI">label</span></span>[] (or <span class="IF"><span class="TI">label</span></span>[i, j, ...] if indices are provided with the <span class="IF"><a class="package-symbol" href="/docs/ref/Indices.html">Indices</a></span> option) that provides a shortcut for the user to write the coupling in the internal format used in Matchete. It gives an instance of the coupling with the given indices. </li>
+     <li><a name="1765356201"></a>Defining a coupling with <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCoupling.html">DefineCoupling</a></span> informs Matchete of the EFT order counting and indices of the coupling in question. All couplings must be defined before a Lagrangian can be written down. </li>
+     <li><a name="1938043328"></a><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineCoupling.html">DefineCoupling</a></span> provides a new function <span class="IF"><span class="TI">label</span></span>[] (or <span class="IF"><span class="TI">label</span></span>[i, j, ...] if indices are provided with the <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Indices.html">Indices</a></span> option) that provides a shortcut for the user to write the coupling in the internal format used in Matchete. It gives an instance of the coupling with the given indices. </li>
      <li><a name="1654026119"></a>The following options can be given: </li>
      <li class="NotesTable">
       <a name="41171618"></a>
@@ -74,15 +74,15 @@
        <col width="28%" />
        <col width="28%" />
        <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/docs/ref/DiagonalCoupling.html">DiagonalCoupling</a> <a href="DefineCoupling?view=all#1242934061" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/Default.html">Default</a></td><td><span class="TT"><span class="specialcharacters">specifies if any of the indices are diagonal in flavor space<span class="comma">,</span> meaning irrelevant for Einstein summation convention.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/EFTOrder.html">EFTOrder</a> <a href="DefineCoupling?view=all#1419328858" class="example-jump-link"></a></td><td>0</td><td><span class="TT">specifies the EFT power-counting of the coupling with a non-negative integer.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/Indices.html">Indices</a> <a href="DefineCoupling?view=all#411765530" class="example-jump-link"></a></td><td><span class="openbrace">{</span><span class="closebrace">}</span></td><td><span class="TT"><span class="specialcharacters">specifies a <span class="openparenthesis">(</span>list of<span class="closeparenthesis">)</span> representation<span class="openparenthesis">(</span>s<span class="closeparenthesis">)</span> corresponding to the flavor indices carried by the coupling. </span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a> <a href="DefineCoupling?view=all#1350952076" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/Default.html">Default</a></td><td><span class="TT">provides the display of the field under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span> formatting.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/SelfConjugate.html">SelfConjugate</a> <a href="DefineCoupling?view=all#106941601" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="specialcharacters">specifies whether the field is self-conjugated <span class="openparenthesis">(</span>real<span class="closeparenthesis">)</span>.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/Symmetries.html">Symmetries</a> <a href="DefineCoupling?view=all#2071159115" class="example-jump-link"></a></td><td><span class="openbrace">{</span><span class="closebrace">}</span></td><td><span class="TT">provides a list of symmetries among the indices of the coupling.</span></td></tr>
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/DiagonalCoupling.html">DiagonalCoupling</a> <a href="DefineCoupling?view=all#1242934061" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/Default.html">Default</a></td><td><span class="TT"><span class="specialcharacters">specifies if any of the indices are diagonal in flavor space<span class="comma">,</span> meaning irrelevant for Einstein summation convention.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/EFTOrder.html">EFTOrder</a> <a href="DefineCoupling?view=all#1419328858" class="example-jump-link"></a></td><td>0</td><td><span class="TT">specifies the EFT power-counting of the coupling with a non-negative integer.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/Indices.html">Indices</a> <a href="DefineCoupling?view=all#411765530" class="example-jump-link"></a></td><td><span class="openbrace">{</span><span class="closebrace">}</span></td><td><span class="TT"><span class="specialcharacters">specifies a <span class="openparenthesis">(</span>list of<span class="closeparenthesis">)</span> representation<span class="openparenthesis">(</span>s<span class="closeparenthesis">)</span> corresponding to the flavor indices carried by the coupling. </span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a> <a href="DefineCoupling?view=all#1350952076" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/Default.html">Default</a></td><td><span class="TT">provides the display of the field under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span> formatting.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/SelfConjugate.html">SelfConjugate</a> <a href="DefineCoupling?view=all#106941601" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="specialcharacters">specifies whether the field is self-conjugated <span class="openparenthesis">(</span>real<span class="closeparenthesis">)</span>.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/Symmetries.html">Symmetries</a> <a href="DefineCoupling?view=all#2071159115" class="example-jump-link"></a></td><td><span class="openbrace">{</span><span class="closebrace">}</span></td><td><span class="TT">provides a list of symmetries among the indices of the coupling.</span></td></tr>
       </table>
      </li>
-     <li><a name="1206187962"></a>The allowed values for the option <span class="IF"><a class="package-symbol" href="/docs/ref/DiagonalCoupling.html">DiagonalCoupling</a></span> are</li>
+     <li><a name="1206187962"></a>The allowed values for the option <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DiagonalCoupling.html">DiagonalCoupling</a></span> are</li>
      <li class="NotesTable">
       <a name="411930956"></a>
       <table>
@@ -94,8 +94,8 @@
        <tr class="" style=""><td /><td><span class="openbrace">{</span>Boolean<span class="comma">,</span> Boolean<span class="comma">,</span> <span class="special-character Ellipsis">&#8230;</span><span class="closebrace">}</span></td><td><span class="TT">the n'th Boolean specifies whether the n'th flavor index is a diagonal in flavor space</span></td></tr>
       </table>
      </li>
-     <li><a name="1942479575"></a>The EFT power counting behavior of the coupling as specified by <span class="IF"><a class="package-symbol" href="/docs/ref/EFTOrder.html">EFTOrder</a></span> is used by Matchete to truncate the EFTexpansion in functions such as <span class="IF"><a class="package-symbol" href="/docs/ref/Match.html">Match</a></span> or <span class="IF"><a class="package-symbol" href="/docs/ref/SeriesEFT.html">SeriesEFT</a></span>. The counting (EFTOrder) of light bosons and covariant derivatives are 1.</li>
-     <li><a name="875769142"></a>The option values for <span class="IF"><a class="package-symbol" href="/docs/ref/SelfConjugate.html">SelfConjugate</a></span> are</li>
+     <li><a name="1942479575"></a>The EFT power counting behavior of the coupling as specified by <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/EFTOrder.html">EFTOrder</a></span> is used by Matchete to truncate the EFTexpansion in functions such as <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Match.html">Match</a></span> or <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/SeriesEFT.html">SeriesEFT</a></span>. The counting (EFTOrder) of light bosons and covariant derivatives are 1.</li>
+     <li><a name="875769142"></a>The option values for <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/SelfConjugate.html">SelfConjugate</a></span> are</li>
      <li class="NotesTable">
       <a name="1305495017"></a>
       <table>
@@ -107,17 +107,17 @@
        <tr class="" style=""><td /><td><span class="openbrace">{</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span> <span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebrace">}</span></td><td><span class="TT"><span class="specialcharacters">complex conjugation of the coupling exchanges its indices<span class="comma">,</span> e.g<span class="comma">,</span> if the couplings is a Hermitian matrix</span></span></td></tr>
       </table>
      </li>
-     <li><a name="699232689"></a>The option <span class="IF"><a class="package-symbol" href="/docs/ref/Symmetries.html">Symmetries</a></span> takes a list of symmetries between the indices. The symmetries can be specified as  </li>
+     <li><a name="699232689"></a>The option <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Symmetries.html">Symmetries</a></span> takes a list of symmetries between the indices. The symmetries can be specified as  </li>
      <li class="NotesTable">
       <a name="1617521466"></a>
       <table>
        <col width="1%" />
        <col width="35%" />
        <col width="50%" />
-       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/docs/ref/SymmetricIndices.html">SymmetricIndices</a><span class="openbracket">[</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebracket">]</span></td><td><span class="TT">dictates symmetry of all permutations between the indices <span class="IF"><span class="TI">n</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">n</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="special-character Ellipsis">&#8230;</span> </span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/AntisymmetricIndices.html">AntisymmetricIndices</a><span class="openbracket">[</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebracket">]</span></td><td><span class="TT">dictates antisymmetry of all permutations between the indices <span class="IF"><span class="TI">n</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">n</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="special-character Ellipsis">&#8230;</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/SymmetricPermutation.html">SymmetricPermutation</a><span class="openbracket">[</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebracket">]</span></td><td><span class="TT">dictates symmetry under a particular permutation of the indices <span class="IF"><span class="TI">n</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">n</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="special-character Ellipsis">&#8230;</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/AntisymmetricPermutation.html">AntisymmetricPermutation</a><span class="openbracket">[</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebracket">]</span></td><td><span class="TT">dictates antisymmetry under a particular permutation of the indices <span class="IF"><span class="TI">n</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">n</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="special-character Ellipsis">&#8230;</span></span></td></tr>
+       <tr class="lineAbove" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/SymmetricIndices.html">SymmetricIndices</a><span class="openbracket">[</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebracket">]</span></td><td><span class="TT">dictates symmetry of all permutations between the indices <span class="IF"><span class="TI">n</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">n</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="special-character Ellipsis">&#8230;</span> </span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/AntisymmetricIndices.html">AntisymmetricIndices</a><span class="openbracket">[</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebracket">]</span></td><td><span class="TT">dictates antisymmetry of all permutations between the indices <span class="IF"><span class="TI">n</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">n</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="special-character Ellipsis">&#8230;</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/SymmetricPermutation.html">SymmetricPermutation</a><span class="openbracket">[</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebracket">]</span></td><td><span class="TT">dictates symmetry under a particular permutation of the indices <span class="IF"><span class="TI">n</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">n</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="special-character Ellipsis">&#8230;</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/AntisymmetricPermutation.html">AntisymmetricPermutation</a><span class="openbracket">[</span><span class="TI">n</span><sub><span class="TR">1</span></sub><span class="comma">,</span><span class="TI">n</span><sub><span class="TR">2</span></sub><span class="comma">,</span><span class="special-character Ellipsis">&#8230;</span><span class="closebracket">]</span></td><td><span class="TT">dictates antisymmetry under a particular permutation of the indices <span class="IF"><span class="TI">n</span><sub><span class="TR">1</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="IF"><span class="TI">n</span><sub><span class="TR">2</span></sub></span><span class="specialcharacters"><span class="comma">,</span> </span><span class="special-character Ellipsis">&#8230;</span></span></td></tr>
       </table>
      </li>
     </ul>
@@ -166,7 +166,7 @@
          data-out-width="6"
          data-out-height="16"
          ></div>
-     <p><a name="1329203475"></a>The properties of the coupling is saved in the global state and can be recovered with <span class="IF"><a class="package-symbol" href="/docs/ref/GetCouplings.html">GetCouplings</a></span></p>
+     <p><a name="1329203475"></a>The properties of the coupling is saved in the global state and can be recovered with <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/GetCouplings.html">GetCouplings</a></span></p>
      <div id="1416368068"
          class="clipboard-input"
          data-in="In[3]:="
@@ -194,7 +194,7 @@
      <div>
       <h3 id="1242934061" class="toggle">DiagonalCoupling<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h3>
       <div class="hideable">
-       <p><a name="1059878944"></a>We define a new flavor index with <span class="IF"><a class="package-symbol" href="/docs/ref/DefineFlavorIndex.html">DefineFlavorIndex</a></span>:</p>
+       <p><a name="1059878944"></a>We define a new flavor index with <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineFlavorIndex.html">DefineFlavorIndex</a></span>:</p>
        <div id="1007826002"
            class="clipboard-input"
            data-in="In[1]:="
@@ -218,7 +218,7 @@
            data-link="https://wolfram.com/xid/0b66uiklkslp346mgmya-d5t50a"
            data-code="Files/DefineCoupling.en/i_5.txt"
            ></div>
-       <p><a name="1551897559"></a>can, thus, freely have repeated indices relabeled (with <span class="IF"><a class="package-symbol" href="/docs/ref/RelabelIndices.html">RelabelIndices</a></span>)</p>
+       <p><a name="1551897559"></a>can, thus, freely have repeated indices relabeled (with <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/RelabelIndices.html">RelabelIndices</a></span>)</p>
        <div id="1978586148"
            class="clipboard-input"
            data-in="In[3]:="
@@ -264,7 +264,7 @@
            data-out-width="47"
            data-out-height="16"
            ></div>
-       <p><a name="1515851332"></a>In some cases, particularly heavy masses, it is convenient to assume a diagonal structure for a coupling (meaning e.g. a mass matrix has elements only along the diagonal). In such cases it is convenient to use a single index instead of two <span class="special-character Dash">&#8211;</span> it is even required for heavy masses when using <span class="IF"><a class="package-symbol" href="/docs/ref/Match.html">Match</a></span>. Setting a flavor index to be diagonal with the <span class="IF">DiagonalCoupling</span> option means that the index does not count in Einstein summation convention. For instance, the mass parameter</p>
+       <p><a name="1515851332"></a>In some cases, particularly heavy masses, it is convenient to assume a diagonal structure for a coupling (meaning e.g. a mass matrix has elements only along the diagonal). In such cases it is convenient to use a single index instead of two <span class="special-character Dash">&#8211;</span> it is even required for heavy masses when using <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Match.html">Match</a></span>. Setting a flavor index to be diagonal with the <span class="IF">DiagonalCoupling</span> option means that the index does not count in Einstein summation convention. For instance, the mass parameter</p>
        <div id="2053649515"
            class="clipboard-input"
            data-in="In[5]:="
@@ -336,7 +336,7 @@
      <div>
       <h3 id="1419328858" class="toggle">EFTOrder<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
       <div class="hideable">
-       <p><a name="1906924565"></a>The option <span class="IF"><a class="package-symbol" href="/docs/ref/EFTOrder.html">EFTOrder</a></span> dictates the power-counting behavior of the coupling. A coupling</p>
+       <p><a name="1906924565"></a>The option <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/EFTOrder.html">EFTOrder</a></span> dictates the power-counting behavior of the coupling. A coupling</p>
        <div id="309694361"
            class="clipboard-input"
            data-in="In[1]:="
@@ -381,7 +381,7 @@
      <div>
       <h3 id="411765530" class="toggle">Indices<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
       <div class="hideable">
-       <p><a name="1882729934"></a>Couplings can have flavor indices in theories where such have been defined. Using <span class="IF"><a class="package-symbol" href="/docs/ref/DefineFlavorIndex.html">DefineFlavorIndex</a></span> to initialize a flavor representation with dimension 3,</p>
+       <p><a name="1882729934"></a>Couplings can have flavor indices in theories where such have been defined. Using <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineFlavorIndex.html">DefineFlavorIndex</a></span> to initialize a flavor representation with dimension 3,</p>
        <div id="97647015"
            class="clipboard-input"
            data-in="In[1]:="
@@ -430,7 +430,7 @@
      <div>
       <h3 id="1350952076" class="toggle">NiceForm<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(1)</span></h3>
       <div class="hideable">
-       <p><a name="1298571887"></a>The option <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span> can be provided to the coupling definition to change how it displays under <span class="IF"><a class="package-symbol" href="/docs/ref/NiceForm.html">NiceForm</a></span> output. The default is to use the label of the coupling, but it can be changed by providing a string. For instance to display the coupling with a subscript, we would use </p>
+       <p><a name="1298571887"></a>The option <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span> can be provided to the coupling definition to change how it displays under <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/NiceForm.html">NiceForm</a></span> output. The default is to use the label of the coupling, but it can be changed by providing a string. For instance to display the coupling with a subscript, we would use </p>
        <div id="189100156"
            class="clipboard-input"
            data-in="In[1]:="
@@ -463,7 +463,7 @@
      <div>
       <h3 id="106941601" class="toggle">SelfConjugate<span class="special-character NonBreakingSpace">&#160;</span><span class="special-character NonBreakingSpace">&#160;</span><span class="total-examples">(2)</span></h3>
       <div class="hideable">
-       <p><a name="833792406"></a>Couplings are by default assumed to be complex; however, in many cases the form of the Lagrangian may require that they should be real. In such cases, it is important to specify this, so that the simplification algorithms can work as well as possible.  To do this, we may use the option <span class="IF"><a class="package-symbol" href="/docs/ref/SelfConjugate.html">SelfConjugate</a></span>. To illustrate the behavior of real and complex couplings consider  </p>
+       <p><a name="833792406"></a>Couplings are by default assumed to be complex; however, in many cases the form of the Lagrangian may require that they should be real. In such cases, it is important to specify this, so that the simplification algorithms can work as well as possible.  To do this, we may use the option <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/SelfConjugate.html">SelfConjugate</a></span>. To illustrate the behavior of real and complex couplings consider  </p>
        <div id="2055907054"
            class="clipboard-input"
            data-in="In[1]:="
@@ -475,7 +475,7 @@
            data-link="https://wolfram.com/xid/0b66uiklkslp346mgmya-8abibk"
            data-code="Files/DefineCoupling.en/i_18.txt"
            ></div>
-       <p><a name="1302374349"></a>Complex conjugation with <span class="IF"><a class="package-symbol" href="/docs/ref/Bar.html">Bar</a></span> gives </p>
+       <p><a name="1302374349"></a>Complex conjugation with <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/Bar.html">Bar</a></span> gives </p>
        <div id="377511257"
            class="clipboard-input"
            data-in="In[2]:="
@@ -582,13 +582,13 @@
    <div class="clear"><!-- --></div>
   </div></section><section id="SeeAlso" class="related-links"><div class="inner">
    <h1>See Also</h1>
-   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/docs/ref/DefineField.html">DefineField</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/CheckLagrangian.html">CheckLagrangian</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/ResetAll.html">ResetAll</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/LoadModel.html">LoadModel</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/SeriesEFT.html">SeriesEFT</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/docs/ref/GetCouplings.html">GetCouplings</a></span></p>
+   <p class="inlineFunctionList"><span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/DefineField.html">DefineField</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/CheckLagrangian.html">CheckLagrangian</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/ResetAll.html">ResetAll</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/LoadModel.html">LoadModel</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/SeriesEFT.html">SeriesEFT</a></span><span class="special-character NonBreakingSpace">&#160;</span><span class="inlineSeparator"></span> <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/GetCouplings.html">GetCouplings</a></span></p>
   </div></section><section id="RelatedGuides" class="related-links"><div class="inner">
    <h1>Related Guides</h1>
    <ul class="functionList">
     <span class="special-character FilledVerySmallSquare">&#9642;</span>
     <li>
-     <a href="/docs/guide/Matchete.html">Matchete</a>
+     <a href="/just-the-docs/docs/guide/Matchete.html">Matchete</a>
     </li>
    </ul>
   </div></section>

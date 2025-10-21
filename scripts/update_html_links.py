@@ -5,11 +5,14 @@ import re
 INPUT_DIR = "../DocumentationHTML/Documentation/html"   # <-- change this
 OUTPUT_DIR = "../DocumentationHTML/Documentation/html-mod" # <-- change this
 
+# The base path for your GitHub Pages site (e.g., '/myproject' or '')
+BASE_PATH = "/just-the-docs"  # <-- change this to match your repo name (no trailing slash)
+
 # Patterns to rewrite: { old_prefix: new_prefix }
 LINK_PATTERNS = {
-    r'href="\.\./ref/([^"]+)"': r'href="/docs/ref/\1"',
-    r'href="\.\./guide/([^"]+)"': r'href="/docs/guide/\1"',
-    r'href="\.\./tutorial/([^"]+)"': r'href="/docs/tutorial/\1"',
+    r'href="\.\./ref/([^"]+)"': rf'href="{BASE_PATH}/docs/ref/\1"',
+    r'href="\.\./guide/([^"]+)"': rf'href="{BASE_PATH}/docs/guide/\1"',
+    r'href="\.\./tutorial/([^"]+)"': rf'href="{BASE_PATH}/docs/tutorial/\1"',
 }
 
 def process_html_content(content):

@@ -26,16 +26,16 @@
     <a href="#" class="menu see-also">See Also</a>
     <ul class="sub_menu">
      <li>
-      <a href="/docs/ref/GreensSimplify.html"><span class="dropdownPad">GreensSimplify</span></a>
+      <a href="/just-the-docs/docs/ref/GreensSimplify.html"><span class="dropdownPad">GreensSimplify</span></a>
      </li>
      <li>
-      <a href="/docs/ref/HcSimplify.html"><span class="dropdownPad">HcSimplify</span></a>
+      <a href="/just-the-docs/docs/ref/HcSimplify.html"><span class="dropdownPad">HcSimplify</span></a>
      </li>
      <li>
-      <a href="/docs/ref/ReductionIdentities.html"><span class="dropdownPad">ReductionIdentities</span></a>
+      <a href="/just-the-docs/docs/ref/ReductionIdentities.html"><span class="dropdownPad">ReductionIdentities</span></a>
      </li>
      <li>
-      <a href="/docs/ref/ReplaceEffectiveCouplings.html"><span class="dropdownPad">ReplaceEffectiveCouplings</span></a>
+      <a href="/just-the-docs/docs/ref/ReplaceEffectiveCouplings.html"><span class="dropdownPad">ReplaceEffectiveCouplings</span></a>
      </li>
     </ul>
    </li>
@@ -43,14 +43,14 @@
     <a href="#" class="menu related-guides">Related Guides</a>
     <ul class="sub_menu">
      <li>
-      <a href="/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
+      <a href="/just-the-docs/docs/guide/Matchete.html"><span class="dropdownPad">Matchete</span></a>
      </li>
     </ul>
    </li>
   </ul></nav><div class="ContextNameCell">Matchete`</div><div class="main-heading"><span class="main-title-top">Matchete`</span><h1 class="main-title">EOMSimplify</h1><div class="iconography" data-src="s= d= m= c= u= l= n= e="></div></div><div class="functionIntroWrap">
   <div class="functionIntro">
    <p class="code">
-    <span class="IF"><a class="package-symbol" href="/docs/ref/EOMSimplify.html">EOMSimplify</a><span class="openbracket">[</span>L<span class="closebracket">]</span></span>
+    <span class="IF"><a class="package-symbol" href="/just-the-docs/docs/ref/EOMSimplify.html">EOMSimplify</a><span class="openbracket">[</span>L<span class="closebracket">]</span></span>
    </p>
    <p class="code-description">simplifies the input Lagrangian <span class="IF">L</span> to an on-shell basis by applying field-redefinitions. Kinetic terms of scalar and fermion fields are brought into canonical form.</p>
   </div>
@@ -58,7 +58,7 @@
    <h1 class="toggle">Details and Options</h1>
    <div class="hideable">
     <ul class="functionList">
-     <li><a name="574769717"></a>The input Lagrangian is first treated using <a href="/docs/ref/EOMSimplify.html#574769717">GreensSimplify</a>. If the target basis is the on-shell one, GreensSimplify can thus be skipped after matching.</li>
+     <li><a name="574769717"></a>The input Lagrangian is first treated using <a href="/just-the-docs/docs/ref/EOMSimplify.html#574769717">GreensSimplify</a>. If the target basis is the on-shell one, GreensSimplify can thus be skipped after matching.</li>
      <li><a name="1524298907"></a>The following options can be given: </li>
      <li class="NotesTable">
       <a name="1559304886"></a>
@@ -67,14 +67,14 @@
        <col width="28%" />
        <col width="28%" />
        <col width="43%" />
-       <tr class="lineAbove" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Verbose.html">Verbose</a> <a href="EOMSimplify?view=all#1214799812" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">whether or not the function reports on its progress. Can be <a class="package-symbol" href="/docs/ref/EOMSimplify.html#1559304886">True</a> or <a class="package-symbol" href="/docs/ref/EOMSimplify.html#1559304886">False</a>.  </span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/DummyCoefficients.html">DummyCoefficients</a> <a href="EOMSimplify?view=all#1013408255" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="specialcharacters">determines whether the module replaces operator coefficients by temporary variables before applying the reductions. For Lagrangians where the matching coefficients consist of complicated loop functions<span class="comma">,</span> this can yield a better performance.</span></span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/EFTOrder.html">EFTOrder</a> <a href="EOMSimplify?view=all#659737428" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/All.html">All</a></td><td><span class="TT">specifies the targeted order in power-counting to which field redefinitions are applied. The standard option <a class="package-symbol" href="/docs/ref/EOMSimplify.html#1559304886">All</a> determines the order from the input Lagrangian and keeps the output at the same order.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/EffectiveCouplingSymbol.html">EffectiveCouplingSymbol</a> <a href="EOMSimplify?view=all#748882935" class="example-jump-link"></a></td><td>&quot;C&quot;</td><td><span class="TT">the standard symbol used for effective couplings which are generated for superleading terms.</span></td></tr>
-       <tr class="" style=""><td /><td><a class="package-symbol" href="/docs/ref/ReductionIdentities.html">ReductionIdentities</a> <a href="EOMSimplify?view=all#73833478" class="example-jump-link"></a></td><td><a class="package-symbol" href="/docs/ref/EvanescenceFree.html">EvanescenceFree</a></td><td><span class="TT"><span class="specialcharacters">specifies whether or not to use the subset of identities valid only in 4 dimensions <span class="openparenthesis">(</span>fierz<span class="comma">,</span> gamma reduction and Levi-Civita relations<span class="closeparenthesis">)</span> in intermediate simplifications.</span></span></td></tr>
+       <tr class="lineAbove" style=""><td /><td><a href="http://reference.wolfram.com/language/ref/Verbose.html">Verbose</a> <a href="EOMSimplify?view=all#1214799812" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/True.html">True</a></td><td><span class="TT">whether or not the function reports on its progress. Can be <a class="package-symbol" href="/just-the-docs/docs/ref/EOMSimplify.html#1559304886">True</a> or <a class="package-symbol" href="/just-the-docs/docs/ref/EOMSimplify.html#1559304886">False</a>.  </span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/DummyCoefficients.html">DummyCoefficients</a> <a href="EOMSimplify?view=all#1013408255" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/False.html">False</a></td><td><span class="TT"><span class="specialcharacters">determines whether the module replaces operator coefficients by temporary variables before applying the reductions. For Lagrangians where the matching coefficients consist of complicated loop functions<span class="comma">,</span> this can yield a better performance.</span></span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/EFTOrder.html">EFTOrder</a> <a href="EOMSimplify?view=all#659737428" class="example-jump-link"></a></td><td><a href="http://reference.wolfram.com/language/ref/All.html">All</a></td><td><span class="TT">specifies the targeted order in power-counting to which field redefinitions are applied. The standard option <a class="package-symbol" href="/just-the-docs/docs/ref/EOMSimplify.html#1559304886">All</a> determines the order from the input Lagrangian and keeps the output at the same order.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/EffectiveCouplingSymbol.html">EffectiveCouplingSymbol</a> <a href="EOMSimplify?view=all#748882935" class="example-jump-link"></a></td><td>&quot;C&quot;</td><td><span class="TT">the standard symbol used for effective couplings which are generated for superleading terms.</span></td></tr>
+       <tr class="" style=""><td /><td><a class="package-symbol" href="/just-the-docs/docs/ref/ReductionIdentities.html">ReductionIdentities</a> <a href="EOMSimplify?view=all#73833478" class="example-jump-link"></a></td><td><a class="package-symbol" href="/just-the-docs/docs/ref/EvanescenceFree.html">EvanescenceFree</a></td><td><span class="TT"><span class="specialcharacters">specifies whether or not to use the subset of identities valid only in 4 dimensions <span class="openparenthesis">(</span>fierz<span class="comma">,</span> gamma reduction and Levi-Civita relations<span class="closeparenthesis">)</span> in intermediate simplifications.</span></span></td></tr>
       </table>
      </li>
-     <li><a name="367043257"></a>The option <a href="/docs/ref/EOMSimplify.html#367043257">EFTOrder</a> takes either an integer value greater or equal to 4, or the symbol <a href="/docs/ref/EOMSimplify.html#367043257">All</a>. In the latter case, <a href="/docs/ref/EOMSimplify.html#367043257">EOMSimplify</a> determines the order in power-counting from the input Lagrangian. When the option value is lower than the maximal order of the Lagrangian, redundant operators are only removed up to the specified order.</li>
+     <li><a name="367043257"></a>The option <a href="/just-the-docs/docs/ref/EOMSimplify.html#367043257">EFTOrder</a> takes either an integer value greater or equal to 4, or the symbol <a href="/just-the-docs/docs/ref/EOMSimplify.html#367043257">All</a>. In the latter case, <a href="/just-the-docs/docs/ref/EOMSimplify.html#367043257">EOMSimplify</a> determines the order in power-counting from the input Lagrangian. When the option value is lower than the maximal order of the Lagrangian, redundant operators are only removed up to the specified order.</li>
      <li><a name="2126913657"></a>When the Lagrangian contains a term that is formally of lower order than dimension 4, it is replaced by an effective coupling with its power-counting defined such, that the term becomes dimension 4. These terms typically occur after matching when the light degrees of freedom do not have their masses protected by a symmetry (c.f. the Hierarchy Problem). Matchete then assumes the loop suppression to be equivalent to a power-suppression, trading a &quot;superleading-power&quot; loop function for a tree-level object that is of higher order in power-counting. The option EffectiveCouplingSymbol controls which letter is used for the generation of such couplings.</li>
      <li><a name="1267460636"></a>The allowed options for ReductionIdentities are</li>
      <li class="NotesTable">
@@ -682,7 +682,7 @@
    <ul class="functionList">
     <span class="special-character FilledVerySmallSquare">&#9642;</span>
     <li>
-     <a href="/docs/guide/Matchete.html">Matchete</a>
+     <a href="/just-the-docs/docs/guide/Matchete.html">Matchete</a>
     </li>
    </ul>
   </div></section>

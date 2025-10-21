@@ -57,7 +57,9 @@ module Jekyll
 
         # Titles from directory names and file name
         parents_titles = segments.map { |s| titleize(s) }
-        file_title     = titleize(File.basename(fname, '.html'))
+        file_stem = File.basename(fname, '.html') # preserves case, e.g., "BasisOperator" 
+        file_title = file_stem # keep title as-is (no titleize) 
+        # file_title     = titleize(File.basename(fname, '.html'))
 
         # Create nested index pages (up to grandchild)
         current_dir    = top_dir
@@ -82,7 +84,10 @@ module Jekyll
                             end
 
         src_rel = "/DocumentationHTML/Documentation/html/#{rel}"
-        name    = slugify(file_title) + '.md'
+        
+        # name    = slugify(file_title) + '.md'
+        # site.pages << IframePage.new(site, page_dir, name, file_title, parent_for_child, grand_parent, src_rel)
+        name = "#{file_stem}.md" # preserves case for output file 
         site.pages << IframePage.new(site, page_dir, name, file_title, parent_for_child, grand_parent, src_rel)
       end
     end
